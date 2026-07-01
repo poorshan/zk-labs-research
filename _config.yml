@@ -1,0 +1,17 @@
+title: 金戊乾坤2号 研究
+description: Options Volatility & Crypto Research
+baseurl: "/zk-labs-research"
+url: "https://poorshan.github.io"
+github_username: poorshan
+
+# Build settings
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Cayman theme is clean and professional
+
+show_downloads: false
+google_analytics:
