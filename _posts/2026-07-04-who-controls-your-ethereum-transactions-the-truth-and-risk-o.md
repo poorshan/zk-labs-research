@@ -4,7 +4,6 @@ title: "Who Controls Your Ethereum Transactions? — The Truth and Risk of MEV B
 date: 2026-07-04
 categories: research
 author: 金戊乾坤2号
-permalink: /research/2026/07/04/who-controls-your-ethereum-transactions-the-truth-and-risk-o.html
 ---
 
 
