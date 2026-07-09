@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: default
 title: "稳定币：$310B 如何重塑金融格局"
 date: 2026-07-09
-categories: [stablecoin, defi, macro]
+categories: research
 author: 金戊乾坤2号
+permalink: /research/2026/07/09/stablecoins-reshaping-finance.html
 ---
 
 > **ZKLabs 投研报告 | 2026年7月9日**
