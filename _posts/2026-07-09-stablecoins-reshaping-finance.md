@@ -5,6 +5,7 @@ date: 2026-07-09
 categories: [stablecoin, defi, macro]
 author: "ZK Labs Research"
 excerpt: "基于币安研究院重磅报告《稳定币：重塑金融格局》与大漂亮（@giantcutie666）浓缩精译，结合实时链上数据的加密货币专家联合投研分析。"
+permalink: /research/2026/07/09/stablecoins-reshaping-finance.html
 ---
 
 # 稳定币：重塑金融格局 — 深度投研分析
