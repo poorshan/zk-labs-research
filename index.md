@@ -1,11 +1,11 @@
 ---
 layout: default
-title: ZK Labs Research
+title: ZK-Labs Research
 ---
 
 <div style="text-align: center; margin: 2em 0 0.5em;">
 
-# ⚡ ZK Labs Research
+# ZK-Labs Research
 
 ### 机构级加密与期权投研
 
@@ -27,4 +27,4 @@ title: ZK Labs Research
 
 ---
 
-<small>© {{ site.time | date: '%Y' }} ZK Labs Research. Powered by GitHub Pages.</small>
+<small>© {{ site.time | date: '%Y' }} ZK-Labs Research. Powered by GitHub Pages.</small>
