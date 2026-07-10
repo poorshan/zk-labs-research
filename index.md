@@ -3,21 +3,21 @@ layout: default
 title: ZK-Labs Research
 ---
 
-<div style="text-align: center; margin: 2em 0 0.5em;">
+<div style="text-align: center; margin: 3em 0 1.5em;">
 
 # ZK-Labs Research
 
-### 机构级加密与期权投研
+### 加密货币与期权深度研究
 
-*Institutional-Grade Crypto & Options Research*
+*Crypto & Options Research*
 
 </div>
 
----
+<p style="text-align: center; max-width: 560px; margin: 0 auto 3em; color: #606060; font-size: 0.95em; line-height: 1.75;">
+由旗下「金戊乾坤2号」投研团队运营，专注期权波动率、加密货币及宏观市场的深度研究。
+</p>
 
-**ZK Labs Research** 由旗下「金戊乾坤2号」投研团队运营，专注期权波动率、加密货币及宏观市场的深度研究。我们为机构投资者和高级交易者提供数据驱动、逻辑严密的独立分析。
-
----
+<div style="border-top: 1px solid #e1e4e8; margin: 0 auto 3em; max-width: 400px;"></div>
 
 ## 最新报告
 
@@ -25,6 +25,6 @@ title: ZK-Labs Research
 - **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
----
-
-<small>© {{ site.time | date: '%Y' }} ZK-Labs Research. Powered by GitHub Pages.</small>
+<div style="margin-top: 4em; padding-top: 1.5em; text-align: center; color: #999; font-size: 0.82em;">
+© {{ site.time | date: '%Y' }} ZK-Labs Research
+</div>
