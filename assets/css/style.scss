@@ -1,0 +1,259 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ============================================================
+   ZK-Labs Research — Custom Style Overrides
+   Base theme: Cayman (pages-themes/cayman@v0.2.0)
+   ============================================================ */
+
+/* ----- 1. Typography & Colors ----- */
+
+/* Replace Cayman green with institutional deep blue-gray */
+$heading-color: #1a3a4a;
+$accent-color: #2c5f7c;
+$link-color: #1a6daa;
+$text-color: #2d2d2d;
+$muted-color: #5a6a74;
+
+body {
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+    font-weight: 600;  /* Cayman defaults to normal */
+  }
+
+  h1 { font-size: 1.8rem; border-bottom: 2px solid #e0e5e8; padding-bottom: 0.5rem; }
+  h2 { font-size: 1.5rem; margin-top: 2.5rem; }
+  h3 { font-size: 1.25rem; color: #2c5f7c; }
+  h4 { font-size: 1.1rem; }
+
+  a { color: $link-color; }
+
+  /* Softer horizontal rules */
+  hr {
+    height: 1px;
+    background: linear-gradient(to right, #d0d6da, transparent);
+    border: none;
+    margin: 1.5rem 0;
+  }
+}
+
+/* Page header — tone down the Cayman green gradient */
+.page-header {
+  background: linear-gradient(135deg, #1a3a4a 0%, #2c5f7c 100%);
+  padding: 2rem 1rem;
+
+  .project-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .project-tagline {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 0.75rem;
+  }
+
+  .btn {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+}
+
+
+/* ----- 2. Tables — Zebra striping + sticky headers ----- */
+
+.main-content table {
+  display: table;            /* Override Cayman's display:block */
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border-radius: 4px;
+  overflow: hidden;
+
+  th {
+    background: #f0f3f5;
+    color: $heading-color;
+    font-weight: 600;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 2px solid #d0d6da;
+    text-align: left;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid #e9ebec;
+    vertical-align: top;
+  }
+
+  /* Zebra striping */
+  tbody tr:nth-child(even) td {
+    background: #f8f9fa;
+  }
+
+  tbody tr:hover td {
+    background: #edf2f5;
+  }
+
+  /* Compact mode for data-dense tables */
+  &.compact td, &.compact th {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  /* Responsive: allow horizontal scroll on narrow screens, keep display:table */
+  @media screen and (max-width: 42em) {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    th { white-space: nowrap; }
+  }
+}
+
+
+/* ----- 3. Blockquotes — More readable ----- */
+
+.main-content blockquote {
+  color: #4a5a65;
+  border-left: 4px solid #2c5f7c;
+  background: #f5f7f9;
+  padding: 0.8rem 1.2rem;
+  margin: 1.2rem 0;
+  border-radius: 0 4px 4px 0;
+  font-style: normal;
+
+  p { margin-bottom: 0.5rem; }
+
+  strong { color: #1a3a4a; }
+}
+
+
+/* ----- 4. Source tag legend — Distinct callout ----- */
+
+.source-legend {
+  background: #f0f4f7;
+  border: 1px solid #d0d8dd;
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  margin: 0.8rem 0 1.5rem;
+  font-size: 0.88rem;
+  color: #4a5a65;
+
+  strong { color: #1a3a4a; }
+}
+
+
+/* ----- 5. Metadata bar — Compact horizontal info ----- */
+
+.meta-bar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: $muted-color;
+  margin: 0.5rem 0 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #e9ebec;
+
+  span { white-space: nowrap; }
+  strong { color: #4a5a65; }
+}
+
+
+/* ----- 6. Investment conclusion — Highlight box ----- */
+
+.investment-conclusion {
+  background: linear-gradient(135deg, #f0f5f9 0%, #fafbfc 100%);
+  border-left: 4px solid #2c5f7c;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+
+  p { margin-bottom: 0.5rem; }
+}
+
+
+/* ----- 7. Dark mode (auto) ----- */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1d21;
+    color: #d0d4d8;
+  }
+
+  .main-content {
+    h1, h2, h3, h4, h5, h6 { color: #8ab4d6; }
+    h1 { border-bottom-color: #3a4a55; }
+    h3 { color: #7ab0d0; }
+    a { color: #6bb5e0; }
+    hr { background: linear-gradient(to right, #3a4a55, transparent); }
+
+    blockquote {
+      background: #22262a;
+      border-left-color: #4a7a9a;
+      color: #a0b0ba;
+    }
+
+    table {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+
+      th {
+        background: #252a2f;
+        color: #c0d0d8;
+        border-bottom-color: #3a4a55;
+      }
+
+      td { border-bottom-color: #2a3035; }
+
+      tbody tr:nth-child(even) td { background: #1f2327; }
+      tbody tr:hover td { background: #262b30; }
+    }
+
+    .source-legend {
+      background: #22262a;
+      border-color: #3a4a55;
+      color: #90a0aa;
+    }
+
+    .investment-conclusion {
+      background: linear-gradient(135deg, #1f2428 0%, #22262a 100%);
+      border-left-color: #4a7a9a;
+    }
+
+    .meta-bar {
+      color: #90a0aa;
+      border-bottom-color: #2a3035;
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, #111518 0%, #1a2a35 100%);
+    }
+  }
+
+  code, pre {
+    background: #252a2f !important;
+    color: #90b0c0 !important;
+  }
+}
+
+
+/* ----- 8. Print styles ----- */
+
+@media print {
+  .page-header, .btn, #skip-to-content { display: none; }
+  .main-content { max-width: 100%; padding: 0; font-size: 11pt; }
+  body { color: #000; }
+  a { color: #000; text-decoration: underline; }
+}
