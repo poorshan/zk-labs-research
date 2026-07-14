@@ -60,7 +60,7 @@ The EEZ article points in a direction — not blob fees, but **atomic interopera
 
 ### 1.2 The Core Insight of EEZ
 
-On July 12, 2026, @etheconomiczone published an article titled "Real Businesses Make the Ethereum Decision." Its core argument:
+On July 12, 2026, @etheconomiczone cited an article titled "Real Businesses Make the Ethereum Decision." Its core argument:
 
 > "Real businesses are choosing Ethereum L1+L2, forming a 'barbell model': a neutral base layer + specialized edges. This is proof that the roadmap is working as designed. But L2 fragmentation is the next problem that must be solved: separated liquidity, separated state, connected only by asynchronous bridges. What EEZ aims to do is enable synchronous composability between L2s — making the edge layers operate as a single economy while keeping the base layer uncapturable. Integration on the base layer is positioning; composability on the edge is harvesting."
 
