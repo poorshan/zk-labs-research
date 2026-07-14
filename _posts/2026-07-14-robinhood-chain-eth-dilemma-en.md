@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Robinhood Chain Deep Dive: Ethereum's Victory, ETH's Dilemma"
+subtitle: "Ethereum L2 Research Series (I)"
 date: 2026-07-14
 categories: research
 lang: en

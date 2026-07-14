@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Robinhood Chain 深度研报 / 以太坊的胜利，ETH 的困境"
+subtitle: "以太坊 L2 投研系列（一）"
 date: 2026-07-14
 categories: research
 author: ZK-Labs Research
