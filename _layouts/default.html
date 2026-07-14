@@ -28,7 +28,7 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {% if page.date %}
+      {% unless page.url == "/" or page.url == "/index.html" %}
       <nav class="breadcrumb" style="margin-bottom: 1.5rem;">
         <a href="{{ '/' | relative_url }}">← 返回主页</a>
         {% if page.categories %}
@@ -37,7 +37,7 @@
           {% endfor %}
         {% endif %}
       </nav>
-      {% endif %}
+      {% endunless %}
 
       {{ content }}
 
