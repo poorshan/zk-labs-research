@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: default
 title: "Composability, Not Fees: Ethereum's True Moat"
-subtitle: "Ethereum L2 Research Series (II) — A macro-level extension of the Robinhood Chain report"
+description: "Ethereum L2 Research Series (II) — A macro-level extension of the Robinhood Chain report"
 author: "ZK-Labs Research"
 author_url: "https://poorshan.github.io/zk-labs-research/about"
 date: 2026-07-14 09:00:00 +0800

@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: default
 title: "可组合性，而非费用：以太坊真正的护城河"
-subtitle: "以太坊 L2 投研系列（二）——前文《Robinhood Chain》的宏观延伸"
+description: "以太坊 L2 投研系列（二）——前文《Robinhood Chain》的宏观延伸"
 author: "ZK-Labs Research"
 author_url: "https://poorshan.github.io/zk-labs-research/about"
 date: 2026-07-14 09:00:00 +0800
