@@ -1,12 +1,12 @@
 ---
 layout: default
 title: "Robinhood Chain Deep Dive: Ethereum's Victory, ETH's Dilemma"
-description: "Ethereum L2 Research Series (I)"
 date: 2026-07-14
 categories: research
-lang: en
+author: 金戊乾坤2号
 permalink: /research/2026/07/14/robinhood-chain-eth-dilemma-en.html
 ---
+
 # Robinhood Chain Deep Dive (v3.1)
 # Ethereum's Victory, ETH's Dilemma
 
@@ -15,6 +15,52 @@ permalink: /research/2026/07/14/robinhood-chain-eth-dilemma-en.html
 **Date**: 2026-07-14 · **Published by**: ZK-Labs Research (Golden Warrior No. 2) · **Version**: v3.1
 
 > **Source Tags**: [DL] = Official Documentation · [BPR] = Press Release · [DATA] = On-chain Data/Research Institutions · [EXPERT] = Expert Quote · [MEDIA] = Media Report · [EST] = Industry Estimate
+
+---
+
+## Table of Contents
+
+- [Investment Conclusions](#investment-conclusions)
+- [Executive Summary](#executive-summary)
+- [I. Why This Moment Matters](#i-why-this-moment-matters)
+  - [1.1 Robinhood's Dilemma and Ambition](#11-robinhoods-dilemma-and-ambition)
+  - [1.2 The Unintended Consequences of the L2 Roadmap](#12-the-unintended-consequences-of-the-l2-roadmap)
+  - [1.3 The Paradox of Institutional Entry](#13-the-paradox-of-institutional-entry)
+- [II. The Dual-Layer Architecture: Anatomy of a Legal Firewall](#ii-the-dual-layer-architecture-anatomy-of-a-legal-firewall)
+  - [2.1 Architecture Overview](#21-architecture-overview)
+  - [2.2 The Sole Bridge: BBVI](#22-the-sole-bridge-bbvi)
+  - [2.3 ETH's Position in This Architecture](#23-eths-position-in-this-architecture)
+  - [2.4 Why Ethereum L2 and Not Solana? — Settlement Chain vs Payment Rail](#24-why-ethereum-l2-and-not-solana--settlement-chain-vs-payment-rail)
+- [III. The Legal Firewall: Regulatory Arbitrage or Regulatory Innovation?](#iii-the-legal-firewall-regulatory-arbitrage-or-regulatory-innovation)
+  - [3.1 Jersey SPV + Liechtenstein Prospectus + Reg S](#31-jersey-spv--liechtenstein-prospectus--reg-s)
+  - [3.2 The Legal Essence of Stock Tokens: What You're Buying Isn't Stock](#32-the-legal-essence-of-stock-tokens-what-youre-buying-isnt-stock)
+  - [3.3 The Paradox of US Users](#33-the-paradox-of-us-users)
+- [IV. The Real Story On-Chain: Memecoins Are Driving, RWA Is in the Back Seat](#iv-the-real-story-on-chain-memecoins-are-driving-rwa-is-in-the-back-seat)
+  - [4.1 Numbers Don't Lie](#41-numbers-dont-lie)
+  - [4.2 But the TVL Data Is Screaming](#42-but-the-tvl-data-is-screaming)
+  - [4.3 The Gap Between Narrative and Reality](#43-the-gap-between-narrative-and-reality)
+  - [4.4 The Real Question After Cold Start: From Traffic to Asset Ledger](#44-the-real-question-after-cold-start-from-traffic-to-asset-ledger)
+- [V. Who Else Can Replicate This Template](#v-who-else-can-replicate-this-template)
+  - [5.1 Comparison: Robinhood Chain vs Major L2s](#51-comparison-robinhood-chain-vs-major-l2s)
+  - [5.2 Replicability of the Template](#52-replicability-of-the-template)
+  - [5.3 Coinbase's Next Move](#53-coinbases-next-move)
+- [VI. ETH's Identity Crisis — The Core Thesis of This Report](#vi-eths-identity-crisis--the-core-thesis-of-this-report)
+  - [6.1 The Natural Gas Analogy](#61-the-natural-gas-analogy-a-convenient-but-uncomfortable-metaphor)
+  - [6.2 The Data Tells a Story You Don't Want to Hear](#62-the-data-tells-a-story-you-dont-want-to-hear)
+  - [6.3 The Experts' Voices](#63-the-experts-voices-from-inside-the-ethereum-circle-to-outside)
+  - [6.4 Robinhood Chain Is an Accelerator of ETH's Narrative Pressure](#64-robinhood-chain-is-an-accelerator-of-eths-narrative-pressure)
+  - [6.5 The Counterarguments: Why ETH's Narrative Hasn't Collapsed Yet](#65-the-counterarguments-why-eths-narrative-hasnt-collapsed-yet)
+  - [6.6 Verdict](#66-verdict)
+- [VII. Risk Matrix](#vii-risk-matrix)
+  - [7.1 Robinhood Chain's Own Risks](#71-robinhood-chains-own-risks)
+  - [7.2 ETH Narrative Risks](#72-eth-narrative-risks)
+  - [7.3 Regulatory Cycle Risk: The 2028 Political Transition](#73-regulatory-cycle-risk-the-2028-political-transition)
+- [VIII. Implications for Investors](#viii-implications-for-investors)
+  - [8.1 Trackable Leading Indicators](#81-trackable-leading-indicators)
+  - [8.2 Structural Implications for ETH Volatility Trading](#82-structural-implications-for-eth-volatility-trading)
+  - [8.3 Falsification Conditions: What Would Make Us Change Our View](#83-falsification-conditions-what-would-make-us-change-our-view)
+- [Data Appendix](#data-appendix)
+- [Source Index](#source-index)
 
 ---
 
