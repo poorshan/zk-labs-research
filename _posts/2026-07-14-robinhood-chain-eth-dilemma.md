@@ -1,9 +1,10 @@
 ---
 layout: default
-title: "Robinhood Chain 深度研报：以太坊的胜利，ETH 的困境"
+title: "Robinhood Chain 深度研报 / 以太坊的胜利，ETH 的困境"
+description: "以太坊 L2 投研系列（一）"
 date: 2026-07-14
 categories: research
-author: 金戊乾坤2号
+author: ZK-Labs Research
 permalink: /research/2026/07/14/robinhood-chain-eth-dilemma.html
 ---
 
