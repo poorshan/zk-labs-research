@@ -19,7 +19,14 @@ title: ZK-Labs Research
 
 <div style="border-top: 1px solid #e1e4e8; margin: 0 auto 3em; max-width: 400px;"></div>
 
-## 最新报告
+## 🏴‍☠️ 旗舰深度研究
+
+- **2026-07-25** — [CRCL (Circle) v2.4：从货币基金到金融互联网 — 完整财务模型与投资框架]({{ '/research/2026/07/25/crcl-circle-v2.html' | relative_url }})  
+  *DCF 目标价 $164 (+165%) · WACC×g 敏感性矩阵 · SOTP $158 · Investment Mosaic 75.9/100*
+
+---
+
+## 全部报告
 
 {% for post in site.posts limit:10 %}
 - **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url | relative_url }})
