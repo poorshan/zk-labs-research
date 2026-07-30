@@ -28,14 +28,35 @@ title: ZK-Labs Research
 
 ---
 
+## 📡 市场观察
+
+<p style="color: #606060; max-width: 640px;">
+实时追踪机构资金流向、ETF 流量分化及大类资产配置信号。与深度研究不同，本专栏聚焦<b>短期可验证的信号</b>。
+</p>
+
+{% if site.categories.observation %}
+{% for post in site.categories.observation limit:3 %}
+- **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url | relative_url }})
+  {% if post.description %}*{{ post.description }}*{% endif %}
+{% endfor %}
+{% endif %}
+
+[→ 查看全部市场观察]({{ '/observations.html' | relative_url }})
+
+---
+
 ## 全部报告
 
-{% for post in site.posts limit:10 %}
+{% for post in site.posts %}
+{% unless post.categories contains 'observation' %}
 - **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url | relative_url }})
+{% endunless %}
 {% endfor %}
 
 <div style="margin-top: 4em; padding-top: 1.5em; border-top: 1px solid #e1e4e8; text-align: center; color: #999; font-size: 0.82em;">
-  <a href="/zk-labs-research/about.html" style="color: #666;">关于我们</a>
+  <a href="{{ '/observations.html' | relative_url }}" style="color: #666;">市场观察</a>
+  &nbsp;·&nbsp;
+  <a href="{{ '/about.html' | relative_url }}" style="color: #666;">关于我们</a>
   &nbsp;·&nbsp;
   © {{ site.time | date: '%Y' }} ZK-Labs Research
 </div>
