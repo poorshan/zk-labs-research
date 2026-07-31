@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "ETH 的 11 岁悖论：生态繁荣，为何币价沉默？"
 subtitle: "通缩、现金流、机构抵押品——三个必须同时亮起的信号灯"
 description: "以太坊 11 岁生日刚过。逾 $50B 的 L2、BlackRock 的链上基金、两轮重大升级——基本面的进展史无前例。但 ETH 距高点跌去 61%，兑 BTC 年跌 9%。答案不在一个信号里，而在三个信号的联动中。"
