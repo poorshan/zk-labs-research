@@ -17,7 +17,7 @@ parent_report: /research/2026/07/25/crcl-circle-v2-5-1.html
 | 分类 | 美股 · 稳定币 · 金融科技 · 业绩更新 |
 | 评级 | BUY（维持） |
 | 报告类型 | Q2 2026 业绩评估 — 覆盖更新 |
-| 关联报告 | [CRCL v2.5.1 完整覆盖报告]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' \| relative_url }}) |
+| 关联报告 | [CRCL v2.5.1 完整覆盖报告]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }}) |
 
 ---
 
