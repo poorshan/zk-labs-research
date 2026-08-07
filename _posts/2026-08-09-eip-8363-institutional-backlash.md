@@ -124,7 +124,7 @@ Chalom 的潜台词很明确：**如果这个提案在三年前提出，反对�
 
 ## 四、与 ZK Labs 此前分析的衔接
 
-两天前（8 月 7 日），ZK Labs 发布了 EIP-8363 的完整技术复盘（[《以太坊是否关上「无限质押」的大门》](https://poorshan.github.io/zk-labs-research/observations/2026/08/07/eip-8363-tapered-issuance-burn.html)），核心判断：
+两天前（8 月 7 日），ZK Labs 发布了 EIP-8363 的市场观察（[《以太坊是否关上「无限质押」的大门》](https://poorshan.github.io/zk-labs-research/observations/2026/08/07/eip-8363-tapered-issuance-burn.html)），核心判断：
 
 > 「这个提案大概率不会原样通过 Hegotá，但它打开了『质押率上限』的 Overton 窗口。」
 
@@ -200,5 +200,5 @@ EIP-8363，不管它的技术设计多精妙，都在动摇这个信念。
 ---
 
 *数据截止：2026 年 8 月 9 日*
-*本文引用 Chalom 帖子内容来自 X 公开帖文（2026-08-09），观点解读和分析为作者独立判断。EIP-8363 技术细节以 ZK Labs 2026-08-07 投研报告为准。*
+*本文引用 Chalom 帖子内容来自 X 公开帖文（2026-08-09），观点解读和分析为作者独立判断。EIP-8363 技术细节以 ZK Labs 2026-08-07 市场观察为准。*
 *本文不构成投资建议。概率加权为作者主观判断。*
