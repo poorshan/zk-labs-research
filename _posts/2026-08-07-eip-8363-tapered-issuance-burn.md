@@ -6,7 +6,7 @@ date: 2026-08-07
 categories: observation
 author: 南野东亦
 data_cutoff: 2026-08-07
-version: "v1.0"
+version: "v1.1"
 tags: [ETH, EIP, staking, monetary-policy, governance]
 description: Justin Drake 联合署名、63 条社区激辩 — EIP-8363 是以太坊合并以来最激进的货币政策提案，将质押率锁定在 50% 以下，终结「无限质押」时代。
 ---
@@ -90,7 +90,7 @@ description: Justin Drake 联合署名、63 条社区激辩 — EIP-8363 是以�
 ### 🔴 反对派（约 35-40%）
 - **安全模型受损**：CelticWarrior 认为「damages Ethereum's long-term staked economic security」
 - **DeFi 被忽视**：alphaleaked 指出「The EIP is looking at validators, but not at DeFi」——质押率是 DeFi 定价锚，收益率腰斩会影响 ETH 借贷、杠杆质押、LST/LRT 抵押品、稳定币贷款等所有市场
-- **散户不被保护**：goodroot：「The mechanism reduces consensus issuance proportionally — 小验证者固定成本无法摊薄，反而更脆弱」
+- **散户不被保护**：goodroot：「The mechanism reduces consensus issuance proportionally — 小验证者固定成本无法摊薄，反而更脆弱」。中文圈ETH KOL 0xTodd 更进一步，认为该提案将「**斩杀所有 Solo Stakers**」——当收益率在33%质押率下腰斩至约1.2%，散户验证者的硬件、电费、维护时间等固定成本占比将远超收益，独立质押的经济账彻底打不平
 - **时机错误**：concernedcitizen：「Can we please devote energy to getting people to build on Ethereum?」
 
 ### 🟡 条件支持派（约 15-20%）
@@ -176,4 +176,6 @@ description: Justin Drake 联合署名、63 条社区激辩 — EIP-8363 是以�
 
 - 原始提案：[ethereum/EIPs PR #12081](https://github.com/ethereum/EIPs/pull/12081)
 - 社区讨论：[Ethereum Magicians 主题](https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263)
-- 关联研究：[CRCL v2.5.1 完整覆盖报告]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }})
+- 中文社区讨论：[0xTodd：EIP-8363 将斩杀所有 Solo Stakers](https://x.com/0xTodd/status/2085262348009521289)（2026-08-06）
+- 技术分析：[pintail — Tapered Issuance Burn](https://pintail.xyz/posts/2026/eip-tapered-issuance-burn/)
+- 关联研究：[11岁的以太坊：最好的基本面，最安静的币价]({{ '/observation/2026/07/31/eth-eleventh-birthday-paradox.html' | relative_url }})
