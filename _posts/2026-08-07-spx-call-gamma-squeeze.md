@@ -2,6 +2,7 @@
 title: "当VIX在牛市中上涨——8月4日SPX Call端Gamma Squeeze复盘"
 date: 2026-08-07
 author: 南野东亦
+categories: observation
 permalink: /observations/2026/08/07/spx-call-gamma-squeeze.html
 type: market-observation
 topics:
