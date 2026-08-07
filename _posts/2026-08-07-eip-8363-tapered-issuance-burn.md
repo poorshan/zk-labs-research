@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "EIP-8363 信号：以太坊正在关上「无限质押」的大门"
+title: "EIP-8363 信号：以太坊是否关上「无限质押」的大门"
 permalink: /observations/2026/08/07/eip-8363-tapered-issuance-burn.html
 date: 2026-08-07
 categories: observation
