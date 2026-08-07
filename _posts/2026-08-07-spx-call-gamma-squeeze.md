@@ -1,14 +1,25 @@
 ---
-layout: default
 title: "当VIX在牛市中上涨——8月4日SPX Call端Gamma Squeeze复盘"
-permalink: /observations/2026/08/07/spx-call-gamma-squeeze.html
 date: 2026-08-07
-categories: observation
 author: 南野东亦
-data_cutoff: 2026-08-07
-version: "v1.1"
-tags: [SPX, VIX, gamma-squeeze, options, dealer-hedging, volatility, SKEW, market-microstructure]
-description: SPX单日+1.79%，VIX反而上涨4%——成交量激增、日内振幅2σ、SKEW崩溃、VIX同向运动四个信号指向Call端Gamma Squeeze。本文复盘事件机制并给出波动率交易者的实战启示。
+type: market-observation
+topics:
+  - gamma-squeeze
+  - spx-options
+  - vix-anomaly
+  - dealer-hedging
+  - volatility-regime
+refs:
+  - yfinance (^GSPC, ^VIX, ^VVIX, ^SKEW, ^TNX)
+  - CBOE options volume (via Benzinga, citing CBOE official data)
+  - Benzinga (2026-08-07): "S&P 500 Call Option Volume Hits Record 4 Million Contracts"
+  - leprivatebanker (2026-08-06): "FOMO Drives Record S&P 500 Call Volume Above 4 Million"
+  - Bloomberg (2026-08-06): "Wall Street Bulls Flock to S&P 500 Calls as Rally Broadens"
+data_completeness: |
+  已验证数据：SPX日线价格、VIX/VVIX/SKEW日线、板块ETF回报、10Y收益率。
+  SPX Call成交量4,023,796张来自Benzinga引用CBOE官方数据，leprivatebanker和Bloomberg独立交叉验证。
+  CBOE原始数据在付费墙/JS墙后，但三个独立二级源提供了一致的数字。
+  SKEW指数从yfinance获取，CBOE官网实时数据需JS渲染无法爬取。
 ---
 
 # 当VIX在牛市中上涨——8月4日SPX Call端Gamma Squeeze复盘
@@ -22,6 +33,7 @@ SPX单日上涨 **+136点（+1.79%）**，收于7736.52，全日成交量59亿�
 | 指标 | 8月3日（周一） | 8月4日（周二） | 变化 | 异常？ |
 |:--|:--|:--|:--|:--|
 | SPX | 7600.50 | **7736.52** | +1.79% | 正常—牛市上涨 |
+| **SPX Call成交量** | — | **4,023,796 张** | 历史记录 | 🚨 **单日Call成交量创历史新高** |
 | VIX | 15.86 | **16.50** | +4.0% | ⚠️ **VIX随上涨上升** |
 | VVIX | 90.81 | **92.57** | +1.9% | ⚠️ 波动率的波动率上升 |
 | SKEW | 139.96 | **126.41** | -9.7% | ⚠️ **尾部风险定价崩溃** |
@@ -33,7 +45,9 @@ SPX单日上涨 **+136点（+1.79%）**，收于7736.52，全日成交量59亿�
 
 更耐人寻味的是 SKEW 指数的变化。CBOE SKEW指数（衡量OTM Put相对于OTM Call的溢价）从139.96跌至126.41，**单日跌幅超过13点**——这是尾部风险定价的剧烈重构。市场不再担心下行尾部，而是为"错过上涨"定价。
 
-四个异常信号在8月4日高度聚集，共同指向期权市场的极端活跃度：SPX全日成交量59亿股（当周最高）¹、日内振幅129点（约2σ）²、VIX与SPX同向上涨（+4.0%）³、SKEW单日-9.7%（139.96→126.41）⁴。这些指标表明散户和机构资金大量涌入SPX看涨期权，做市商被动卖出Call并买入正股对冲Delta，触发了教科书式的**Call端Gamma Squeeze**。
+根据CBOE官方数据（经Benzinga独立报道确认，leprivatebanker和Bloomberg交叉验证），SPX看涨期权在8月4日成交 **4,023,796张**——这是CBOE历史上单日Call成交量的最高纪录。这远超任何正常的期权交投水平，标志着机构与散户的集中涌入。
+
+五个异常信号在8月4日高度聚集，共同指向期权市场的极端活跃度：SPX Call成交量创纪录4,023,796张（历史最高）¹、SPX全日成交量59亿股（当周最高）²、日内振幅129点（约2σ）³、VIX与SPX同向上涨（+4.0%）⁴、SKEW单日-9.7%（139.96→126.41）⁵。这些指标表明散户和机构资金大量涌入SPX看涨期权，做市商被动卖出Call并买入正股对冲Delta，触发了教科书式的**Call端Gamma Squeeze**。
 
 ---
 
@@ -269,5 +283,5 @@ SPX在8月4日的Call端Gamma Squeeze是一次**教科书式的波动率市场�
 
 *数据截止：2026年8月7日收盘*
 *† SKEW指数存在1天发布延迟，134.73为8月6日收盘值。*
-*数据来源：yfinance (^GSPC, ^VIX, ^VVIX, ^SKEW, ^TNX)；CBOE精确期权成交量数据不可通过免费公开渠道获取，以间接一致性证据替代。*
+*数据来源：yfinance（^SPX, ^VIX, ^VVIX, ^SKEW, ^TNX），SPX Call成交量4,023,796张来自Benzinga（2026-08-07）引用CBOE官方数据，leprivatebanker（2026-08-06）和Bloomberg（2026-08-06）独立交叉验证。CBOE原始成交数据无法通过免费公开渠道直接获取（CSV截至2019/付费墙/JS渲染）。*
 *本文不构成投资建议。市场有风险，入市需谨慎。*
