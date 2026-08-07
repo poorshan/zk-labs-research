@@ -30,7 +30,7 @@ data_completeness: |
 
 # 当VIX在牛市中上涨——8月4日SPX Call端Gamma Squeeze复盘
 
-## 零、恐慌的起源：VIX三波脉冲
+## 恐慌的起源：VIX三波脉冲
 
 8月4日的Gamma Squeeze不是孤立事件。它是7月中旬开始的一场VIX脉冲序列的终章。
 
