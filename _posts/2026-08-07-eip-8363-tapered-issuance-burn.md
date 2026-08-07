@@ -6,18 +6,12 @@ date: 2026-08-07
 categories: observation
 author: 南野东亦
 data_cutoff: 2026-08-07
-version: "v1.1"
+version: "v1.2"
 tags: [ETH, EIP, staking, monetary-policy, governance]
 description: Justin Drake 联合署名、63 条社区激辩 — EIP-8363 是以太坊合并以来最激进的货币政策提案，将质押率锁定在 50% 以下，终结「无限质押」时代。
 ---
 
-| 项目 | |
-|:--|:--|
-| 研究机构 | ZK-Labs Research / 金戊乾坤2号 |
-| 日期 | 2026-08-07 |
-| 分类 | 加密市场观察 · 以太坊治理 |
-| 信号类型 | 货币政策结构性转变 |
-| 相关研究 | [11岁的以太坊：最好的基本面，最安静的币价]({{ '/observation/2026/07/31/eth-eleventh-birthday-paradox.html' | relative_url }}) |
+> *Justin Drake 联合署名、63 条社区帖子、一个把质押收益率在 50% 质押率时砍到零的提案——以太坊合并以来最激进的货币政策讨论，正在 Hegotá 硬分叉之前激烈展开。以下是这场辩论的完整复盘。*
 
 ---
 
@@ -157,25 +151,14 @@ description: Justin Drake 联合署名、63 条社区激辩 — EIP-8363 是以�
 
 ---
 
-## 方法论与验证说明
+> 本文技术参数来源于提案原文（GitHub PR #12081）及 Ethereum Magicians 讨论。收益率表格基于公式推算而非提案直接给出，概率加权为主观判断。所有内容仅为市场观察，不构成投资建议。
 
-**交叉验证清单：**
-- ✅ 提案原始文本：GitHub PR #12081 diff（405 行完整 EIP 文件）
-- ✅ 社区讨论：Ethereum Magicians 63 条帖子（2026-08-04 至 08-07）
-- ✅ 作者信息：PR metadata + Ethereum France / ETHCC 公开信息
-- ✅ 技术参数：Specification 章节逐项对照
-- ⚠️ 收益率表格：基于公式推算（非提案直接给出），标记为 [注1]
-- ⚠️ SATURATION_BALANCE：提案未给精确数字（表述为「approximately half supply」）
-- ⚠️ 概率加权判断：基于社区讨论倾向估计，具有主观性
-
-**本报告不构成投资建议或交易信号。所有概率估计基于公开讨论的定性分析。**
 
 ---
 
-### 📎 阅读指引
+### 延伸阅读
 
-- 原始提案：[ethereum/EIPs PR #12081](https://github.com/ethereum/EIPs/pull/12081)
-- 社区讨论：[Ethereum Magicians 主题](https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263)
-- 中文社区讨论：[0xTodd：EIP-8363 将斩杀所有 Solo Stakers](https://x.com/0xTodd/status/2085262348009521289)（2026-08-06）
-- 技术分析：[pintail — Tapered Issuance Burn](https://pintail.xyz/posts/2026/eip-tapered-issuance-burn/)
-- 关联研究：[11岁的以太坊：最好的基本面，最安静的币价]({{ '/observation/2026/07/31/eth-eleventh-birthday-paradox.html' | relative_url }})
+- 原始提案：[ethereum/EIPs PR #12081](https://github.com/ethereum/EIPs/pull/12081) · 社区讨论：[Ethereum Magicians](https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263)
+- 中文视角：[0xTodd：EIP-8363 将斩杀所有 Solo Stakers](https://x.com/0xTodd/status/2085262348009521289)（2026-08-06）
+- 技术推演：[pintail — Tapered Issuance Burn](https://pintail.xyz/posts/2026/eip-tapered-issuance-burn/)
+- 以太坊基本面的另一面：[11岁的以太坊：最好的基本面，最安静的币价]({{ '/observation/2026/07/31/eth-eleventh-birthday-paradox.html' | relative_url }})
