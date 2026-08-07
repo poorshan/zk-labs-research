@@ -39,6 +39,15 @@
       </nav>
       {% endunless %}
 
+      {% if page.author %}
+      <p class="post-meta" style="color: #819198; margin-bottom: 1.5rem; font-size: 0.9rem;">
+        作者: {{ page.author }}
+        {% if page.date %}
+        &nbsp;/&nbsp;<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+        {% endif %}
+      </p>
+      {% endif %}
+
       {{ content }}
 
       <footer class="site-footer">
