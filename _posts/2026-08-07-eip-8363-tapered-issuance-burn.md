@@ -17,7 +17,7 @@ description: Justin Drake 联合署名、63 条社区激辩 — EIP-8363 是以�
 | 日期 | 2026-08-07 |
 | 分类 | 加密市场观察 · 以太坊治理 |
 | 信号类型 | 货币政策结构性转变 |
-| 相关报告 | [CRCL v2.5.1 完整覆盖报告]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }}) |
+| 相关研究 | [11岁的以太坊：最好的基本面，最安静的币价]({{ '/observation/2026/07/31/eth-eleventh-birthday-paradox.html' | relative_url }}) |
 
 ---
 
