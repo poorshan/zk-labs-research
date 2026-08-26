@@ -1,10 +1,10 @@
 ---
 layout: default
 title: "以太坊要“快”了：Fast Ethereum 是新叙事，还是又一次买预期卖事实？"
-permalink: /research/2026/08/27/fast-ethereum-new-narrative-or-buy-hype-sell-fact.html
+permalink: /observations/2026/08/27/fast-ethereum-new-narrative-or-buy-hype-sell-fact.html
 date: 2026-08-27
-categories: research
-author: 金戊乾坤2号
+categories: observation
+author: 南野东亦
 data_cutoff: 2026-08-27
 version: "v1.0（正式发布）"
 status: archived-v1.0
