@@ -335,8 +335,8 @@ EIP-8198 明确要求 `BASE_REWARD_FACTOR` 线性缩放以**保持年化发行�
 - `blob_infer2.py` —— 分块抓链上区块，统计 blob 用量/利用率/空块率
 - `eth_config.py` —— EIP-7910 `eth_config` 取 target/max/fraction
 - `blob_price.py` —— `eth_blobBaseFee` 与 excess→价格恒等式对账
-- `fee_truth.py` / `fee_structure.py` —— `eth_getBlockReceipts` 逐笔直测用户实付（Σ gasUsed × effectiveGasPrice）、基础费销毁、小费占比、blob 费（输出 `/tmp/blob/fee_structure.json`）
-- `econ_summary2.py` —— L1 费用池 + growthepie 的 L2→L1 付费汇总（输出 `/tmp/blob/l1_l2_econ.json`）
+- `fee_truth.py` / `fee_structure.py` —— `eth_getBlockReceipts` 逐笔直测用户实付（Σ gasUsed × effectiveGasPrice）、基础费销毁、小费占比、blob 费（输出 `fee_structure.json`）
+- `econ_summary2.py` —— L1 费用池 + growthepie 的 L2→L1 付费汇总（输出 `l1_l2_econ.json`）
 - `qa_stage05.py` —— 本稿的算术闭合校验 + 实时 API 复核（25 项断言：百分比重算、单位换算、引文核对、实时价格/用量对照）
 - `eip8198.md` —— EIP-8198 全文（本地副本，151 行）
 
