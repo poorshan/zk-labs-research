@@ -21,6 +21,8 @@ title: ZK-Labs Research
 
 ## 🏴‍☠️ 旗舰深度研究
 
+- **2026-09-20** — [Circle × Coinbase 分销经济学：合同、GENIUS 法案与下一美元 USDC 的归属]({{ '/research/2026/09/20/circle-coinbase-distribution-economics.html' | relative_url }})  
+  *四变量框架（规模×收益率×渠道×监管）· Marginal USDC Economics · GENIUS 四层法律拆解 + 六情景 · K2b 监控线 · CRCL Research Dashboard*
 - **2026-09-20** — [blob 扩容、Quick Slots、账户抽象、快速最终性：Ethlabs Week 13 四题与我们的答案]({{ '/research/2026/09/20/ethlabs-week13-four-questions.html' | relative_url }})  
   *四问逐条核验 · 链上实测 + EIP 一手文本 + EF 官方文件 · 三处口径校正 + 一次自我更正留痕 · 五条可证伪的推翻条件*
 - **2026-07-25** — [CRCL (Circle) v2.5.1：从货币基金到金融互联网 — 完整财务模型、市场定价诊断与投资框架]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }})  
