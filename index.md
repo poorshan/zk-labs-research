@@ -21,6 +21,8 @@ title: ZK-Labs Research
 
 ## 🏴‍☠️ 旗舰深度研究
 
+- **2026-09-30** — [MSTR vs BMNR：两种 Digital Asset Treasury 模型的资本结构比较]({{ '/research/2026/09/30/mstr-vs-bmnr-digital-asset-treasury.html' | relative_url }})  
+  *资本结构 × mNAV × 每股敞口 × Carry × 融资飞轮 · 一手 8-K/10-Q 逐周复算 · 机械 NAV 压力测试（假设股价不变）· 附录含核心数字审计表与可证伪条件*
 - **2026-09-20** — [Circle × Coinbase 分销经济学：合同、GENIUS 法案与下一美元 USDC 的归属]({{ '/research/2026/09/20/circle-coinbase-distribution-economics.html' | relative_url }})  
   *四变量框架（规模×收益率×渠道×监管）· Marginal USDC Economics · GENIUS 四层法律拆解 + 六情景 · K2b 监控线 · CRCL Research Dashboard*
 - **2026-09-20** — [blob 扩容、Quick Slots、账户抽象、快速最终性：Ethlabs Week 13 四题与我们的答案]({{ '/research/2026/09/20/ethlabs-week13-four-questions.html' | relative_url }})  
