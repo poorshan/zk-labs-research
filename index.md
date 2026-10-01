@@ -21,6 +21,8 @@ title: ZK-Labs Research
 
 ## 🏴‍☠️ 旗舰深度研究
 
+- **2026-10-01** — [Open USD (OUSD) 月度深度分析报告 — 2026年10月号（v7.1）]({{ '/research/2026/10/01/open-usd-ousd-monthly-deep-analysis.html' | relative_url }})  
+  *五层证据标注（FACT / ATTRIBUTED FACT / INFERENCE / HYPOTHESIS / FORECAST）· 发行方 API + 链分布 + 交易所 API + 监管文书四路一手复跑 · Tempo 集中度的可证伪假说 · 伙伴证据阶梯 Level 0–6 · GENIUS Act 许可路径与生效日追踪*
 - **2026-09-30** — [MSTR vs BMNR：两种 Digital Asset Treasury 模型的资本结构比较]({{ '/research/2026/09/30/mstr-vs-bmnr-digital-asset-treasury.html' | relative_url }})  
   *资本结构 × mNAV × 每股敞口 × Carry × 融资飞轮 · 一手 8-K/10-Q 逐周复算 · 机械 NAV 压力测试（假设股价不变）· 附录含核心数字审计表与可证伪条件*
 - **2026-09-20** — [Circle × Coinbase 分销经济学：合同、GENIUS 法案与下一美元 USDC 的归属]({{ '/research/2026/09/20/circle-coinbase-distribution-economics.html' | relative_url }})  
