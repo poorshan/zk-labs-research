@@ -18,10 +18,21 @@ show_downloads: false
 google_analytics:
 
 # Social cards (X / Twitter / Open Graph)
-# jekyll-seo-tag emits og:image + twitter:image from `image:`; absolute URL is
-# built from `url` + `baseurl`. summary_large_image gives the wide 1.91:1 banner.
+# NOTE: jekyll-seo-tag (v2.8) resolves the card image ONLY from page-level front
+# matter — a site-level `image:` key is silently ignored by ImageDrop. We inject
+# it into every post/page via front matter defaults instead.
 twitter:
   card: summary_large_image
   username: shangu365
 logo: /assets/images/og-default.jpg
-image: /assets/images/og-default.jpg
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      image: /assets/images/og-default.jpg
+  - scope:
+      path: ""
+      type: pages
+    values:
+      image: /assets/images/og-default.jpg
