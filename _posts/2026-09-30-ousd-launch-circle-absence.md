@@ -6,7 +6,7 @@ date: 2026-09-30
 categories: observation
 author: 南野东亦
 data_cutoff: 2026-09-30
-version: "v2.0（Publication Upgrade：事实层补强 / 监管层降确定性 / 推断层显式标记）"
+version: "v2.1（P0 Evidence Audit 三项通过后的证据补强：OCC 批文有限性原文 / rewards 双维度与「部分披露」定性 / 战略推断降为假说）"
 tags: [Circle, CRCL, USDC, OUSD, Open Standard, Bridge, 稳定币, GENIUS Act, Coinbase, Stripe, 市场观察]
 ---
 
@@ -67,7 +67,11 @@ Bridge 已获得 OCC 对其设立 **Bridge National Trust Bank** 的**初步有�
 
 > Bridge National Trust Bank 是一个处于筹建中的独立法律实体。**它尚未运营，目前也不发行 OUSD。** OUSD 当前由 Bridge Building Inc. 发行。OCC 的有条件批准附带额外要求，**并不构成最终牌照批准，也不构成 Bridge National Trust Bank 依 GENIUS Act 发行 OUSD 的授权**。
 
-这个区分很重要。**不能把 OUSD 理解为"一家已获 OCC 全国信托银行牌照的机构、按 GENIUS Act 发行的稳定币"。** 目前的事实是：OUSD 由一家州体系下的实体发行，其关联的全国信托银行仍在筹建。
+OCC 批文原文进一步说明了这一批准的**有限性**。批文措辞是"**仅授予初步有条件批准**"（preliminary conditional approval only）；依 12 USC 27(a) 的最终批准与开业授权，须在全部开业前要求满足后才会给出；在此之前，OCC 保留**修改、暂停或撤销**该初步批准的权利。
+
+批文还附有一项 GENIUS Act 合规条件：该行须使其稳定币活动符合 GENIUS Act 及其实施规则；**若不符合，该条件要求其停止或剥离相关业务**。
+
+这个区分很重要。**不能把 OUSD 理解为"一家已获 OCC 全国信托银行牌照的机构、按 GENIUS Act 发行的稳定币"。** 目前的事实是：OUSD 由一家州体系下的实体（Bridge Building Inc.，持牌州汇款机构）发行，其关联的全国信托银行仍在筹建，且连未来路径本身都附带 GENIUS 合规义务。
 
 ### 关于"214"
 
@@ -138,7 +142,14 @@ OUSD（Open Standard）
                          → Open Standard 自身收入来自交易手续费
 ```
 
-Open Standard 官方对合作伙伴收益的描述是：合作伙伴可"**就其推动的 OUSD 供应和活动**"获得 rewards，并有机会获得 Open Standard 股权。Bridge 官方博客进一步说明，加入 Open Standard 的企业"**可以就其存在 Bridge 的 OUSD 余额获得 rewards**"。
+Open Standard 官方对合作伙伴收益的描述是：合作伙伴可"**就其推动的 OUSD 供应和活动**"获得 rewards，并有机会获得 Open Standard 股权。
+
+Bridge 官方博客进一步给出了**第二个维度**。它在一篇公告中两次提到 rewards：
+
+> ①（服务维度）"…receive rewards by **providing qualifying services to the OUSD network**."
+> ②（余额维度）"Businesses that join Open Standard will also be able to earn rewards on their **OUSD balances held at Bridge**."
+
+也就是说，公开材料目前指向一个**部分披露的 reward mechanism**：**服务/活动**与**在 Bridge 持有的 OUSD 余额**是两个已被点名的相关变量。但完整机制仍未披露——包括具体计算公式、各变量权重、分配比例、是否存在上限、是否与持有时间挂钩，以及它是否属于对储备收益的经济利润分成。**这些都不能从现有原文推断。**
 
 Zach Abrams（Open Standard 创始 CEO）在 9 月 9 日的公开信中把定位说得很直接：
 
@@ -227,7 +238,7 @@ OUSD 首日供应结构如下：
 | **issuer（发行商）** | 法条 §4(a)(11) 的禁止对象 | OUSD 当前发行商为 Bridge Building Inc. |
 | **holder（持有者）** | 法条禁止发行商向其支付利息/收益的对象 | **法条未定义**；Coinbase 托管钱包中的资产，法律持有者是 Coinbase 还是用户，是未决的解释问题 |
 | **distributor（分销商）** | 把稳定币送到用户面前的渠道方 | Circle 侧为 Coinbase 等；OUSD 侧为 Open Standard 的网络合作伙伴 |
-| **rewards（奖励）** | 法条禁止的是"仅因持有/使用/留存"而支付的利息或收益 | OUSD 官方描述为合作伙伴因推动 supply/activity 获得 rewards；Bridge 博客补充为"就存在 Bridge 的 OUSD 余额获得 rewards" |
+| **rewards（奖励）** | 法条禁止的是"仅因持有/使用/留存"而支付的利息或收益 | **部分披露**：OUSD 官方描述为合作伙伴因推动 supply/activity 获得 rewards；Bridge 博客另点出"在 Bridge 持有的 OUSD 余额"这一维度。完整机制未披露 |
 | **affiliate / related third party** | OCC 拟议推定所针对的对象类别 | 拟议定义限于代付收益服务商与白标伙伴，非所有第三方 |
 
 ### 结构性差异
@@ -309,7 +320,7 @@ GENIUS Act §4(a)(11) 禁止获准发行商**仅因持有、使用或留存**而
 
 **④ Coinbase / Visa / Mastercard / Stripe 的实际资源投入。** 签署名单与投入资源是两件事。Coinbase 是否将 OUSD 设为平台默认或优先结算资产，是最直接的观察窗口。
 
-**⑤ 合作伙伴 rewards 的实际分配机制。** 这是最关键的一项。Open Standard 已明确 rewards 与合作伙伴推动的 supply/activity 相关，Bridge 补充了"存在 Bridge 的余额"这一维度。**具体的校准基准（余额 / 交易量 / 层级）、分配比例、以及是否触及监管定义，目前尚未完全披露。** 这个机制的设计，直接决定 OUSD 的经济模型能否成立，也决定它在监管框架下的位置。
+**⑤ 合作伙伴 rewards 的实际分配机制。** 这是最关键的一项。Open Standard 已明确 rewards 与合作伙伴推动的 supply/activity 相关，Bridge 另点出"在 Bridge 持有的 OUSD 余额"这一维度。**但这是一个部分披露的 reward mechanism——具体计算公式、各变量权重、分配比例、是否存在上限、是否与持有时间挂钩、是否属于对储备收益的经济利润分成，目前均未披露。** 这个机制的设计，直接决定 OUSD 的经济模型能否成立，也决定它在监管框架下的位置。
 
 **⑥ GENIUS Act 最终规则对"分销商补偿"的措辞。** 预计 11 月。这一条同时决定 OUSD 的结构差异是否构成优势，以及 Circle × Coinbase 的安排是否被收紧。
 
@@ -335,7 +346,7 @@ Circle 缺席那份名单本身不是结论。Coinbase 同时站在两边也不�
 
 ## 一句话 Takeaway
 
-**OUSD 上线第一天，还没有证明自己能够挑战 USDC 的规模；但它已经提出了一个更值得观察的问题：稳定币的发行收益，为什么必须主要集中在发行人，而不是分配给推动网络增长的参与者。今天改变的未必是市场份额，而可能是分销渠道未来谈判时的筹码。**
+**OUSD 上线第一天，还没有证明自己能够挑战 USDC 的规模；但它已经提出了一个更值得观察的问题：稳定币的发行收益，为什么必须主要集中在发行人，而不是分配给推动网络增长的参与者。如果 OUSD 最终形成足够规模，发行收益的分配机制可能成为分销渠道未来商业谈判中的一个议价变量——但在数据到来之前，这只是一个假说。**
 
 ---
 
@@ -345,7 +356,7 @@ Circle 缺席那份名单本身不是结论。Coinbase 同时站在两边也不�
 1. Open Standard 官网：首页、About、Integrate 页（公开名单约 214 个名称，为本文去重解析结果），joinopenstandard.com
 2. Open Standard 博客四篇：*OUSD is live*（2026-09-30）、*Businesses using stablecoins should have a stake in their future*（2026-09-24）、*Stablecoins are supposed to be better dollars*（Zach Abrams，2026-09-09）、*Introducing Open USD*（2026-06-30）
 3. **Bridge 官方博客《OUSD is live, issued by Bridge》（2026-09-30）——当前发行主体为 Bridge Building Inc.；Bridge National Trust Bank 尚未运营、不发行 OUSD；OCC 有条件批准不构成最终牌照批准；合作伙伴可就存在 Bridge 的 OUSD 余额获得 rewards**
-4. **OCC Corporate Decision #1365（2026-02-12）——Bridge National Trust Bank 初步有条件批准原文**
+4. **OCC Corporate Decision #1365（2026-02-12）——Bridge National Trust Bank 初步有条件批准原文：确认 BBI 为持牌州汇款机构；"preliminary conditional approval only"；12 USC 27(a) 最终批准机制；GENIUS Act 合规条件（不合规须停止或剥离）**
 5. X 官方账号：@openstandard status 2105311795980447922（2026-09-30 15:00 UTC）；@BVNKFinance status 2105335385190506701（2026-09-30 16:34 UTC）
 6. Mastercard 官方故事页《The hardest part of moving money isn't moving money》（2026-09-30）
 7. GENIUS Act 公法 119-27 §4(a)(11)（2025-07-18 签署）
