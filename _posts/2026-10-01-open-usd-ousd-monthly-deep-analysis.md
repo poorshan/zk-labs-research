@@ -19,6 +19,7 @@ tags: [OUSD, OpenUSD, Stablecoin, Bridge, Stripe, Tempo, GENIUSAct, PPSI, Eviden
 **观察窗口:** 2026年9月18日 – 2026年10月1日（13 天，短窗期，见 3.1）
 **研究立场:** 独立机构研究，非投资建议
 **版本:** v7.1（ZK Labs Research-Grade Audit & Structural Revision；本版不新增结论，只重建证据层级、撤回越界表述、补齐可证伪条件）
+**配套文档:** 证据审计、主张台账、未决问题清单、出版审计四份为 ZK Labs 内部研究记录（随本报告留存，不随本文发布）；正文中对它们的引用用于标注口径来源。
 **本版一手复跑时点:** 2026年10月1日 00:20–00:50 UTC（详见附录 A0）
 
 ---
