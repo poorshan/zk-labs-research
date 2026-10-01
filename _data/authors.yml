@@ -1,0 +1,24 @@
+# 作者元数据 —— 供 jekyll-seo-tag 解析 twitter:creator
+#
+# 背景：jekyll-seo-tag 的 AuthorDrop#twitter 在 page.author 为字符串时
+# 会**回退到作者名**（author_hash["twitter"] || author_hash["name"]）。
+# 中文作者名会被直接当作 handle 输出（如 "@南野东亦"），这是无效的 Twitter handle。
+# 在此登记中文名 → 真实 handle 的映射即可修正。
+#
+# 键（key）必须与文章 frontmatter 中 `author:` 的值完全一致。
+
+南野东亦:
+  name: 南野东亦
+  twitter: shangu365
+
+金戊乾坤2号:
+  name: 金戊乾坤2号
+  twitter: shangu365
+
+金戊乾坤3号:
+  name: 金戊乾坤3号
+  twitter: shangu365
+
+ZK-Labs Research:
+  name: ZK-Labs Research
+  twitter: shangu365

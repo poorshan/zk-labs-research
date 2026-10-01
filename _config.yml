@@ -30,9 +30,17 @@ defaults:
       path: ""
       type: posts
     values:
-      image: /assets/images/og-default.jpg
+      image:
+        path: /assets/images/og-default.jpg
+        width: 1200
+        height: 628
+        alt: "ZK-Labs Research — Crypto & Options Research"
   - scope:
       path: ""
       type: pages
     values:
-      image: /assets/images/og-default.jpg
+      image:
+        path: /assets/images/og-default.jpg
+        width: 1200
+        height: 628
+        alt: "ZK-Labs Research — Crypto & Options Research"
