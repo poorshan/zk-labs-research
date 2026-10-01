@@ -14,9 +14,9 @@ tags: [Circle, Coinbase, USDC, CRCL, 稳定币, 分销协议, Arc, Base, 市场�
 
 > ZK Labs Research｜市场观察｜2026-09-20
 
-**ZK Labs 市场观察 ｜ USDC 越做越大，到底是谁从这门生意里拿走了更多的钱？**
-署名：南野东亦 ｜ 2026-09-20
-**数据截点**：2026-09-18（Circle Q2 FY26 财报、Collaboration Agreement 续约确认）
+**ZK Labs 市场观察 ｜ USDC 越做越大，到底是谁从这门生意里拿走了更多的钱？**  
+署名：南野东亦 ｜ 2026-09-20  
+**数据截点**：2026-09-18（Circle Q2 FY26 财报、Collaboration Agreement 续约确认）  
 **声明**：本文为公开研究文稿，不涉及任何个人资产持有情况、交易记录与交易信号。
 
 ---

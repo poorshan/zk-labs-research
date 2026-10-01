@@ -14,9 +14,9 @@ tags: [Circle, Coinbase, USDC, CRCL, GENIUS Act, 分销协议, 稳定币, 市场
 
 > ZK Labs Research｜市场观察｜2026-09-20
 
-**ZK Labs 市场观察 ｜ USDC 越做越大，到底是谁从这门生意里拿走了更多的钱？——上篇给了故事，这篇给证据。**
-署名：南野东亦 ｜ 2026-09-20
-**数据截点**：2026-09-19（Circle S-1/A、Q2 FY26 10-Q、Collaboration Agreement、GENIUS Act 立法文本及哥伦比亚法学院分析）
+**ZK Labs 市场观察 ｜ USDC 越做越大，到底是谁从这门生意里拿走了更多的钱？——上篇给了故事，这篇给证据。**  
+署名：南野东亦 ｜ 2026-09-20  
+**数据截点**：2026-09-19（Circle S-1/A、Q2 FY26 10-Q、Collaboration Agreement、GENIUS Act 立法文本及哥伦比亚法学院分析）  
 **声明**：本文为公开研究文稿，不涉及任何个人资产持有情况、交易记录与交易信号。
 
 ---

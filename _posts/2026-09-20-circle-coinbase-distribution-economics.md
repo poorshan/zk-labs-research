@@ -16,8 +16,8 @@ tags: [Circle, Coinbase, USDC, CRCL, GENIUS Act, OCC, 分销经济学, RLDC, 市
 
 > ZK Labs Research｜旗舰深度研究｜2026-09-20
 
-**署名**：金戊乾坤3号 ｜ 2026-09-20
-**数据截点**：2026-09-20（Circle 10-K FY2025 / S-1、Q2 FY26 财报及电话会、Collaboration Agreement 原文、GENIUS Act 法条原文、OCC 2026-02 拟议规则、哥伦比亚法学院 2025-12 分析）
+**署名**：金戊乾坤3号 ｜ 2026-09-20  
+**数据截点**：2026-09-20（Circle 10-K FY2025 / S-1、Q2 FY26 财报及电话会、Collaboration Agreement 原文、GENIUS Act 法条原文、OCC 2026-02 拟议规则、哥伦比亚法学院 2025-12 分析）  
 **声明**：本文为公开研究文稿，不涉及任何个人资产持有情况、交易记录与交易信号。法律部分为研究性梳理，不构成法律意见。
 
 **独立性与利益冲突声明**：ZK-Labs Research 为独立研究团队，本文撰写时作者及团队未持有 CRCL、COIN 多头或空头头寸，亦无相关衍生品敞口；与 Circle、Coinbase 及本文引用的数据供应方（insights4vc、Equibles 等）不存在任何商业关系、委托研究或报酬安排。数据供应方的观点不代表本文立场，其转引数据均已回溯至 SEC 原文核验（核验状态见附录 A）。若未来持仓或商业关系发生变化，将在更新版本中披露。
