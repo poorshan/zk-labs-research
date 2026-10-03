@@ -15,6 +15,21 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
+    {% if page.hero_image %}
+    <header class="page-header hero-header" role="banner" style="background-image: url('{{ page.hero_image | relative_url }}');">
+      {% unless page.hide_header_text %}
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% endunless %}
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
+      {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+      {% endif %}
+    </header>
+    {% else %}
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
@@ -26,6 +41,7 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
     </header>
+    {% endif %}
 
     <main id="content" class="main-content" role="main">
       {% unless page.url == "/" or page.url == "/index.html" %}
