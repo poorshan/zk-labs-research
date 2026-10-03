@@ -3,7 +3,7 @@ layout: default
 title: "可组合性，而非费用：以太坊真正的护城河"
 description: "以太坊 L2 投研系列（二）——前文《Robinhood Chain》的宏观延伸"
 author: "ZK-Labs Research"
-author_url: "https://poorshan.github.io/zk-labs-research/about"
+author_url: "https://www.zklabsresearch.com/about"
 date: 2026-07-14 09:00:00 +0800
 categories: [research]
 tags: [Ethereum, L2, composability, EEZ]

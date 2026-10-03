@@ -3,7 +3,7 @@ layout: default
 title: "Composability, Not Fees: Ethereum's True Moat"
 description: "Ethereum L2 Research Series (II) — A macro-level extension of the Robinhood Chain report"
 author: "ZK-Labs Research"
-author_url: "https://poorshan.github.io/zk-labs-research/about"
+author_url: "https://www.zklabsresearch.com/about"
 date: 2026-07-14 09:00:00 +0800
 categories: [research]
 tags: [Ethereum, L2, composability, EEZ]

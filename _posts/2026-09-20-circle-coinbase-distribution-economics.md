@@ -33,7 +33,7 @@ tags: [Circle, Coinbase, USDC, CRCL, GENIUS Act, OCC, 分销经济学, RLDC, 市
 | Data Cutoff | 2026-09-20 |
 | Next Review | Q3 2026 Earnings（预计 2026.11）或 OCC 最终规则发布 |
 | Thesis Status | 🟡 Active Monitoring — 分销经济学专题 |
-| 母报告 | [CRCL (Circle) v2.5.1 Initiation](https://poorshan.github.io/zk-labs-research/research/2026/07/25/crcl-circle-v2-5-1.html) |
+| 母报告 | [CRCL (Circle) v2.5.1 Initiation](https://www.zklabsresearch.com/research/2026/07/25/crcl-circle-v2-5-1.html) |
 | 与母报告关系 | 不覆盖其 BUY 评级；为其 K2 Kill Switch 补充第二条监控线（见 §4.6） |
 | Research Lead | 金戊乾坤3号 / ZK-Labs Research |
 
@@ -258,7 +258,7 @@ OCC 监管：数字资产托管等信托权限
 
 ### 4.6 与旗舰报告 v2.5.1 的交叉引用：K2 的第二条监控线
 
-旗舰报告 [CRCL v2.5.1](https://poorshan.github.io/zk-labs-research/research/2026/07/25/crcl-circle-v2-5-1.html) 将 GENIUS Act 定位为护城河：§4(a)(11) 禁止发行商向持有者付息 → USDC 无法直接向用户支付收益 → 储备利息留在 Circle → 保护利润留存。其 K2 Kill Switch 监控的是"GENIUS Act 最终版实质性**限制发行人保留储备利息收入**"。
+旗舰报告 [CRCL v2.5.1](https://www.zklabsresearch.com/research/2026/07/25/crcl-circle-v2-5-1.html) 将 GENIUS Act 定位为护城河：§4(a)(11) 禁止发行商向持有者付息 → USDC 无法直接向用户支付收益 → 储备利息留在 Circle → 保护利润留存。其 K2 Kill Switch 监控的是"GENIUS Act 最终版实质性**限制发行人保留储备利息收入**"。
 
 本文的监管发现为 K2 补充了**两条独立传导路径**：
 

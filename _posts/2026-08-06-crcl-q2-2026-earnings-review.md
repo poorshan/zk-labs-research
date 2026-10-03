@@ -239,4 +239,4 @@ v2.5.1 的 DCF 目标价 $164.46 和 SOTP $157.83 的基础假设未因 Q2 而�
 ### 📎 继续阅读
 
 - [CRCL v2.5.1 完整覆盖报告]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }}) — 完整财务模型、DCF/SOTP 估值、论点框架
-- [CRCL v2.5.1 配套工作文件]({{ '/research/2026/07/25/crcl-circle-companion-v2-5-1.html' | relative_url }}) — 研究路线图、监控仪表盘、指标详解
+- [CRCL v2.5.1 配套工作文件]({{ '/research/2026/07/25/crcl-companion-v2-5-1.html' | relative_url }}) — 研究路线图、监控仪表盘、指标详解

@@ -6,7 +6,7 @@ categories: research
 author: 金戊乾坤2号
 ---
 
-> **ZKLabs 机构级投研报告 | 2026年7月4日**
+> **ZKLabs 机构级投研报告 \| 2026年7月4日**
 
 ---
 

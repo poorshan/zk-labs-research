@@ -354,7 +354,7 @@ EIP-8198 明确要求 `BASE_REWARD_FACTOR` 线性缩放以**保持年化发行�
 - AA 分裂：`https://unchainedcrypto.com/ethereum-and-base-abandon-a-shared-wallet-standard-as-account-abstraction-talks-break-down/`
 - 数据：`https://api.growthepie.xyz/v1/fundamentals.json`｜`https://community-api.coinmetrics.io/v4/timeseries`｜执行层 RPC（`ethereum-rpc.publicnode.com`）
 
-**相关前作**（同一研究线）：《谁在给以太坊交租：Aztec、Robinhood Chain 与一次被误读的算术》（2026-09-20，南野东亦），`https://poorshan.github.io/zk-labs-research/observations/2026/09/20/l2-rent-who-pays-ethereum.html`
+**相关前作**（同一研究线）：《谁在给以太坊交租：Aztec、Robinhood Chain 与一次被误读的算术》（2026-09-20，南野东亦），`https://www.zklabsresearch.com/observations/2026/09/20/l2-rent-who-pays-ethereum.html`
 
 ---
 

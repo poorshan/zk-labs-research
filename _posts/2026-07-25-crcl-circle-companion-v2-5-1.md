@@ -77,7 +77,7 @@ parent_report: "CRCL v2.5.1 Institutional Research"
 
 > **v2.5 升级亮点**：Dashboard 将每个监控指标的阈值与 Kill Switch 直接联动（标注 Kill W / Kill H），确保从「日常监控」到「退出决策」的路径没有断层。
 
-#### 季度更新 Check-List
+### 季度更新 Check-List
 
 每次财报后完成以下检查：
 - [ ] 更新 D1–D4 的当前值（数据来源：Circle 财报、DeFiLlama）

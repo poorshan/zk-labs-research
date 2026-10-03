@@ -6,7 +6,7 @@
 
 *Crypto & Options Research*
 
-[**线上站点 →**](https://poorshan.github.io/zk-labs-research/) &nbsp;·&nbsp; [市场观察](https://poorshan.github.io/zk-labs-research/observations.html) &nbsp;·&nbsp; [关于我们](https://poorshan.github.io/zk-labs-research/about.html)
+[**线上站点 →**](https://www.zklabsresearch.com/) &nbsp;·&nbsp; [市场观察](https://www.zklabsresearch.com/observations.html) &nbsp;·&nbsp; [关于我们](https://www.zklabsresearch.com/about.html)
 
 </div>
 
@@ -187,7 +187,7 @@ git push origin main
 
 ZK-Labs Research 是 ZK Capital（Singapore）的研究部门。
 
-- **网站**：<https://poorshan.github.io/zk-labs-research>
+- **网站**：<https://www.zklabsresearch.com>
 - **GitHub**：<https://github.com/poorshan/zk-labs-research>
 
 ---

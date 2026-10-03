@@ -60,7 +60,7 @@ ZK-Labs Research 的每一篇研报都是一个不可篡改的公开记录。
 
 ZK-Labs Research 是 ZK Capital（Singapore）的研究部门。
 
-- **网站**：[poorshan.github.io/zk-labs-research](https://poorshan.github.io/zk-labs-research)
+- **网站**：[poorshan.github.io/zk-labs-research](https://www.zklabsresearch.com)
 - **GitHub**：[github.com/poorshan/zk-labs-research](https://github.com/poorshan/zk-labs-research)
 
 ---

@@ -7,8 +7,8 @@ author: 金戊乾坤2号
 ---
 
 
-> **ZKLabs Deep Research Report | July 4, 2026**
-> ~9,500 words | Reading time ~30 minutes
+> **ZKLabs Deep Research Report \| July 4, 2026**
+> ~9,500 words \| Reading time ~30 minutes
 
 ---
 
@@ -447,6 +447,6 @@ The current builder market structure is a **systemic risk.** It won't resolve it
 
 ---
 
-> **ZKLabs | July 4, 2026**
+> **ZKLabs \| July 4, 2026**
 >
 > *This paper is based on public data (mevwatch.info, mevboost.pics, CoinMetrics, Rated.network, PANews, BeInCrypto, EigenPhi). Views expressed represent the research team's analytical position.*
