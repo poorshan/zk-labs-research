@@ -14,11 +14,13 @@ tags: [Ethereum, ValueCapture, ETH, L2, Blob, Stablecoin, Staking, 传导机制,
 
 ## Ethereum Value Capture v2.0｜From Protocol Cash Flow to Network Value Transmission
 
-**专题**：Ethereum Value Capture｜**版本**：**v2.0**（**v1.5 全量承继** ＋ **审计 7 条 P0 全量落地** ＋ **研究评审 2026-10-03 批示之 7 项二审处置**：**#1 双栏呈现层 ｜ #3 Layer 4 自设限 ｜ #4 阈值改历史分位数 ｜ #7 EIP-7918 90 天逐块取证 ｜ #8 L2 链集重划 ｜ #9 加权均值＋分位并列 ｜ #11 B5 观测项**；**#5 拆分为「对外版＋审计底稿」**。**零档位变更**；A3 下限与 A2/B2 阈值按批示 **#12/#13/#14** 调整**表述与数值**（非档位变更）；「制度性封堵」按 **#15** 改为「制度性锚定」。**完整版本沿革叙事（v1.0→v1.5）已移入配套《审计底稿》**）  
+**专题**：Ethereum Value Capture｜**版本**：**v2.0**  
 **基准日（UTC）**：2026-10-02｜**数据截点（UTC）**：日频 2026-10-01 / 链上即时 2026-10-02（**全部沿用 v1.0 一手证据集，本轮未重取**）  
 **状态**：`RESEARCH`｜不含价格目标、不含交易建议、不含短期预测  
 **冻结纪律（Publication Freeze｜研究评审 2026-10-04 定）**：本版进入**定稿冻结**后，**除 P1 硬口径错误外，不再接受新数据、新指标、新框架、新档位调整**。**UNKNOWN 保留即为研究成果的一部分**，不以「消灭 UNKNOWN」为交付标准。  
 **作者**：ZK Labs｜金戊乾坤2号｜**本版（v2.0）落定**：**2026-10-03 16:00 UTC**｜**时间口径**：全文**一律 UTC**
+
+> **v2.0 变更摘要**：**v1.5 全量承继** ＋ **审计 7 条 P0 全量落地** ＋ **研究评审 2026-10-03 批示之 7 项二审处置**：**#1 双栏呈现层 ｜ #3 Layer 4 自设限 ｜ #4 阈值改历史分位数 ｜ #7 EIP-7918 90 天逐块取证 ｜ #8 L2 链集重划 ｜ #9 加权均值＋分位并列 ｜ #11 B5 观测项**；**#5 拆分为「对外版＋审计底稿」**。**零档位变更**；A3 下限与 A2/B2 阈值按批示 **#12/#13/#14** 调整**表述与数值**（非档位变更）；「制度性封堵」按 **#15** 改为「制度性锚定」。**完整版本沿革叙事（v1.0→v1.5）已移入配套《审计底稿》**
 
 > **文件形态说明**：本文件是 **v2.0** 的**单文件自包含报告**（单文件形态自 v1.3 起）。**配套《审计底稿》为独立文件**（`ETH_Value_Capture_v2.0_审计底稿.md`），承载**版本沿革叙事、逐条处置记录、承重数字登记、自查更正与复算资产索引**——**引用本报告不需要打开它**——正文、支撑分析、证据与反证登记册、监控看板、版本留痕**全部在同一文档内**，阅读本文件不需要打开任何其他文件。原 13 份拆分交付物已**逐字折入**下列章节（仅删除三处纯指针段并改写交叉引用，见附录 C）。原拆分版逐字节归档于 `../_archive/v1.3_13files/`。原文件与本章节的对应关系、阅读路径、术语约定见**附录 D**。
 >
@@ -26,7 +28,6 @@ tags: [Ethereum, ValueCapture, ETH, L2, Blob, Stablecoin, Staking, 传导机制,
 
 ---
 
----
 
 ## 目录
 
@@ -191,8 +192,6 @@ tags: [Ethereum, ValueCapture, ETH, L2, Blob, Stablecoin, Staking, 传导机制,
 
 ---
 
----
-
 ## 第一部分｜主报告（v2.0 主体）
 
 ### 01 Value Creation — Ethereum 创造什么？
@@ -284,12 +283,12 @@ tags: [Ethereum, ValueCapture, ETH, L2, Blob, Stablecoin, Staking, 传导机制,
 
 **两个方向，证据并列，不强行选择：**
 
-**方向 1｜Network Expansion**
-`L2 Growth → Lower L1 marginal cost → More activity → More settlement/DA → Potential ETH demand`
+**方向 1｜Network Expansion**  
+`L2 Growth → Lower L1 marginal cost → More activity → More settlement/DA → Potential ETH demand`  
 证据：L2 94.6% 交易；blob 154.7 GB/月；容量 4.7×；L2 每笔 DA 成本 $3.6e-6；L1 区块利用率 ≈100% of target（30M）；**EIP-7918 设相对预留价 = `L1 base fee / 16`（软下界，经 excess_blob_gas 动态回拉，存在多区块滞后）**（实测/预留价 0.931）。
 
-**方向 2｜Rent Sacrifice**
-`L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH cash-flow capture`
+**方向 2｜Rent Sacrifice**  
+`L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH cash-flow capture`  
 证据：L1 cost share **0.146%（剔除 Robinhood 后 0.550%）**；L1 费用同比 **−79.6%**；销毁/发行 **138.7%（2022-09-15→2024-03-12 均值）→ 19.7%（2024-03-13→2026-10-01 均值；⚠️ 二值均为「4844 前/后」窗口均值、非当前值——当期近 30 天 2.52%、近 365 天 2.60%、近 90 天 1.81%**；Coinbase SEC 一手（Base 活动 +7× 而 `Other transaction revenue` −11%）。
 
 **回答三选一 —— C，但「不对称的 C」：**
@@ -381,7 +380,7 @@ tags: [Ethereum, ValueCapture, ETH, L2, Blob, Stablecoin, Staking, 传导机制,
 | 份额变化 | **53.7%（2026-01）→ 47.3%（2026-10）＝ −6.4pp** |
 | RWA | 全类 **$4.69B / 181 协议**；BUIDL 43% 在 Solana > 19.7%（4844 后窗口均值；当期近 30 天 2.52%） Ethereum；USYC Ethereum 仅 1.7% |
 
-**禁用表述**：`Stablecoin growth has no transmission to ETH`。
+**禁用表述**：`Stablecoin growth has no transmission to ETH`。  
 **应表述**：「稳定币增长**是否通过 Ethereum settlement activity 形成足够大的 ETH value capture，截至当前证据尚未被证明**。」
 
 ---
@@ -680,17 +679,17 @@ ETH Economic Value                       ⚪️ Unknown（本轮不判定）
 
 ### 八、收官状态
 
-**v1.3–v1.5 三轮沿革**（Final Logic Audit → 档位重标 → 思想升维四件）的完整叙事、逐轮交付物与档位变更记录，**已按研究评审批示 #5 移入配套《审计底稿》**（`ETH_Value_Capture_v2.0_审计底稿.md` §A）。**三轮均不改变专题冻结状态、不改判据**。
+**v1.3–v1.5 三轮沿革**（Final Logic Audit → 档位重标 → 思想升维四件）的完整叙事、逐轮交付物与档位变更记录，**已按研究评审批示 #5 移入配套《审计底稿》**（`ETH_Value_Capture_v2.0_审计底稿.md` §A）。**三轮均不改变专题冻结状态、不改判据**。  
 **v2.0 轮 = 7 条 P0 全量落地 ＋ 批示二审 7 项处置**：**零档位变更**；A3 下限与 A2/B2 阈值按批示 **#12/#13/#14** 调整**表述与数值**（**非档位变更**）；「制度性封堵」按 **#15** 改为「制度性锚定」（判定强度降为现象性）。逐条处置见《审计底稿》§B。
 - 交付（v2.0）：**对外版 1 份 ＋ 审计底稿 1 份**。v1.5 及以前各版冻结于各自目录；
 - **Publication Freeze（研究评审 2026-10-04 定，已写入研究纪律）**：**除 P1 硬口径错误外，不再接受新数据、新指标、新框架、新档位调整**。P1 硬口径错误＝读者一查即撞上的可验证缺陷（如引用的复算脚本不存在、口径标签与读数不符、链数/窗口不可复现）；此类错误**只修可复现性与标注，不改承重数字**。本轮 **F-7a（复算脚本缺失）** 即按此处置，**未改任何承重数字**；
-- **不新增自动化任务；交付范围与对外发布均须单独确认；
+- **不新增自动化任务、不对外发布**（对外发布须单独确认）；
 - **下一轮增量触发条件**（承继 v1.0 并更新）：
-  ① 取得**借贷抵押构成**（0 成本，最高性价比，可能改变层 3 判定）；
-  ② 取得**交易所 ETH 存量**或 **Dune/relayscan 任一 MEV 源**；
-  ③ **ETH 计价经济活动**指标被定义并可测（层 4 从 ⚪️ 转 🟡 当前已识别的唯一路径）；
-  ④ L1 执行 base fee 结构性回到 **> p90（≈0.46 Gwei，90 天日均口径）**（触发 A/B 组同时抬升）——原「> 5 Gwei」＝p100、90 天 0 次触发，**v2.0 按批示 #13 废止**；
-  ⑤ based/native rollup 出现**第二个**可测量案例；
+  ① 取得**借贷抵押构成**（0 成本，最高性价比，可能改变层 3 判定）；  
+  ② 取得**交易所 ETH 存量**或 **Dune/relayscan 任一 MEV 源**；  
+  ③ **ETH 计价经济活动**指标被定义并可测（层 4 从 ⚪️ 转 🟡 当前已识别的唯一路径）；  
+  ④ L1 执行 base fee 结构性回到 **> p90（≈0.46 Gwei，90 天日均口径）**（触发 A/B 组同时抬升）——原「> 5 Gwei」＝p100、90 天 0 次触发，**v2.0 按批示 #13 废止**；  
+  ⑤ based/native rollup 出现**第二个**可测量案例；  
   ⑥ 下一次 blob 参数调整（须重算全部 blob 结论）。
 
 ---
@@ -790,7 +789,7 @@ ETH Economic Value                       ⚪️ Unknown（本轮不判定）
   - **Channel A｜Stablecoin issuer reserve economics** → Treasury yield → **Issuer**（**通常不直接传导 ETH**）
   - **Channel B｜Stablecoin on-chain activity** → Transactions → Settlement → Ethereum / L2 → **Potential ETH demand**（**仍有 ETH transmission mechanism**）
 
-  四层必须分开陈述：**Issuer economics｜On-chain economic activity｜Ethereum settlement economics｜ETH demand**。
+  四层必须分开陈述：**Issuer economics｜On-chain economic activity｜Ethereum settlement economics｜ETH demand**。  
   应研究的问题是：**Stablecoin growth 是否通过 Ethereum settlement activity 形成足够大的 ETH value capture？**
 - **Reason**：禁用 "Stablecoin growth has no transmission to ETH" 这种句子——它把一个**量级问题**（够不够大）写成了**存在性问题**（有没有）。
 
@@ -1312,7 +1311,7 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 | **Value Capture（Channel B）** | 链上结算 → Ethereum/L2 的 gas 与 blob → **潜在 ETH demand** | **传导机制存在**，但量级未证明（Ethereum 侧存量 YTD **−10.7%**） |
 | **Cash Flow Capture** | Ethereum 拿到的稳定币相关 gas | **未拆分** `[UNKNOWN]`（这决定「稳定币给 ETH 贡献多少 gas」） |
 
-**关键纪律**：**禁止**写 "Stablecoin growth has no transmission to ETH"。
+**关键纪律**：**禁止**写 "Stablecoin growth has no transmission to ETH"。  
 **应写**：「稳定币增长**是否通过 Ethereum settlement activity 形成足够大的 ETH value capture，截至当前证据尚未被证明**；且 issuer economics 与 on-chain economics 必须分开陈述。」
 
 ---
@@ -1374,7 +1373,7 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 > **三者全部早于 Ethereum 主网（2015-07）**。更硬的一手材料来自**以太坊基金会自己的博客**（2014-11-13）：Ethereum 的最初构想——"the first true seed of the Ethereum idea"——源自 Vitalik 向 Mastercoin 团队提交的一份提案；文中并称「若历史不同，我们本可以一开始就选择建在 Bitcoin 之上」。
 >
 > **因此处置**：「首创」不可用（需要否认他人更早实现＝不可证伪）；「**率先规模化**」可用——Ethereum 是第一个把可编程结算推到规模的一方（ERC-20 自 2015 起、DeFi 2020–2021 达峰），且其**份额史可观测**。标签由 `Originated / Pioneered` 收紧为 **`Scaled First`**。
-**关键限定**：Tron/Solana 的稳定币活动**不产生任何 ETH 销毁**，但**同样也不产生对应链的「货币溢价」等价物**——份额流失的直接后果是 Ethereum 侧结算活动与 gas 需求的减少，**不是**「价值被 Tron 捕获」这种对称表述。
+**关键限定**：Tron/Solana 的稳定币活动**不产生任何 ETH 销毁**，但**同样也不产生对应链的「货币溢价」等价物**——份额流失的直接后果是 Ethereum 侧结算活动与 gas 需求的减少，**不是**「价值被 Tron 捕获」这种对称表述。  
 `[UNKNOWN]`：Ethereum 上稳定币相关交易的费用占比未拆分 → **无法量化份额流失对 ETH 捕获的实际损失**。
 
 > **【v2.0 新增｜P0-5】稳定币份额必须三栏：L1-only / L1+rollups / 全链**
@@ -1448,7 +1447,7 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 | **结算与安全锚** | 替代方案 = 独立 L1（放弃共享安全）或 alt-settlement 层；**当前无规模化的替代实现** | **(a) Scaled First + (b) 份额领先**——共享安全 + 最终结算锚；「当前无规模化替代」是**当前状态**，不是「无 Ethereum 则不存在」 |
 | **排序与费用捕获** | 若不基于 Ethereum，L2 直接做独立 L1，则费用全归自己 | **(c) 归属 L2**——这部分从来不在 Ethereum 侧 |
 
-**判定**：**Ethereum 在 L2 上创造的是「共享安全与结算锚」（a），它拿到了 DA 份额（b，且定价被自己锁死），而排序器经济学从未属于 Ethereum（c）。**
+**判定**：**Ethereum 在 L2 上创造的是「共享安全与结算锚」（a），它拿到了 DA 份额（b，且定价被自己锁死），而排序器经济学从未属于 Ethereum（c）。**  
 **由此得到本框架对 L2 当前已识别的唯一「非捕获」候选结论（附条件，不计入 Leakage）**：
 - 若某经济价值「**理论上可通过协议机制被 ETH 捕获**」——EIP-7918 已建立 blob 价格下限，**证明协议具备定价能力**；
 - 那么「**有定价能力却选择只收取 0.146%（剔除 Robinhood 后 0.550%）**」在严格定义下可读作 **Discretionary non-capture**（主动非收取），**不是** Value Leakage（因为「本可捕获」的价格水平本身不可确定）；
@@ -1474,8 +1473,8 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 - **Stablecoin 作抵押品**：需要**以 ETH 或稳定币计价**的债务市场，而这些市场**运行在 Ethereum 及其 L2 上** → Ethereum 在这一点上同时是承载者与规则提供者。
 - **Tokenized Treasury**：量级**仍是零头**（$4.65B vs ETH 市值 $335B），且**头部产品主要不在 Ethereum** → 现阶段不能作为 ETH 抵押需求的证据。
 
-**判定**：**ETH 在链上抵押品这一层是「(a) Scaled First + (b) 份额」的混合；与 BTC 存在结构性差异（native vs tokenized/wrapped）、与 Tokenized Treasury 存在量级差异（约 15×）——两者是「差异」，不是「优势」，且两者的 Transmission Mechanism 不同。**（相对地位属评价性推断，且份额分母缺失。）
-**但**：**ETH 在借贷抵押品中的份额不可测**（Aave/Morpho 抵押构成未取）→ 该判定只能停在 `Weak evidence`，**与 Layer 3 的状态一致**。
+**判定**：**ETH 在链上抵押品这一层是「(a) Scaled First + (b) 份额」的混合；与 BTC 存在结构性差异（native vs tokenized/wrapped）、与 Tokenized Treasury 存在量级差异（约 15×）——两者是「差异」，不是「优势」，且两者的 Transmission Mechanism 不同。**（相对地位属评价性推断，且份额分母缺失。）  
+**但**：**ETH 在借贷抵押品中的份额不可测**（Aave/Morpho 抵押构成未取）→ 该判定只能停在 `Weak evidence`，**与 Layer 3 的状态一致**。  
 `[UNKNOWN]`：借贷协议 ETH/LST 抵押占比；BTC 侧代币化资产按**托管链**的归属拆分；稳定币抵押份额。
 
 ---
@@ -1495,7 +1494,7 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 - **Ethereum 创造的部分**：**无许可、可组合、可编程的结算层**——这是 Ethereum 的原生产物，且 L2 生态（94.6% 交易）是它的延伸。
 - **Ethereum 未获得的部分**：**机构结算的增量**——头部机构产品（BUIDL/USYC）**选择了其他链**。
 
-**判定**：**Ethereum 是率先把「开放结算」这一范式推到规模的一方（a. Scaled First）；在「机构结算」这一增量场景上正在失去份额（b 反向）。**
+**判定**：**Ethereum 是率先把「开放结算」这一范式推到规模的一方（a. Scaled First）；在「机构结算」这一增量场景上正在失去份额（b 反向）。**  
 **关键限制**：**传统金融轨道一侧完全无一手数据**，因此「Ethereum 是否在与传统轨道竞争」**本轮不作判定**（任务书 §22：无证据不下强判断）。
 
 ---
@@ -1702,8 +1701,8 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 - **Evidence**：租金下降侧已实现（L1 费用 **−79.6%**、销毁 ÷ 发行 **138.7%（2022-09-15→2024-03-12 均值）→ 19.7%（2024-03-13→2026-10-01 均值；⚠️ 二值均为「4844 前/后」窗口均值、非当前值——当期近 30 天 2.52%、近 365 天 2.60%、近 90 天 1.81%**、L1 cost share **0.146%（剔除 Robinhood 后 0.550%）**）；规模扩张侧已实现（L2 **94.6%** 交易、blob **154.7 GB/月**）。
 - **Supports**：两件事**同期发生**，且都在本报告观测窗口内可复测。
 - **Contradicts（三条）**：
-  ① **「主动转变」不可观测**——「转向底座」需要证明「这是被选择的策略」，而本机**无回答「是否存在此意图」的一手治理依据**（可指名的路线图记录见「附录 E」，但不回答意图），报告已明文禁止推测目标函数（P0-3）；
-  ② **「高费率杀死应用层网络效应」是单因解读**——L1 需求侧分解数据不存在，**「容量效应」与「需求流失」两种读法并存且无法区分**（CE-1）；把它写成单一原因，正是 CE-1 禁止的写法；
+  ① **「主动转变」不可观测**——「转向底座」需要证明「这是被选择的策略」，而本机**无回答「是否存在此意图」的一手治理依据**（可指名的路线图记录见「附录 E」，但不回答意图），报告已明文禁止推测目标函数（P0-3）；  
+  ② **「高费率杀死应用层网络效应」是单因解读**——L1 需求侧分解数据不存在，**「容量效应」与「需求流失」两种读法并存且无法区分**（CE-1）；把它写成单一原因，正是 CE-1 禁止的写法；  
   ③ **该叙事的核心预测部分不可证伪**——「批发收入（底座费）终将出现」**在当前观察窗口内没有任何可测读数**（ETH 计价经济活动指标未定义）。
 - **Strength**：中（结构性框架有解释力，但**解释力 ≠ 证据**）。
 - **Remaining uncertainty**：**能否给这条叙事一个可证伪的读数？** 目前不能 ⇒ 处置为**框架保留在 `[INTERPRETATION]` 层，档位层零影响**；**若**「ETH 计价经济活动规模」或「机构结算份额」有一项被定义并可测，**则**该叙事首次具备可判定条件（已进「第九部分」UNKNOWN 路线图）。
@@ -1713,8 +1712,8 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 - **Evidence（本机有一手的部分）**：Ethereum 侧结构读数——**877,233 个活跃验证者**、信标链总余额 **44,061,701 ETH（36.09%）**、合并账户集中度 **12,092 个持 36.49%**、多客户端实现。
 - **Supports**：Ethereum 的**活性不依赖单一物理设施**这一结构性判断，与其验证者规模／客户端多样性的量级一致。
 - **Contradicts（三条）**：
-  ① **对比的另一侧没有本机一手读数**——Solana / Tron 的验证者地理分布、ASN 集中度、客户端多样性、停机史**全部 `[UNKNOWN]`** ⇒ 该对比**只能停在结构性论断，不得量化**；
-  ② **「更冗余 ⇒ 更优」不是普遍结论**——冗余的代价是吞吐与成本，复用型架构在「单位成本」维度上**客观领先**；**这是风险偏好的选择，不是免费的优势**；
+  ① **对比的另一侧没有本机一手读数**——Solana / Tron 的验证者地理分布、ASN 集中度、客户端多样性、停机史**全部 `[UNKNOWN]`** ⇒ 该对比**只能停在结构性论断，不得量化**；  
+  ② **「更冗余 ⇒ 更优」不是普遍结论**——冗余的代价是吞吐与成本，复用型架构在「单位成本」维度上**客观领先**；**这是风险偏好的选择，不是免费的优势**；  
   ③ **本报告已否证「节点多 ＝ 集中度低」的简化**——合并账户 **12,092 个持 36.49%** 提示**验证者实体集中度**远高于节点数量所暗示的水平（实体归属 `[UNKNOWN]`）。
 - **Strength**：中偏弱（**结构性判断成立；比较级结论无本机证据**）。
 - **Remaining uncertainty**：**这是本轮最容易被读成「替 Ethereum 辩护」的一条** ⇒ 正文已加**双向限定**——「物理层更冗余」**既不证明地位不丧失，也不证明 ETH 获得价值捕获**；该条**不得用于支撑任何档位**。
@@ -1724,8 +1723,8 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 - **Evidence**：Taiko **L1 成本占其费用 61.7%**（vs OP Stack **<0.5%**）；Coinbase SEC 一手：量 **+7× YoY** 而收入 **−11%**。
 - **Supports**：**技术路径存在**（based rollup 已实现把排序交还 L1）；**L2 之间的竞争确实在压缩中心化 sequencer 的截留空间**。
 - **Contradicts（三条）**：
-  ① **n=1**——Taiko 单案**不可复现即不成立**，第二个可测量案例尚未出现；
-  ② **「企业级合规刚需」无一手依据**——监管路径未定 ⇒ 条件句的**前件本身是 `[SCENARIO]`**；
+  ① **n=1**——Taiko 单案**不可复现即不成立**，第二个可测量案例尚未出现；  
+  ② **「企业级合规刚需」无一手依据**——监管路径未定 ⇒ 条件句的**前件本身是 `[SCENARIO]`**；  
   ③ **「将」不可写**——把条件句写成预测违反「不含短期预测、非对未来下结论」纪律（本轮已改写为条件句式）。
 - **Strength**：中（技术可行性有现场证据；**经济可行性与时点均无**）。
 - **Remaining uncertainty**：本条的**触发观测量是明确的**（第二个 based / native rollup 案例 ＋ 其 L1 成本占比）；**一旦出现，第 4 段与通道 B 须立即重审**。此前**不改任何档位**。
@@ -1920,13 +1919,13 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 - **Why it matters**：它决定「L2 是否有能力、是否有意愿向 L1 支付更多」
 - **Confirmation**：**L1 cost share 上升** / 出现强制回流机制（based、sequencer 税、强制 ETH 计价）。**v2.0（批示 #9）**：一律给「加权均值 ＋ 中位/p25/p75」，**不得只用加权均值**——当前 **0.1448%（加权）｜中位 4.38%｜p25 0.27%｜p75 27.60%**
 - **Disconfirmation**：L1 cost share 长期 < 0.2%，且无治理动作
-- **Current state**：**L1 cost share 0.146%（剔除 Robinhood 后 0.550%）**；**gross economic retention 99.854%（L1-only 口径；剔除 Robinhood 后 **99.450%**）/ 99.77%（含其他成本口径）**；L2 gross ÷ L1 费用 **≈3.0×**。⚠️ **不得称 profit margin**；Coinbase SEC 一手显示**单链层面可能「活动涨、收入跌」**
+- **Current state**：**L1 cost share 0.146%（剔除 Robinhood 后 0.550%）**；**gross economic retention 99.854%（L1-only 口径；剔除 Robinhood 后 99.450%）/ 99.77%（含其他成本口径）**；L2 gross ÷ L1 费用 **≈3.0×**。⚠️ **不得称 profit margin**；Coinbase SEC 一手显示**单链层面可能「活动涨、收入跌」**
 
 ---
 
 ### L2 链集重划：按「是否向以太坊结算」（v2.0 新增｜研究评审批示 #8）
 
-**旧口径**：growthepie 2026-09 返回的 **25 条链**全量计入分母——含 **Polygon PoS**（L2BEAT 明示为 **sidechain**，Ethereum 只是 notary 而非 judge）等非以太坊结算链。
+**旧口径**：growthepie 2026-09 返回的 **25 条链**全量计入分母——含 **Polygon PoS**（L2BEAT 明示为 **sidechain**，Ethereum 只是 notary 而非 judge）等非以太坊结算链。  
 **新口径**：只计入**结算层为 Ethereum L1 的链**（其状态根/证明直接提交至 L1 的 rollup）。
 
 | 口径 | 链数 | Σ fees（USD/天） | **L1 cost share** | 集中度 max | 跨链**中位** | p25 | p75 |
@@ -2112,7 +2111,7 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 - ❌ 不把 Dashboard 阈值当交易信号；
 - ❌ 不用二手聚合填补承重数字；
 - ❌ **不把 `Burn / Issuance > 100%` 当作 Value Capture Trigger**（任务书 §20）；
-- ❌ 不新增自动化任务；交付范围与对外发布均须单独确认。
+- ❌ 不新增自动化任务、不对外发布。
 
 **版本纪律**：阈值/指标/分组变更 = **Dashboard 版本变更**，须记录理由与受影响的历史结论。纯数据更新不改版本号。
 
@@ -2121,7 +2120,7 @@ L2 Growth → Sequencer captures economics → L1 fee compression → Lower ETH 
 ### 一键复检脚本（承继 v1.0，未改动）
 
 ```bash
-cd /Users/ivanwang/ZKLabs/research/eth-value-capture-2026-10
+cd ~/ZKLabs/research/eth-value-capture-2026-10
 
 python3 scripts/T2_fetch_cm.py && python3 scripts/T2_analyze_supply.py   # 供给/发行/销毁
 python3 scripts/T2_derive_stake_history.py                                # 质押规模反推
@@ -2299,7 +2298,7 @@ python3 scripts/report_charts.py                                          # 图�
 - ❌ 不做 ETH 价格目标、不做交易建议；
 - ❌ 不保留 `0/4` 式评分；
 - ❌ 不因短期读数调整 v1.0 已冻结尾的阈值（阈值若变，走 Dashboard 版本变更记录）；
-- ❌ 不新增自动化任务；交付范围与对外发布均须单独确认。
+- ❌ 不新增自动化任务、不对外发布（对外发布须单独确认）。
 
 ### 6. 版本沿革与版本纪律
 
@@ -2313,7 +2312,7 @@ python3 scripts/report_charts.py                                          # 图�
 | v1.5 | `../v1.5/` | **已被 v2.0 取代**（原标「定稿候选」） | v1.4 全量继承 + **思想升维四件**：①「平台税 → 主权结算基座」解释性框架（§01 / §04）；② Layer 4 **可组合性溢价**机制阐释（**档位保持 ⚪️**）；③ **韧性与物理层去中心化不对称**对比框架（第六部分）；④ **排序器租金可持续性**与排序权回归条件句（第五部分）。＋反证 **CE-10／11／12**、术语四条、E8 留痕。**零新增数据、零档位变更、判据未改** |
 | **v2.0** | **本目录** | **当前定稿**（研究评审 2026-10-03 批准冻结） | v1.5 全量继承 + **审计 7 条 P0 全量落地** + **研究评审批示 #1–#15 处置**；**零档位变更**（A3 下限与 A2/B2 阈值为**表述/数值变更**，「封堵→锚定」为**判定强度表述变更**）；**交付：对外版 1 份 ＋ 审计底稿 1 份（共 2 文件）**。详细叙事见《审计底稿》§A/§B |
 
-**版本纪律**：任何**判据 / 分类 / 标签定义**的变更 = **框架版本变更**，须在 `第三部分（判据与概念审计）` 与 `附录 C（版本沿革与修订留痕）` 留记录。
+**版本纪律**：任何**判据 / 分类 / 标签定义**的变更 = **框架版本变更**，须在 `第三部分（判据与概念审计）` 与 `附录 C（版本沿革与修订留痕）` 留记录。  
 **v1.1 → v1.2、v1.2 → v1.3、v1.3 → v1.4、v1.4 → v1.5 四次变更的完整差异、依据与影响评估**见 `附录 C（版本沿革与修订留痕）`。
 
 ---
@@ -2322,9 +2321,9 @@ python3 scripts/report_charts.py                                          # 图�
 
 ### v1.5 → v2.0（UTC 2026-10-03）｜审计落地 ＋ 批示处置 ＋ 勘误
 
-**内容**：审计 **7 条 P0 全量落地**（P0-1 四窗口 ｜ P0-2 L2 双读数 ｜ P0-3 blob 软下界 ｜ P0-4 gas/target 口径 ｜ P0-5 稳定币三栏 ｜ P0-6 附录 E 事件 ｜ P0-7 双计价分解）＋ **研究评审批示 #1–#15 处置**（#1 双栏呈现层 ｜ #3 Layer 4 自设限 ｜ #4 阈值改分位数 ｜ #7 90 天逐块取证 ｜ #8 链集重划 ｜ #9 加权均值＋分位 ｜ #11 B5 观测项 ｜ #12 A3 下限 ｜ #13 A2 阈值 ｜ #14 B2 时间口径 ｜ #15 封堵→锚定 ｜ #5 拆对外版＋底稿）。
-**级别**：**零档位变更**；A3 下限与 A2/B2 阈值为**表述与数值变更**；「封堵→锚定」为**判定强度表述变更**（机制性 → 现象性）。
-**勘误（本轮）**：① B2 滚动小时数由混用的 2,161 / 2,170 **统一为 2,161**（＝90 天窗口子集，与块级表同源），p10 随之由 0.8892 修正为 **0.8895**；② 附录版本表 v1.5 状态由「当前（定稿候选）」改为「已被 v2.0 取代」并补 v2.0 行。
+**内容**：审计 **7 条 P0 全量落地**（P0-1 四窗口 ｜ P0-2 L2 双读数 ｜ P0-3 blob 软下界 ｜ P0-4 gas/target 口径 ｜ P0-5 稳定币三栏 ｜ P0-6 附录 E 事件 ｜ P0-7 双计价分解）＋ **研究评审批示 #1–#15 处置**（#1 双栏呈现层 ｜ #3 Layer 4 自设限 ｜ #4 阈值改分位数 ｜ #7 90 天逐块取证 ｜ #8 链集重划 ｜ #9 加权均值＋分位 ｜ #11 B5 观测项 ｜ #12 A3 下限 ｜ #13 A2 阈值 ｜ #14 B2 时间口径 ｜ #15 封堵→锚定 ｜ #5 拆对外版＋底稿）。  
+**级别**：**零档位变更**；A3 下限与 A2/B2 阈值为**表述与数值变更**；「封堵→锚定」为**判定强度表述变更**（机制性 → 现象性）。  
+**勘误（本轮）**：① B2 滚动小时数由混用的 2,161 / 2,170 **统一为 2,161**（＝90 天窗口子集，与块级表同源），p10 随之由 0.8892 修正为 **0.8895**；② 附录版本表 v1.5 状态由「当前（定稿候选）」改为「已被 v2.0 取代」并补 v2.0 行。  
 **详细叙事**：**版本沿革、逐条处置、承重数字登记、事实核验与自查更正全部移入《审计底稿》§A/§B/§C/§D**（研究评审批示 #5）。
 
 ### 补丁级统一｜报告内时间口径由「京时」改为「一律 UTC」｜2026-10-03 09:16 UTC
@@ -2452,8 +2451,8 @@ python3 scripts/report_charts.py                                          # 图�
 
 ### v1.2 → v1.3（UTC 2026-10-02）｜Final Logic Audit
 
-**变更类型**：**逻辑收紧 + 命名修正**（不改判据定义、不改状态档位）
-**依据**：研究评审 2026-10-02 评审第十九点 —— 「v1.3 — Final Logic Audit，只修 6 个 P0」
+**变更类型**：**逻辑收紧 + 命名修正**（不改判据定义、不改状态档位）  
+**依据**：研究评审 2026-10-02 评审第十九点 —— 「v1.3 — Final Logic Audit，只修 6 个 P0」  
 **上游前身**：`../v1.2/`（冻结，只读）
 
 #### 一、变了什么
@@ -2496,9 +2495,9 @@ python3 scripts/report_charts.py                                          # 图�
 ### v1.1 → v1.2（UTC 2026-10-02）｜2×2 捕获矩阵升为一级框架组件
 
 
-**变更日期**：2026-10-02（UTC）
-**变更类型**：**框架版本变更**（framework-level change），非修订级
-**依据**：研究评审于 2026-10-02 明确裁定 —— 「新增的 2×2 矩阵若你视为框架级新增，就该升 v1.2，升吧」
+**变更日期**：2026-10-02（UTC）  
+**变更类型**：**框架版本变更**（framework-level change），非修订级  
+**依据**：研究评审于 2026-10-02 明确裁定 —— 「新增的 2×2 矩阵若你视为框架级新增，就该升 v1.2，升吧」  
 **上游前身**：`../v1.1/`（冻结，只读）
 
 ---
@@ -2619,9 +2618,6 @@ python3 scripts/report_charts.py                                          # 图�
 **但本次交付随后发生了一次框架级变更**：研究评审于 2026-10-02 裁定新增的 **2×2 捕获矩阵**（Cash-Flow / Non-Cash-Flow × Direct / Indirect）属**框架级组件新增**，据此升版本 **v1.1 → v1.2**。
 
 该矩阵在 v1.1 原稿中被标为「呈现层」（当时的原判是「不触发版本变更」）；在 v1.2 中升为**一级框架组件**。**判定判据、四层分类、五档标签定义、全部承重数字均未变**，因此本记录 §1–§4 的核验结论在 v1.2 中原样有效。完整差异见 `附录 C（版本沿革与修订留痕）`。
-
----
-
 
 ---
 
