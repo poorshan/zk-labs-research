@@ -1,6 +1,8 @@
 ---
 layout: default
 title: ZK-Labs Research
+hero_image: /assets/images/og-default.jpg
+hide_header_text: true
 ---
 
 <div style="text-align: center; margin: 3em 0 1.5em;">
@@ -9,7 +11,7 @@ title: ZK-Labs Research
 
 ### 加密货币与期权深度研究
 
-*Crypto & Options Research*
+*Crypto &amp; Options Research*
 
 </div>
 
@@ -30,7 +32,7 @@ title: ZK-Labs Research
 - **2026-09-20** — [blob 扩容、Quick Slots、账户抽象、快速最终性：Ethlabs Week 13 四题与我们的答案]({{ '/research/2026/09/20/ethlabs-week13-four-questions.html' | relative_url }})  
   *四问逐条核验 · 链上实测 + EIP 一手文本 + EF 官方文件 · 三处口径校正 + 一次自我更正留痕 · 五条可证伪的推翻条件*
 - **2026-07-25** — [CRCL (Circle) v2.5.1：从货币基金到金融互联网 — 完整财务模型、市场定价诊断与投资框架]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }})  
-  *DCF 目标价 $164 (+165%) · SOTP $158 · Investment Mosaic 75.9/100 · 附 Companion Document*
+  *DCF 目标价 64 (+165%) · SOTP 58 · Investment Mosaic 75.9/100 · 附 Companion Document*
 - **2026-07-25** — [CRCL Companion Document：研究路线图 & 监控仪表盘]({{ '/research/2026/07/25/crcl-companion-v2-5-1.html' | relative_url }})  
   *Research Roadmap R1–R6 + 完整 Dashboard + 指标详解*
 
