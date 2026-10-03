@@ -5,21 +5,7 @@ hero_image: /assets/images/og-default.jpg
 hide_header_text: true
 ---
 
-<div style="text-align: center; margin: 3em 0 1.5em;">
 
-# ZK-Labs Research
-
-### 加密货币与期权深度研究
-
-*Crypto &amp; Options Research*
-
-</div>
-
-<p style="text-align: center; max-width: 560px; margin: 0 auto 3em; color: #606060; font-size: 0.95em; line-height: 1.75;">
-由旗下「金戊乾坤2号」投研团队运营，专注期权波动率、加密货币及宏观市场的深度研究。
-</p>
-
-<div style="border-top: 1px solid #e1e4e8; margin: 0 auto 3em; max-width: 400px;"></div>
 
 ## 🏴‍☠️ 旗舰深度研究
 
