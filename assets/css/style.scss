@@ -10,7 +10,6 @@
 
 /* ----- 1. Typography & Colors ----- */
 
-/* Replace Cayman green with institutional deep blue-gray */
 $heading-color: #1a3a4a;
 $accent-color: #2c5f7c;
 $link-color: #1a6daa;
@@ -25,7 +24,7 @@ body {
 .main-content {
   h1, h2, h3, h4, h5, h6 {
     color: $heading-color;
-    font-weight: 600;  /* Cayman defaults to normal */
+    font-weight: 600;
   }
 
   h1 { font-size: 1.8rem; border-bottom: 2px solid #e0e5e8; padding-bottom: 0.5rem; }
@@ -35,7 +34,6 @@ body {
 
   a { color: $link-color; }
 
-  /* Softer horizontal rules */
   hr {
     height: 1px;
     background: linear-gradient(to right, #d0d6da, transparent);
@@ -67,11 +65,73 @@ body {
   }
 }
 
+/* ----- Hero Header (image banner) ----- */
 
-/* ----- 2. Tables — Zebra striping + sticky headers ----- */
+.hero-header {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 2rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(10, 20, 30, 0.55) 0%, rgba(10, 20, 30, 0.35) 100%);
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .project-name {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    margin-bottom: 0.4rem;
+  }
+
+  .project-tagline {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #ffffff;
+    backdrop-filter: blur(4px);
+
+    &:hover {
+      background: rgba(255,255,255,0.25);
+      border-color: rgba(255,255,255,0.6);
+    }
+  }
+
+  @media screen and (max-width: 42em) {
+    min-height: 240px;
+    padding: 2rem 1.25rem;
+
+    .project-name { font-size: 1.6rem; }
+    .project-tagline { font-size: 0.95rem; }
+  }
+}
+
+/* ----- 2. Tables ----- */
 
 .main-content table {
-  display: table;            /* Override Cayman's display:block */
+  display: table;
   width: 100%;
   border-collapse: collapse;
   font-size: 0.92rem;
@@ -97,7 +157,6 @@ body {
     vertical-align: top;
   }
 
-  /* Zebra striping */
   tbody tr:nth-child(even) td {
     background: #f8f9fa;
   }
@@ -106,13 +165,11 @@ body {
     background: #edf2f5;
   }
 
-  /* Compact mode for data-dense tables */
   &.compact td, &.compact th {
     padding: 0.3rem 0.5rem;
     font-size: 0.85rem;
   }
 
-  /* Responsive: allow horizontal scroll on narrow screens, keep display:table */
   @media screen and (max-width: 42em) {
     display: block;
     overflow-x: auto;
@@ -122,8 +179,7 @@ body {
   }
 }
 
-
-/* ----- 3. Blockquotes — More readable ----- */
+/* ----- 3. Blockquotes ----- */
 
 .main-content blockquote {
   color: #4a5a65;
@@ -135,12 +191,10 @@ body {
   font-style: normal;
 
   p { margin-bottom: 0.5rem; }
-
   strong { color: #1a3a4a; }
 }
 
-
-/* ----- 4. Source tag legend — Distinct callout ----- */
+/* ----- 4. Source tag legend ----- */
 
 .source-legend {
   background: #f0f4f7;
@@ -154,8 +208,7 @@ body {
   strong { color: #1a3a4a; }
 }
 
-
-/* ----- 5. Metadata bar — Compact horizontal info ----- */
+/* ----- 5. Metadata bar ----- */
 
 .meta-bar {
   display: flex;
@@ -171,8 +224,7 @@ body {
   strong { color: #4a5a65; }
 }
 
-
-/* ----- 6. Investment conclusion — Highlight box ----- */
+/* ----- 6. Investment conclusion ----- */
 
 .investment-conclusion {
   background: linear-gradient(135deg, #f0f5f9 0%, #fafbfc 100%);
@@ -184,8 +236,7 @@ body {
   p { margin-bottom: 0.5rem; }
 }
 
-
-/* ----- 7. Dark mode (auto) ----- */
+/* ----- 7. Dark mode ----- */
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -216,7 +267,6 @@ body {
       }
 
       td { border-bottom-color: #2a3035; }
-
       tbody tr:nth-child(even) td { background: #1f2327; }
       tbody tr:hover td { background: #262b30; }
     }
@@ -247,7 +297,6 @@ body {
     color: #90b0c0 !important;
   }
 }
-
 
 /* ----- 8. Print styles ----- */
 
