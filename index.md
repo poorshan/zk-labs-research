@@ -9,6 +9,8 @@ hide_header_text: true
 
 ## 🏴‍☠️ 旗舰深度研究
 
+- **2026-10-03** — [《论 ETH 的价值捕获》v2.0：从协议现金流到网络价值传导]({{ '/research/2026/10/03/eth-value-capture-v2.html' | relative_url }})  
+  *八段传导链 + 四层捕获框架 + 五条通道 · 反证登记册与监控看板 · 承重数字全部可复算 · UNKNOWN 保留为研究结论的一部分*
 - **2026-10-01** — [Open USD (OUSD) 月度深度分析报告 — 2026年10月号（v7.1）]({{ '/research/2026/10/01/open-usd-ousd-monthly-deep-analysis.html' | relative_url }})  
   *五层证据标注（FACT / ATTRIBUTED FACT / INFERENCE / HYPOTHESIS / FORECAST）· 发行方 API + 链分布 + 交易所 API + 监管文书四路一手复跑 · Tempo 集中度的可证伪假说 · 伙伴证据阶梯 Level 0–6 · GENIUS Act 许可路径与生效日追踪*
 - **2026-09-30** — [MSTR vs BMNR：两种 Digital Asset Treasury 模型的资本结构比较]({{ '/research/2026/09/30/mstr-vs-bmnr-digital-asset-treasury.html' | relative_url }})  
