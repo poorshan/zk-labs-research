@@ -122,6 +122,8 @@ body {
   @media screen and (max-width: 42em) {
     min-height: 240px;
     padding: 2rem 1.25rem;
+    background-size: contain !important;
+    background-position: center !important;
 
     .project-name { font-size: 1.6rem; }
     .project-tagline { font-size: 0.95rem; }
