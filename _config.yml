@@ -24,14 +24,14 @@ google_analytics:
 twitter:
   card: summary_large_image
   username: shangu365
-logo: /assets/images/og-default.jpg
+logo: /assets/images/og-x-image.jpg
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       image:
-        path: /assets/images/og-default.jpg
+        path: /assets/images/og-x-image.jpg
         width: 1200
         height: 628
         alt: "ZK-Labs Research — Crypto & Options Research"
@@ -40,7 +40,7 @@ defaults:
       type: pages
     values:
       image:
-        path: /assets/images/og-default.jpg
+        path: /assets/images/og-x-image.jpg
         width: 1200
         height: 628
         alt: "ZK-Labs Research — Crypto & Options Research"
