@@ -139,7 +139,7 @@ tags: [Ethereum, EIP-8363, ETH, 发行, 销毁, 通缩, 质押, 价值捕获, �
 - L2 结算向 L1 的回流约 **0.146%**（剔除 Robinhood Chain 后为 0.550%）；
 - 结算类收入约 **$2,387/天**，blob 收入约 **$143–234/天**。
 
-（口径说明：**「量级比」**指以一份可对照的总量为分母、只用于判断数量级的比率，**不能读作捕获率或利润率**。此处分母是「**生态毛价值代理**」（经济活动毛价值，2026-09 为 **$586.66M/月**；拆分口径，含跨层叠加，构成约为应用层 88.9%／L2 链 8.4%／L1 协议 2.7%），分子是 L1 协议费（2026-09，**$16.01M/月**）：2.73% ＝ $16.01M ÷ $586.66M。**剔除 Robinhood Chain** 的原因有二：一是该链 gas 在统计窗口内处于补贴期（其主网 2026-07-01 上线，补贴覆盖至 9 月底），二是其单链费用占 L2 费用的约 83%，会以加权方式压低整体读数；剔除后 L1 回流比例由 0.146% 升至 0.550%。定义与窗口见本站《论 ETH 的价值捕获》v2.0 第 01 节术语表与第八部分 K10 口径说明。）
+（口径说明：**「量级比」**指以一份可对照的总量为分母、只用于判断数量级的比率，**不能读作捕获率或利润率**。此处分母是「**生态毛价值代理**」（经济活动毛价值，2026-09 为 **$586.66M/月**；拆分口径，含跨层叠加，构成约为应用层 88.9%／L2 链 8.4%／L1 协议 2.7%），分子是 L1 协议费（2026-09，**$16.01M/月**）：2.73% ＝ $16.01M ÷ $586.66M。**剔除 Robinhood Chain** 的原因有二：一是该链 gas 在统计窗口内处于补贴期（其主网 2026-07-01 上线，补贴覆盖至 9 月底），二是其单链费用占 L2 费用的约 83%，会以加权方式压低整体读数；剔除后 L1 回流比例由 0.146% 升至 0.550%。定义与窗口见本站[《论 ETH 的价值捕获》v2.0](https://www.zklabsresearch.com/research/2026/10/03/eth-value-capture-v2.html) 第 01 节术语表与第八部分 K10 口径说明。）
 
 网络层面的另一个读数是趋弱的：以太坊在全链稳定币中的份额从 **53.7%（2026-01-01）降到 47.3%（2026-10-02）**，约 **−6.5 个百分点**（按 DefiLlama 分链序列复算：53.75% → 47.21%，−6.54pp）。
 
@@ -181,22 +181,22 @@ tags: [Ethereum, EIP-8363, ETH, 发行, 销毁, 通缩, 质押, 价值捕获, �
 
 **协议与治理事件（核对于 2026-10-03，UTC）**
 
-- EIP-8363 状态页（Draft，未被删除）：`https://eips.ethereum.org/EIPS/eip-8363`
-- 基金会协议级评级（2026-09-07，EIP-8363 列为 DFI、一致意见、并注明「非对提案价值的判断」）：`https://blog.ethereum.org/2026/09/07/protocol-hegota-eips`
-- 作者撤回帖：`https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263`
-- 升级时间表（Glamsterdam 测试网公告，2026-09-17）：`https://blog.ethereum.org/2026/09/17/glamsterdam-testnet-announcement`
-- 主网时间表（记为 Q4 2026，日期未确认）：`https://ethereum.org/roadmap/glamsterdam/`
-- 升级跟踪：`https://forkcast.org/upgrade/hegota`
+- EIP-8363 状态页（Draft，未被删除）：[https://eips.ethereum.org/EIPS/eip-8363](https://eips.ethereum.org/EIPS/eip-8363)
+- 基金会协议级评级（2026-09-07，EIP-8363 列为 DFI、一致意见、并注明「非对提案价值的判断」）：[https://blog.ethereum.org/2026/09/07/protocol-hegota-eips](https://blog.ethereum.org/2026/09/07/protocol-hegota-eips)
+- 作者撤回帖：[https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263](https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263)
+- 升级时间表（Glamsterdam 测试网公告，2026-09-17）：[https://blog.ethereum.org/2026/09/17/glamsterdam-testnet-announcement](https://blog.ethereum.org/2026/09/17/glamsterdam-testnet-announcement)
+- 主网时间表（记为 Q4 2026，日期未确认）：[https://ethereum.org/roadmap/glamsterdam/](https://ethereum.org/roadmap/glamsterdam/)
+- 升级跟踪：[https://forkcast.org/upgrade/hegota](https://forkcast.org/upgrade/hegota)
 
 **摘要提到的两类公开读法（非本文结论，仅标注「这种读法」的出处）**
 
-- IOSG Ventures《EIP-8363 量化复盘：砍掉质押「补贴」，以太坊想要换回什么？》，2026-08-24（TechFlow 转载）：`https://www.techflowpost.com/article/33503`
-- 青岚加密课堂《EIP-8363 深度拆解：销毁质押奖励，以太坊的供应博弈与利益再分配》，2026-08：`https://www.qinglan.org/67374`
+- IOSG Ventures《EIP-8363 量化复盘：砍掉质押「补贴」，以太坊想要换回什么？》，2026-08-24（TechFlow 转载）：[https://www.techflowpost.com/article/33503](https://www.techflowpost.com/article/33503)
+- 青岚加密课堂《EIP-8363 深度拆解：销毁质押奖励，以太坊的供应博弈与利益再分配》，2026-08：[https://www.qinglan.org/67374](https://www.qinglan.org/67374)
 
 **口径说明**
 
 - 本文所有时间均为 UTC。
-- 「生态毛价值代理」「量级比」等口径的定义，见本站《论 ETH 的价值捕获》v2.0 第 01 节术语表与第八部分 K10 口径说明；本文仅引用结论，并在第五节补了一句定义。
+- 「生态毛价值代理」「量级比」等口径的定义，见本站[《论 ETH 的价值捕获》v2.0](https://www.zklabsresearch.com/research/2026/10/03/eth-value-capture-v2.html) 第 01 节术语表与第八部分 K10 口径说明；本文仅引用结论，并在第五节补了一句定义。
 - 涉及未来时间表的内容（升级排期、发行政策流程后续场次）均为已公布的安排，非预测。
 
 *本文为市场观察专栏，不构成投资建议。文中数据、口径与来源见上；分析结论限于 2026-10-04 数据截点。*
