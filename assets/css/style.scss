@@ -68,10 +68,10 @@ body {
 /* ----- Hero Header (image banner) ----- */
 
 .hero-header {
-  background-size: contain !important;
-  background-position: center !important;
+  background-size: 100% auto !important;
+  background-position: center top !important;
   background-repeat: no-repeat !important;
-  min-height: 320px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
