@@ -77,11 +77,16 @@ body {
   line-height: 0;          /* kill inline-image gap */
   overflow: hidden;
 
-  /* Full image, never cropped: width fills, height follows aspect ratio */
+  /* Full-bleed width; height capped so the page content stays visible.
+     object-position: top keeps the branding text (top of image) in frame
+     while the bottom foreground (desks, floor) is trimmed. */
   .hero-image {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 58vh;        /* desktop: never eat more than ~58% of viewport */
+    object-fit: cover;
+    object-position: top center;
     margin: 0;
     border-radius: 0;
     max-width: 100%;
@@ -479,9 +484,20 @@ body {
 }
 
 /* ---- Homepage intro block ---- */
+/* ---- Homepage spacing: tighten hero → content gap ---- */
+.page-home .main-content {
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 64em) {
+  .page-home .main-content {
+    padding-top: 2.5rem;
+  }
+}
+
 .zk-intro {
   max-width: 760px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2.25rem;
   text-align: center;
 
   p {
