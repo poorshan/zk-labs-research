@@ -1,3 +1,22 @@
 <!-- GoatCounter Analytics -->
 <script data-goatcounter="https://zklabs-research.goatcounter.com/count"
         async src="https://gc.zgo.at/count.js"></script>
+
+<!-- Cursor-reactive grid glow -->
+<script>
+(function () {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (window.matchMedia && window.matchMedia('(hover: none)').matches) return; // skip touch devices
+  var root = document.documentElement;
+  var ticking = false;
+  window.addEventListener('mousemove', function (e) {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      root.style.setProperty('--zk-mouse-x', e.clientX + 'px');
+      root.style.setProperty('--zk-mouse-y', e.clientY + 'px');
+      ticking = false;
+    });
+  }, { passive: true });
+})();
+</script>

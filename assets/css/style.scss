@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 /* ============================================================
    ZK-Labs Research — Custom Style Overrides
    Base theme: Cayman (pages-themes/cayman@v0.2.0)
@@ -299,4 +301,268 @@ body {
   .main-content { max-width: 100%; padding: 0; font-size: 11pt; }
   body { color: #000; }
   a { color: #000; text-decoration: underline; }
+}
+
+/* ============================================================
+   9. Modern Tech Aesthetic — dark grid, glass, glow
+   Scoped so article content stays readable.
+   ============================================================ */
+
+:root {
+  --zk-bg: #080b11;
+  --zk-surface: rgba(255, 255, 255, 0.03);
+  --zk-border: rgba(255, 255, 255, 0.08);
+  --zk-accent: #38bdf8;
+  --zk-accent-glow: rgba(56, 189, 248, 0.25);
+  --zk-purple: #818cf8;
+  --zk-text: #f1f5f9;
+  --zk-muted: #94a3b8;
+  --zk-mouse-x: 50vw;
+  --zk-mouse-y: 20vh;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--zk-bg);
+  color: var(--zk-text);
+  background-image:
+    radial-gradient(circle at var(--zk-mouse-x) var(--zk-mouse-y), rgba(56, 189, 248, 0.10) 0%, transparent 420px),
+    linear-gradient(to right, rgba(255,255,255,0.028) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.028) 1px, transparent 1px);
+  background-size: 100% 100%, 64px 64px, 64px 64px;
+  background-attachment: fixed;
+}
+
+/* Monospace for data-ish labels */
+.card-meta, .meta-bar, time, code, kbd, pre {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ---- Headings ---- */
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--zk-text);
+    letter-spacing: -0.02em;
+  }
+
+  h1 { border-bottom-color: var(--zk-border); }
+
+  h2 {
+    position: relative;
+    padding-left: 0.9rem;
+    border-bottom: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.18em;
+      bottom: 0.18em;
+      width: 3px;
+      border-radius: 2px;
+      background: linear-gradient(180deg, var(--zk-accent), var(--zk-purple));
+      box-shadow: 0 0 12px var(--zk-accent-glow);
+    }
+  }
+
+  a {
+    color: var(--zk-accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      color: #7dd3fc;
+      border-bottom-color: rgba(56, 189, 248, 0.5);
+    }
+  }
+
+  hr {
+    background: linear-gradient(to right, rgba(56,189,248,0.35), rgba(129,140,248,0.15), transparent);
+  }
+
+  /* Inline code */
+  code {
+    background: rgba(56, 189, 248, 0.08);
+    color: #7dd3fc;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 4px;
+  }
+
+  pre {
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid var(--zk-border);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  /* Blockquotes */
+  blockquote {
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid var(--zk-accent);
+    color: var(--zk-muted);
+    border-radius: 0 10px 10px 0;
+
+    strong { color: var(--zk-text); }
+  }
+
+  /* Tables */
+  table {
+    th {
+      background: rgba(255,255,255,0.05);
+      color: var(--zk-text);
+      border-bottom-color: rgba(56,189,248,0.3);
+    }
+
+    td { border-bottom-color: var(--zk-border); }
+    tbody tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+    tbody tr:hover td { background: rgba(56,189,248,0.06); }
+  }
+}
+
+/* ---- Hero ---- */
+.hero-header {
+  .hero-image { border-radius: 0; }
+
+  /* subtle bottom fade into the page background */
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 90px;
+    background: linear-gradient(to bottom, transparent, var(--zk-bg));
+    pointer-events: none;
+  }
+}
+
+.hero-overlay-text {
+  .project-name {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.03em;
+  }
+  .project-tagline { font-family: 'JetBrains Mono', monospace; }
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  border-top: 1px solid var(--zk-border);
+  color: var(--zk-muted);
+
+  a { color: var(--zk-muted); }
+  a:hover { color: var(--zk-accent); }
+}
+
+/* ---- Badge / tagline pill ---- */
+.zk-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid var(--zk-border);
+  background: rgba(255,255,255,0.02);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--zk-accent);
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.zk-pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--zk-accent);
+  box-shadow: 0 0 10px var(--zk-accent);
+  flex-shrink: 0;
+}
+
+/* ---- Homepage intro block ---- */
+.zk-intro {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  text-align: center;
+
+  p {
+    color: var(--zk-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+}
+
+.zk-cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin: 1.75rem 0 0;
+}
+
+.zk-btn {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  border-bottom: none !important;
+
+  &.zk-btn-primary {
+    background: var(--zk-accent);
+    color: #030712;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 22px var(--zk-accent-glow);
+      color: #030712;
+    }
+  }
+
+  &.zk-btn-ghost {
+    border: 1px solid var(--zk-border);
+    color: var(--zk-text);
+
+    &:hover {
+      border-color: rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.05);
+      color: var(--zk-text);
+    }
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .zk-cta-row { flex-direction: column; align-items: stretch; }
+  .zk-btn { text-align: center; }
+}
+
+/* ---- Homepage post cards (scoped to homepage only) ---- */
+.page-home .main-content {
+/* ---- Post list as glass cards ---- */
+ul { padding-left: 0; }
+
+ul li {
+  background: var(--zk-surface);
+  border: 1px solid var(--zk-border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.9rem;
+  backdrop-filter: blur(14px);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  list-style: none;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.08);
+  }
+
+  strong {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82em;
+    color: var(--zk-accent);
+    font-weight: 500;
+  }
+}
 }
