@@ -68,65 +68,57 @@ body {
 /* ----- Hero Header (image banner) ----- */
 
 .hero-header {
-  background-size: 100% auto !important;
-  background-position: center top !important;
-  background-repeat: no-repeat !important;
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 3rem 2rem;
   position: relative;
+  padding: 0 !important;
+  background: none !important;
+  background-image: none !important;
+  line-height: 0;          /* kill inline-image gap */
+  overflow: hidden;
 
-  &::before {
-    content: '';
+  /* Full image, never cropped: width fills, height follows aspect ratio */
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    max-width: 100%;
+  }
+
+  .hero-overlay-text {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    line-height: 1.5;
     background: linear-gradient(135deg, rgba(10, 20, 30, 0.55) 0%, rgba(10, 20, 30, 0.35) 100%);
-    z-index: 0;
-  }
 
-  > * {
-    position: relative;
-    z-index: 1;
-  }
+    .project-name {
+      color: #ffffff;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      margin-bottom: 0.4rem;
+    }
 
-  .project-name {
-    color: #ffffff;
-    font-size: 2.2rem;
-    font-weight: 700;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    margin-bottom: 0.4rem;
-  }
-
-  .project-tagline {
-    color: rgba(255,255,255,0.9);
-    font-size: 1.1rem;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
-    margin-bottom: 1rem;
-  }
-
-  .btn {
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.4);
-    color: #ffffff;
-    backdrop-filter: blur(4px);
-
-    &:hover {
-      background: rgba(255,255,255,0.25);
-      border-color: rgba(255,255,255,0.6);
+    .project-tagline {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      margin-bottom: 0;
     }
   }
 
   @media screen and (max-width: 42em) {
-    min-height: 240px;
-    padding: 2rem 1.25rem;
-    background-size: contain !important;
-    background-position: center !important;
+    .hero-overlay-text {
+      padding: 1.5rem 1rem;
 
-    .project-name { font-size: 1.6rem; }
-    .project-tagline { font-size: 0.95rem; }
+      .project-name { font-size: 1.5rem; }
+      .project-tagline { font-size: 0.9rem; }
+    }
   }
 }
 
@@ -289,8 +281,8 @@ body {
       border-bottom-color: #2a3035;
     }
 
-    .page-header {
-      background: linear-gradient(135deg, #111518 0%, #1a2a35 100%);
+    .hero-overlay-text {
+      background: linear-gradient(135deg, rgba(5, 12, 20, 0.6) 0%, rgba(5, 12, 20, 0.4) 100%);
     }
   }
 

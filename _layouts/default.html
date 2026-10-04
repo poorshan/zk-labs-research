@@ -16,10 +16,13 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     {% if page.hero_image %}
-    <header class="page-header hero-header" role="banner" style="background-image: url('{{ page.hero_image | relative_url }}');">
+    <header class="page-header hero-header" role="banner">
+      <img class="hero-image" src="{{ page.hero_image | relative_url }}" alt="{{ page.title | default: site.title }} — {{ site.description }}">
       {% unless page.hide_header_text %}
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <div class="hero-overlay-text">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      </div>
       {% endunless %}
     </header>
     {% else %}

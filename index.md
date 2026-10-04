@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ZK-Labs Research
-hero_image: /assets/images/og-default.jpg
+hero_image: /assets/images/hero-lab.jpg
 hide_header_text: true
 ---
 
