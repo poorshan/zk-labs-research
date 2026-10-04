@@ -32,8 +32,8 @@ defaults:
     values:
       image:
         path: /assets/images/og-x-image.jpg
-        width: 1200
-        height: 628
+        width: 1280
+        height: 676
         alt: "ZK-Labs Research — Crypto & Options Research"
   - scope:
       path: ""
@@ -41,6 +41,6 @@ defaults:
     values:
       image:
         path: /assets/images/og-x-image.jpg
-        width: 1200
-        height: 628
+        width: 1280
+        height: 676
         alt: "ZK-Labs Research — Crypto & Options Research"
