@@ -60,10 +60,8 @@ hide_header_text: true
 {% endunless %}
 {% endfor %}
 
-<div style="margin-top: 4em; padding-top: 1.5em; border-top: 1px solid #e1e4e8; text-align: center; color: #999; font-size: 0.82em;">
-  <a href="{{ '/observations.html' | relative_url }}" style="color: #666;">市场观察</a>
-  &nbsp;·&nbsp;
-  <a href="{{ '/about.html' | relative_url }}" style="color: #666;">关于我们</a>
-  &nbsp;·&nbsp;
-  © {{ site.time | date: '%Y' }} ZK-Labs Research
+<div class="zk-page-nav">
+  <a href="{{ '/observations.html' | relative_url }}">市场观察</a>
+  <span class="zk-nav-sep">·</span>
+  <a href="{{ '/about.html' | relative_url }}">关于我们</a>
 </div>
