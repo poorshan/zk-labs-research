@@ -15,7 +15,6 @@ tags: [Circle, CRCL, USDC, OUSD, Open Standard, Bridge, 稳定币, GENIUS Act, C
 > ZK Labs Research｜市场观察｜2026-09-30
 
 **ZK Labs 市场观察 ｜ OUSD 首日供应仅约为 USDC 的 0.6%，但它正在重新定义稳定币的分发经济**  
-署名：南野东亦 ｜ 2026-09-30  
 **数据截点**：2026-09-30（Open Standard 官网与博客、Bridge 官方博客、OCC 批文、GENIUS Act 法条、OCC 拟议规则、DefiLlama 链上数据、Yahoo Finance 行情）  
 **声明**：本文为公开研究文稿，不涉及任何个人资产持有情况、交易记录与交易信号。法律部分为研究性梳理，不构成法律意见，亦不构成对任何一方合规状态的判断。
 
