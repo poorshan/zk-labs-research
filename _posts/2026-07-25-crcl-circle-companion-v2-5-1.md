@@ -6,11 +6,11 @@ categories: research
 author: 金戊乾坤2号
 permalink: /research/2026/07/25/crcl-companion-v2-5-1.html
 data_cutoff: 2026-07-25
-version: "v2.5.1"
-parent_report: "CRCL v2.5.1 Institutional Research"
+version: "v2.6.0"
+parent_report: "CRCL v2.6.0 Institutional Research"
 ---
 
-> **本文档是 [《CRCL (Circle) v2.5.1 — 从货币基金到金融互联网》]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }}) 的配套工作文件。**
+> **本文档是 [《CRCL (Circle) v2.6.0 — 从货币基金到金融互联网》]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }}) 的配套工作文件。**
 >
 > |  | 主报告 | 本文档（Companion） |
 > |:--|:--|:--|
@@ -37,7 +37,7 @@ parent_report: "CRCL v2.5.1 Institutional Research"
 | R2 | **非储备收入的可预测性建模** | 当前非储备收入模型采用阶梯式目标（10%→15%→20%→27%→35%），需要验证实际季度增速是否支持这一路径 | 中——Q2 财报将提供第一个数据点 | Q3-Q4 2026 | Q2 + Q3 连续两季数据 |
 | R3 | **CPN vs Stripe/BVN/Plaid 的竞争边界** | 当前 SOTP 中 CPN 用 8× PS——这个倍数的合理性取决于 CPN 与竞品的功能差异 | 中——竞品功能重叠程度需实地验证 | Q4 2026 | CPN 合作伙伴/客户案例公开 |
 | R4 | **Tether USA₮ 的银行渠道深度** | USA₮ 是唯一可能从「合规」维度与 USDC 竞争的稳定币——其银行合作网络的广度决定竞争烈度 | 中高——Tether 透明度有限 | Ongoing | 需要 13-F 和 banking partner 公告 |
-| R5 | **Arc 的商业化验证框架** | Arc 目前是模型中估值不确定性最高的部分——从 Pre-revenue 到可估值之间需要一个验证框架 | 高——产品仍在开发中 | Q1-Q2 2027 | ARC 主网上线 + 首批 enterprise case studies |
+| R5 | **Arc 的商业化验证框架** | Arc 主网已于 2026-09-16 上线，3 周内 USDC 流通量达 $1B，DeFi TVL $385M——机构采用已初步验证 | 中——产品已上线，但企业节点规模化仍需观察 | Q4 2026 | 企业节点数突破 50 + API 收入占比 >20% |
 | R6 | **利率路径的双重弹性（定量验证）** | 我们的 Thesis 声称降息 → USDC 规模增长（机会成本降低→银行存款流向稳定币）——这个弹性从未被定量估计 | 中——是「降息不致命」论点的核心支柱 | Q4 2026 | 需要至少 1 次降息后的季度数据 |
 
 ### 研究方法论
@@ -66,7 +66,7 @@ parent_report: "CRCL v2.5.1 Institutional Research"
 | D5 | Coinbase 关系 | 分润 ≤51%，无竞争信号 | 分润谈判进行中 | 自有稳定币 或 终止合作 (Kill H) | ~51% 分润 | 🟡 | CB 公告/招聘 |
 | D6 | GENIUS 监管 | 已落地，不利条款不存在 | NPRM 草案与预期有偏差 | 限制储备利息保留 (Kill H) | ✅ 已落地 | 🟢 | 过渡期细则 |
 | D7 | Fed Funds Rate | >2.5% | 2.0–2.5% | <2.0% 维持 >4Q (Kill W) | 当前高位 | 🟢 | FOMC 会议 |
-| D8 | Arc 商业化 | TVL >$100M (60天内) | Testnet 活跃，主网延迟 | 主网上线后 TVL 持续 <$10M | Pre-revenue | 🟡 | 主网上线 |
+| D8 | Arc 商业化 | USDC 流通 >$500M 且 TVL >$200M | 流通增长停滞，TVL 回落 | 上线 90 天流通 <$200M | 流通 $1B / TVL $385M（上线 3 周） | 🟢 | 季度复核 |
 | D9 | OUSD 联盟 | 流通量 >$5B，partner 活跃 | 数据杂音，个别 partner 退出 | 韩国等关键 partner 确认退出 | 未上线 | 🟡 | H2 2026 |
 | D10 | 非储备收入 YoY 增长 | >30% QoQ | 0–30% | 连续 4 季零/负增长 (Kill H) | Q1'26 YoY +? | 🟡 | 每季 |
 
@@ -98,6 +98,6 @@ parent_report: "CRCL v2.5.1 Institutional Research"
 | D5 | Coinbase 关系 | 最大的单一合作伙伴风险——约 51% 分润 + 几乎独占 CB 平台 USDC 交易 | 分润谈判进行中：正常商业谈判 | 自有稳定币或终止合作 → Kill H：直接打击储备引擎 |
 | D6 | GENIUS 监管 | 合规是 Circle 的核心护城河——如果法律不允许保留储备利息，估值将腰斩 | NPRM 与预期有偏差：需逐条分析条款影响 | 限制储备利息保留 → Kill H：估值逻辑的基石被移除 |
 | D7 | Fed Funds Rate | 储备收入的乘数——直接驱动 96% 的历史利润 | 2.0–2.5%：降息周期但非零利率 | <2.0% 维持 >4 季 → Kill W：需非储备收入占比 >15% 才能弥补 |
-| D8 | Arc 商业化 | 模型中最不确定的部分——Pre-revenue 到可估值之间的第一步 | Testnet 活跃、主网延迟：技术推进但节奏慢于预期 | 主网上线后 TVL 持续 <$10M → 需下调 Arc SOTP 估值 |
+| D8 | Arc 商业化 | 主网已上线（2026-09-16），3 周 USDC 流通 $1B、DeFi TVL $385M——从"零价值期权"重估为"已验证资产" | 流通增长停滞或 TVL 回落：机构采用未持续 | 上线 90 天流通 <$200M → 需下调 Arc SOTP 估值 |
 | D9 | OUSD 联盟 | 双重影响：既是 USDC 增长催化剂，也可能通过联盟稳定币侵蚀 USDC 份额 | 数据杂音、个别 partner 退出：Libra 式协调成本显现 | 韩国等关键 partner 确认退出 → 联盟模型可能不成立 |
 | D10 | 非储备收入 YoY 增长 | 综合指标——验证 Platform Thesis 是否在加速 | 0–30%：有增长但未加速 | 连续 4 季零/负增长 → Kill H：Platform Thesis 失败 |
