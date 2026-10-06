@@ -4,3 +4,6 @@ _site/
 .jekyll-metadata
 vendor/
 Gemfile.lock
+
+# 内部研究文档（非公开发布物）
+research/
