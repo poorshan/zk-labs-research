@@ -60,11 +60,6 @@ body {
     opacity: 0.8;
     margin-bottom: 0.75rem;
   }
-
-  .btn {
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.3);
-  }
 }
 
 /* ----- Hero Header (image banner) ----- */
@@ -302,7 +297,7 @@ body {
 /* ----- 8. Print styles ----- */
 
 @media print {
-  .page-header, .btn, #skip-to-content { display: none; }
+  .page-header, #skip-to-content { display: none; }
   .main-content { max-width: 100%; padding: 0; font-size: 11pt; }
   body { color: #000; }
   a { color: #000; text-decoration: underline; }
