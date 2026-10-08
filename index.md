@@ -28,8 +28,10 @@ hide_header_text: true
   *四变量框架（规模×收益率×渠道×监管）· Marginal USDC Economics · GENIUS 四层法律拆解 + 六情景 · K2b 监控线 · CRCL Research Dashboard*
 - **2026-09-20** — [blob 扩容、Quick Slots、账户抽象、快速最终性：Ethlabs Week 13 四题与我们的答案]({{ '/research/2026/09/20/ethlabs-week13-four-questions.html' | relative_url }})  
   *四问逐条核验 · 链上实测 + EIP 一手文本 + EF 官方文件 · 三处口径校正 + 一次自我更正留痕 · 五条可证伪的推翻条件*
-- **2026-07-25** — [CRCL (Circle) v2.5.1：从货币基金到金融互联网 — 完整财务模型、市场定价诊断与投资框架]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }})  
-  *DCF 目标价 64 (+165%) · SOTP 58 · Investment Mosaic 75.9/100 · 附 Companion Document*
+- **2026-10-08** — [CRCL (Circle) v2.7：论点更新与勘误版（**评级复核中**）]({{ '/research/2026/10/08/crcl-circle-v2-7-0.html' | relative_url }})  
+  *取代 v2.6.1 · KPI K6/K7 双触发 · 七处原文勘误（含 CPN 收入单位错 10 倍）· 利率叙事重写 · Q3 预登记阈值表公开 · **本版不提供评级与目标价**（估值留待 v2.8）*
+- **2026-07-25** — [CRCL (Circle) v2.6.1：从货币基金到金融互联网 — 完整财务模型、市场定价诊断与投资框架]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }})  
+  *⚠️ **已被 v2.7 取代**（BUY 评级与目标价失效）· DCF/SOTP 估值框架 · Investment Mosaic 75.9/100 · 附 Companion Document*
 - **2026-07-25** — [CRCL Companion Document：研究路线图 & 监控仪表盘]({{ '/research/2026/07/25/crcl-companion-v2-5-1.html' | relative_url }})  
   *Research Roadmap R1–R6 + 完整 Dashboard + 指标详解*
 

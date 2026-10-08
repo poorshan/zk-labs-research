@@ -12,6 +12,17 @@ related: "CRCL (Circle) v2.5.1 Initiation / Companion v2.5.1"
 tags: [Circle, Coinbase, USDC, CRCL, GENIUS Act, OCC, 分销经济学, RLDC, 市场观察]
 ---
 
+ > **⚠️ 本文引用的母报告已更新（2026-10-08）**
+>
+> 本文声明「不覆盖 v2.5.1 的 BUY 评级」——**该评级与目标价自 2026-10-08 起失效**，
+> 作者当前状态为「**评级复核中**」。
+> 本文自有的 **K2b / K2c 监控线**仍可作为观察指标，
+> 但请与 v2.7 的 **Q3 预登记阈值表**一并使用（两者阈值口径不同）。
+>
+> 👉 **[CRCL v2.7 论点更新与勘误版]({{ '/research/2026/10/08/crcl-circle-v2-7-0.html' | relative_url }})**
+>
+> 本文的**合同与法律事实梳理、Marginal USDC Economics 框架不受影响**。
+
 # Circle × Coinbase 分销经济学：合同、GENIUS 法案与下一美元 USDC 的归属
 
 > ZK Labs Research｜旗舰深度研究｜2026-09-20

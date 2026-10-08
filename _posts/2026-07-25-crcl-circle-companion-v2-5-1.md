@@ -10,6 +10,16 @@ version: "v2.6.0"
 parent_report: "CRCL v2.6.0 Institutional Research"
 ---
 
+> ### ⚠️ 本文对应的母报告已被取代（2026-10-08）
+>
+> **本文是 v2.5.1 / v2.6.1 时期的 Companion（工作底稿）。**
+> 其中的**监控阈值、Kill Switch 与仪表盘**属该版本口径；
+> 母报告的 **BUY 评级与目标价自 2026-10-08 起失效**。
+>
+> 👉 **[阅读 v2.7 论点更新与勘误版]({{ '/research/2026/10/08/crcl-circle-v2-7-0.html' | relative_url }})**
+> —— 含**修订后的 KPI 判定**（KPI K6 / K7 双触发）、**Q3 预登记阈值表**与七处勘误。
+> **该版评级复核中，不提供目标价。**
+
 > **本文档是 [《CRCL (Circle) v2.6.0 — 从货币基金到金融互联网》]({{ '/research/2026/07/25/crcl-circle-v2-5-1.html' | relative_url }}) 的配套工作文件。**
 >
 > |  | 主报告 | 本文档（Companion） |
