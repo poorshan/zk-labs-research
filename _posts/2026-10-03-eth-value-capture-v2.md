@@ -1,4 +1,6 @@
 ---
+flagship: true
+flagship_summary: "八段传导链 + 四层捕获框架 + 五条通道 · 反证登记册与监控看板 · 承重数字全部可复算 · UNKNOWN 保留为研究结论的一部分"
 layout: default
 title: "《论 ETH 的价值捕获》v2.0 — 从协议现金流到网络价值传导"
 permalink: /research/2026/10/03/eth-value-capture-v2.html

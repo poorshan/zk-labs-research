@@ -1,4 +1,6 @@
 ---
+flagship: true
+flagship_summary: "四问逐条核验 · 链上实测 + EIP 一手文本 + EF 官方文件 · 三处口径校正 + 一次自我更正留痕 · 五条可证伪的推翻条件"
 layout: default
 title: "blob 扩容、Quick Slots、账户抽象、快速最终性：Ethlabs Week 13 四题与我们的答案"
 permalink: /research/2026/09/20/ethlabs-week13-four-questions.html

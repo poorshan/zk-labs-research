@@ -1,4 +1,6 @@
 ---
+flagship: true
+flagship_summary: "五层证据标注（FACT / ATTRIBUTED FACT / INFERENCE / HYPOTHESIS / FORECAST）· 发行方 API + 链分布 + 交易所 API + 监管文书四路一手复跑 · Tempo 集中度的可证伪假说 · 伙伴证据阶梯 Level 0–6 · GENIUS Act 许可路径与生效日追踪"
 layout: default
 title: "Open USD (OUSD) 月度深度分析报告 — 2026年10月号（v7.1）"
 permalink: /research/2026/10/01/open-usd-ousd-monthly-deep-analysis.html

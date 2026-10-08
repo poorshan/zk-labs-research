@@ -1,4 +1,6 @@
 ---
+flagship: true
+flagship_summary: "资本结构 × mNAV × 每股敞口 × Carry × 融资飞轮 · 一手 8-K/10-Q 逐周复算 · 机械 NAV 压力测试（假设股价不变）· 附录含核心数字审计表与可证伪条件"
 layout: default
 title: "MSTR vs BMNR：两种 Digital Asset Treasury 模型的资本结构比较"
 permalink: /research/2026/09/30/mstr-vs-bmnr-digital-asset-treasury.html

@@ -1,4 +1,6 @@
 ---
+flagship: true
+flagship_summary: "Research Roadmap R1–R6 + 完整 Dashboard + 指标详解"
 layout: default
 title: "CRCL (Circle) v2.5.1 — Companion Working Document：研究路线图 & 监控仪表盘"
 date: 2026-07-25

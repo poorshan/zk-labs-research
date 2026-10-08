@@ -1,4 +1,6 @@
 ---
+flagship: true
+flagship_summary: "四变量框架（规模×收益率×渠道×监管）· Marginal USDC Economics · GENIUS 四层法律拆解 + 六情景 · K2b 监控线 · CRCL Research Dashboard"
 layout: default
 title: "Circle × Coinbase 分销经济学：合同、GENIUS 法案与下一美元 USDC 的归属"
 permalink: /research/2026/09/20/circle-coinbase-distribution-economics.html
