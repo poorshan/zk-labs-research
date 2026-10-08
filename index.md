@@ -10,10 +10,6 @@ hide_header_text: true
 <div class="zk-intro">
   <span class="zk-pill"><span class="zk-pill-dot"></span>EVIDENCE FIRST · MARKET STRUCTURE · DIGITAL ASSETS</span>
   <p>由旗下「金戊乾坤2号」投研团队运营，专注期权波动率、加密货币及宏观市场的深度研究。所有结论均可回溯至一手数据与可复算证据链。</p>
-  <div class="zk-cta-row">
-    <a class="zk-btn zk-btn-primary" href="{{ '/observations.html' | relative_url }}">浏览市场观察</a>
-    <a class="zk-btn zk-btn-ghost" href="{{ '/about.html' | relative_url }}">关于我们</a>
-  </div>
 </div>
 
 ## 🏴‍☠️ 旗舰深度研究
