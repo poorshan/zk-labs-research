@@ -2,6 +2,8 @@
 layout: default
 title: 关于 ZK-Labs Research
 permalink: /about.html
+hero_image: /assets/images/hero-lab.jpg
+hide_header_text: true
 ---
 
 # 关于 ZK-Labs Research
