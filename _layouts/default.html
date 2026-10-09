@@ -2,6 +2,14 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
+    {%- comment -%}
+      静态资源版本号：GitHub Pages 对 /assets/* 下发 Cache-Control: max-age=14400（4 小时），
+      且不支持自定义缓存头。若 URL 不变，改图后访客最长 4 小时仍看到旧图。
+      故所有资源 URL 必须带版本号。优先用 commit SHA；万一 site.github 不可用，
+      退回构建时间戳（每次都变，保证一定能击穿）。
+    {%- endcomment -%}
+    {%- assign asset_v = site.github.build_revision -%}
+    {%- if asset_v == nil or asset_v == "" -%}{%- assign asset_v = site.time | date: "%s" -%}{%- endif -%}
 
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ asset_v }}">
     {% include head-custom.html %}
   </head>
   <body class="{% if page.url == '/' or page.url == '/index.html' %}page-home{% else %}page-article{% endif %}">
@@ -17,7 +25,7 @@
 
     {% if page.hero_image %}
     <header class="page-header hero-header" role="banner">
-      <img class="hero-image" src="{{ page.hero_image | relative_url }}" alt="{{ page.title | default: site.title }} — {{ site.description }}">
+      <img class="hero-image" src="{{ page.hero_image | relative_url }}?v={{ asset_v }}" alt="{{ page.title | default: site.title }} — {{ site.description }}">
       {% unless page.hide_header_text %}
       <div class="hero-overlay-text">
         <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
