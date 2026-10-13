@@ -3,11 +3,6 @@ layout: default
 title: ZK-Labs Research
 ---
 
-<div class="zk-intro">
-  <span class="zk-pill"><span class="zk-pill-dot"></span>EVIDENCE FIRST · MARKET STRUCTURE · DIGITAL ASSETS</span>
-  <p>由旗下「金戊乾坤2号 / 金戊乾坤3号」投研团队运营，专注期权波动率、加密货币及宏观市场的深度研究。所有结论均可回溯至一手数据与可复算证据链。</p>
-</div>
-
 <section class="zk-stats" aria-label="站点数据">
   <div class="zk-stat"><span class="zk-stat-n" data-n="{{ site.posts | size }}">0</span><span class="zk-stat-l">深度报告</span></div>
   <div class="zk-stat"><span class="zk-stat-n" data-n="{{ site.posts | where: 'flagship', true | size }}">0</span><span class="zk-stat-l">旗舰研究</span></div>

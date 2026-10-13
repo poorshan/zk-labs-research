@@ -4,6 +4,7 @@
 
 <!-- v5 改版：Hero 波动率曲面 / 时钟 / 数字滚动 / 滚动显现 -->
 <script>
+document.addEventListener('DOMContentLoaded', function () {
 (function () {
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -41,7 +42,7 @@
           if (d < 130 && d > 1) { f = (1 - d / 130) * 46; x += dx / d * f; y += dy / d * f; }
           if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y);
         }
-        a = 0.05 + 0.10 * (1 - Math.abs(j - rows / 2) / (rows / 2));
+        a = 0.10 + 0.16 * (1 - Math.abs(j - rows / 2) / (rows / 2));
         ctx.strokeStyle = 'rgba(56,189,248,' + a.toFixed(3) + ')';
         ctx.lineWidth = 1; ctx.stroke();
       }
@@ -84,6 +85,7 @@
     });
   }
 })();
+});
 </script>
 
 <!-- Cursor-reactive grid glow -->
