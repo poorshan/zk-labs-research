@@ -487,6 +487,14 @@ body {
     border-bottom: none !important;
 
     &:hover { color: var(--zk-accent); }
+
+    /* 外站链接：比站内项稍醒目（accent 色 + 虚线提示"会离开本站"） */
+    &.zk-nav-ext {
+      color: var(--zk-accent);
+      border-bottom: 1px dashed rgba(56, 189, 248, 0.45) !important;
+
+      &:hover { border-bottom-color: var(--zk-accent) !important; }
+    }
   }
 
   .zk-nav-sep {

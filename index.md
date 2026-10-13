@@ -55,4 +55,6 @@ hide_header_text: true
   <a href="{{ '/observations.html' | relative_url }}">市场观察</a>
   <span class="zk-nav-sep">·</span>
   <a href="{{ '/about.html' | relative_url }}">关于我们</a>
+  <span class="zk-nav-sep">·</span>
+  <a class="zk-nav-ext" href="https://vix.zklabsresearch.com" target="_blank" rel="noopener">VIX 量化交易训练站 ↗</a>
 </div>
