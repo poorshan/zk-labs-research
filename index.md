@@ -1,29 +1,34 @@
 ---
 layout: default
 title: ZK-Labs Research
-hero_image: /assets/images/hero-lab.jpg
-hide_header_text: true
 ---
-
-
 
 <div class="zk-intro">
   <span class="zk-pill"><span class="zk-pill-dot"></span>EVIDENCE FIRST · MARKET STRUCTURE · DIGITAL ASSETS</span>
   <p>由旗下「金戊乾坤2号 / 金戊乾坤3号」投研团队运营，专注期权波动率、加密货币及宏观市场的深度研究。所有结论均可回溯至一手数据与可复算证据链。</p>
 </div>
 
-## 🏴‍☠️ 旗舰深度研究
+<section class="zk-stats" aria-label="站点数据">
+  <div class="zk-stat"><span class="zk-stat-n" data-n="{{ site.posts | size }}">0</span><span class="zk-stat-l">深度报告</span></div>
+  <div class="zk-stat"><span class="zk-stat-n" data-n="{{ site.posts | where: 'flagship', true | size }}">0</span><span class="zk-stat-l">旗舰研究</span></div>
+  <div class="zk-stat"><span class="zk-stat-n" data-n="5" data-suffix="级">0</span><span class="zk-stat-l">证据标签体系</span></div>
+  <div class="zk-stat"><span class="zk-stat-t">持续更新</span></div>
+</section>
 
-{%- comment -%}
-自动生成——请勿手工编辑本列表。
-新文章加入本栏：在该文 front matter 写 flagship: true 与 flagship_summary: "…"。
-排序由 site.posts（Jekyll 默认按日期倒序）保证，不会错位。
-{%- endcomment -%}
+## 🏴‍☠️ 旗舰深度研究
+{: #flagship }
+
+<div class="zk-flag-grid">
 {%- assign flagship_posts = site.posts | where: "flagship", true %}
-{% for post in flagship_posts %}
-- **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url | relative_url }})  
-  *{{ post.flagship_summary }}*
+{% for post in flagship_posts limit:6 %}
+<a class="zk-flag-card" href="{{ post.url | relative_url }}">
+  <span class="zk-flag-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.flagship_summary }}</p>
+  <span class="zk-flag-go">阅读报告 →</span>
+</a>
 {% endfor %}
+</div>
 ---
 
 ## 📡 市场观察

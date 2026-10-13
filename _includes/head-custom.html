@@ -2,6 +2,90 @@
 <script data-goatcounter="https://zklabs-research.goatcounter.com/count"
         async src="https://gc.zgo.at/count.js"></script>
 
+<!-- v5 改版：Hero 波动率曲面 / 时钟 / 数字滚动 / 滚动显现 -->
+<script>
+(function () {
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* 顶栏时钟 */
+  var clock = document.getElementById('zk-clock');
+  if (clock) {
+    var p = function (n) { return String(n).padStart(2, '0'); };
+    var tick = function () {
+      var d = new Date();
+      clock.textContent = p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds()) + ' UTC+8';
+    };
+    tick(); setInterval(tick, 1000);
+  }
+
+  /* Hero 波动率曲面（鼠标靠近时排开） */
+  var cv = document.getElementById('zk-vol');
+  if (cv) {
+    var ctx = cv.getContext('2d'), hero = cv.closest('.zk-hero');
+    var W, H, t = 0, mx = -9999, my = -9999;
+    var size = function () { W = cv.width = cv.offsetWidth; H = cv.height = cv.offsetHeight; };
+    window.addEventListener('resize', size); size();
+    hero.addEventListener('pointermove', function (e) {
+      var r = cv.getBoundingClientRect(); mx = e.clientX - r.left; my = e.clientY - r.top;
+    }, { passive: true });
+    hero.addEventListener('pointerleave', function () { mx = -9999; my = -9999; });
+    var draw = function () {
+      ctx.clearRect(0, 0, W, H);
+      var rows = 14, cols = 26, j, i, x, y, dx, dy, d, f, a;
+      for (j = 0; j < rows; j++) {
+        ctx.beginPath();
+        for (i = 0; i <= cols; i++) {
+          x = i / cols * W;
+          y = H * 0.62 + Math.sin(i * 0.45 + t * 0.9 + j * 0.55) * 22 * Math.sin(j * 0.5 + t * 0.4) + (j - rows / 2) * 16;
+          dx = x - mx; dy = y - my; d = Math.hypot(dx, dy);
+          if (d < 130 && d > 1) { f = (1 - d / 130) * 46; x += dx / d * f; y += dy / d * f; }
+          if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y);
+        }
+        a = 0.05 + 0.10 * (1 - Math.abs(j - rows / 2) / (rows / 2));
+        ctx.strokeStyle = 'rgba(56,189,248,' + a.toFixed(3) + ')';
+        ctx.lineWidth = 1; ctx.stroke();
+      }
+      for (var k = 0; k < 26; k++) {
+        var px = (k * 197.3 + t * 22) % W, py = H * 0.55 + Math.sin(k * 1.7 + t) * 40 - ((k * 53) % 120);
+        ctx.fillStyle = 'rgba(125,211,252,.5)';
+        ctx.beginPath(); ctx.arc(px, py, 1.4, 0, 7); ctx.fill();
+      }
+      if (!reduced) { t += 0.016; requestAnimationFrame(draw); }
+    };
+    draw();
+  }
+
+  /* 数字滚动 */
+  if (!reduced && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target, end = parseFloat(el.dataset.n), t0 = performance.now();
+        var step = function (now) {
+          var pr = Math.min((now - t0) / 1200, 1), v = Math.round(end * (1 - Math.pow(1 - pr, 3)));
+          el.textContent = v + (el.dataset.suffix || '');
+          if (pr < 1) requestAnimationFrame(step);
+        };
+        step(t0); io.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('.zk-stat-n[data-n]').forEach(function (el) { io.observe(el); });
+  }
+
+  /* 滚动显现 */
+  if (!reduced && 'IntersectionObserver' in window) {
+    var io2 = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io2.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.zk-flag-card, .zk-stats, .page-home .main-content ul li').forEach(function (el) {
+      el.classList.add('reveal'); io2.observe(el);
+    });
+  }
+})();
+</script>
+
 <!-- Cursor-reactive grid glow -->
 <script>
 (function () {
