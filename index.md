@@ -43,7 +43,9 @@ title: ZK-Labs Research
 {% endfor %}
 {% endif %}
 
-[→ 查看全部市场观察]({{ '/observations.html' | relative_url }})
+<div style="text-align: center; margin-top: 1.6rem;">
+  <a class="zk-more-btn" href="{{ '/observations.html' | relative_url }}">查看全部市场观察 →</a>
+</div>
 
 ---
 
