@@ -62,11 +62,13 @@
       注意：Liquid 里空数组为 truthy，故本分支覆盖所有文章（research / observation）
       以及市场观察列表页；pill 仅当 categories 非空时显示，作者行仅当 author 存在时显示。
     {%- endcomment -%}
-    <header class="page-header zk-article-banner" role="banner" style="background-image: url('{{ '/assets/images/observation-banner-universal.webp' | relative_url }}?v={{ asset_v }}');">
+    <header class="page-header zk-article-banner" role="banner" style="background-image: url('{{ page.banner_image | default: '/assets/images/observation-banner-universal.webp' | relative_url }}?v={{ asset_v }}');">
       <div class="zk-article-banner-veil" aria-hidden="true"></div>
       <div class="zk-article-banner-inner">
         {% assign zk_cat = page.categories | first %}
-        {% if zk_cat == 'observation' %}
+        {% if page.banner_pill %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>{{ page.banner_pill }}</span>
+        {% elsif zk_cat == 'observation' %}
         <span class="zk-pill"><span class="zk-pill-dot"></span>市场观察</span>
         {% elsif zk_cat == 'research' %}
         <span class="zk-pill"><span class="zk-pill-dot"></span>旗舰研究</span>

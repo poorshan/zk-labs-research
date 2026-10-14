@@ -797,3 +797,64 @@ ul li {
   .zk-article-banner .project-name { font-size: 1.65rem; }
   .zk-article-banner .project-tagline { font-size: .95rem; }
 }
+
+/* ============================================================
+   关于我们 v3 — 机构信任状排版（编辑体）
+   ============================================================ */
+.about-wrap { max-width: 960px; margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
+.about-sec { margin-bottom: 4.5rem; }
+.sec-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.8rem; }
+.sec-no { font-family: 'JetBrains Mono', monospace; color: var(--zk-accent); font-size: .85rem; letter-spacing: .1em; }
+.sec-head h2 { font-size: 1.5rem; font-weight: 600; }
+.sec-head::after { content: ""; flex: 1; height: 1px; background: linear-gradient(to right, var(--zk-border), transparent); }
+.about-wrap p { color: #cbd5e1; margin-bottom: 1.1rem; font-size: 1rem; }
+.about-wrap strong { color: var(--zk-text); }
+
+/* 引文 */
+.pull { border-left: 3px solid var(--zk-accent); padding: .4rem 0 .4rem 1.4rem; margin: 1.8rem 0;
+  font-size: 1.25rem; font-weight: 500; color: var(--zk-text); line-height: 1.7; }
+
+/* 铁律 · 编辑体 */
+.rules { border-top: 1px solid var(--zk-border); }
+.rule { display: grid; grid-template-columns: 110px 1fr; gap: 1.5rem; padding: 1.8rem .5rem;
+  border-bottom: 1px solid var(--zk-border); align-items: start; }
+.rule-no { font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 500; color: transparent;
+  -webkit-text-stroke: 1px rgba(56,189,248,.55); line-height: 1; letter-spacing: .04em; }
+.rule h3 { font-size: 1.15rem; margin-bottom: .4rem; }
+.rule p { font-size: .95rem; color: var(--zk-muted); margin: 0; max-width: 640px; }
+
+/* 领域 · 索引体 */
+.domains { border-top: 1px solid var(--zk-border); }
+.domain { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; padding: 1.4rem .5rem;
+  border-bottom: 1px solid var(--zk-border); align-items: baseline; }
+.domain h3 { font-size: 1.05rem; color: var(--zk-accent); font-weight: 600; }
+.domain p { font-size: .93rem; color: var(--zk-muted); margin: 0; }
+
+/* Track Record 特色块 */
+.track { border: 1px solid rgba(245,197,24,.25); border-radius: 16px; padding: 2.2rem;
+  background: linear-gradient(135deg, rgba(245,197,24,.06), rgba(56,189,248,.05)); }
+.track .kicker { font-family: 'JetBrains Mono', monospace; font-size: .78rem; letter-spacing: .14em;
+  color: #f5c518; display: block; margin-bottom: 1rem; }
+.track blockquote { font-size: 1.3rem; font-weight: 600; line-height: 1.7; margin-bottom: 1.2rem; color: var(--zk-text); }
+.track p { font-size: .95rem; color: var(--zk-muted); }
+.track a { color: var(--zk-accent); }
+
+/* 联系卡片 */
+.contacts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.contact { display: flex; align-items: center; gap: 1rem; background: var(--zk-surface);
+  border: 1px solid var(--zk-border); border-radius: 14px; padding: 1.4rem 1.6rem;
+  text-decoration: none; transition: border-color .2s; }
+.contact:hover { border-color: rgba(56,189,248,.35); }
+.contact .ic { font-size: 1.5rem; }
+.contact b { color: var(--zk-text); display: block; font-size: 1rem; }
+.contact span span { color: var(--zk-muted); font-size: .85rem; font-family: 'JetBrains Mono', monospace; }
+.outro { text-align: center; color: var(--zk-muted); font-size: .95rem; margin-top: 4rem; letter-spacing: .04em; }
+
+@media screen and (max-width: 42em) {
+  .rule, .domain { grid-template-columns: 1fr; gap: .4rem; }
+  .rule-no { font-size: 1.5rem; }
+  .contacts { grid-template-columns: 1fr; }
+  .track { padding: 1.6rem; }
+  .track blockquote { font-size: 1.1rem; }
+  .about-wrap { padding: 2.5rem 1.1rem 4rem; }
+}
