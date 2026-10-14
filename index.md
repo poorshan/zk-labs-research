@@ -6,6 +6,7 @@ title: ZK-Labs Research
 <section class="zk-stats" aria-label="站点数据">
   <div class="zk-stat"><span class="zk-stat-n" data-n="{{ site.posts | size }}">0</span><span class="zk-stat-l">深度报告</span></div>
   <div class="zk-stat"><span class="zk-stat-n" data-n="{{ site.posts | where: 'flagship', true | size }}">0</span><span class="zk-stat-l">旗舰研究</span></div>
+  <div class="zk-stat"><span class="zk-stat-n" data-n="{{ site.categories.observation | size }}">0</span><span class="zk-stat-l">市场观察</span></div>
   <div class="zk-stat"><span class="zk-stat-n" data-n="5" data-suffix="级">0</span><span class="zk-stat-l">证据标签体系</span></div>
   <div class="zk-stat"><span class="zk-stat-t">持续更新</span></div>
 </section>

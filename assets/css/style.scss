@@ -676,7 +676,7 @@ ul li {
 
 /* ============ v5 改版：数据条 ============ */
 .zk-stats {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px;
   background: var(--zk-border);
   border: 1px solid var(--zk-border); border-radius: 10px; overflow: hidden;
   margin: 0 0 0.5rem;
