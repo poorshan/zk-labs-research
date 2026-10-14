@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "五大交易所股票代币横评：谁在给真股权，谁在卖离岸包装？"
-description: "上一篇聊完股票代币化的法理，这篇直接看实战。我把 Binance、OKX、Bybit、Bitget、Gate 五家的公告、招股书和 SEC 备案翻了一遍：名字都叫"股票代币"，有人给你真股权，有人只卖你一张离岸包装票据。差别在哪，一篇说清。"
+description: "上一篇聊完股票代币化的法理，这篇直接看实战。我把 Binance、OKX、Bybit、Bitget、Gate 五家的公告、招股书和 SEC 备案翻了一遍：名字都叫「股票代币」，有人给你真股权，有人只卖你一张离岸包装票据。差别在哪，一篇说清。"
 date: 2026-10-14
 categories: observation
 author: Ivan
