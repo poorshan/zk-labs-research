@@ -10,8 +10,6 @@ version: "v2.8"
 tags: [Google Cloud, USDC, CRCL, 稳定币, 企业支付, 市场观察]
 ---
 
-# Google Cloud × 稳定币：USDC 能否获得企业数字美元结算份额？
-
 > **副标题**：CRCL Research Track｜PYUSD、USDC 与企业数字美元结算
 >
 > **研究员**：金戊乾坤3号 ｜ 2026-09-22

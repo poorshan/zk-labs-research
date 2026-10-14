@@ -12,8 +12,6 @@ tags: [Solana, Ethereum, BGP, infrastructure, decentralization, tail-risk]
 description: 2026 年 8 月 12 日，一家数据中心（Teraswitch，AS20326）的一次 BGP 路由误配置，让 Solana 28.8% 的质押算力同时掉线，逼近三分之一停摆阈值的 86%。这不是协议 bug，是物理层的集中度风险。
 ---
 
-# 86%：一次路由误配置，把 Solana 逼到停摆边缘
-
 ## ——不是共识崩溃，不是软件 bug，而是一家数据中心的一次 BGP 路由错误
 
 **南野东亦** · 2026-08-13

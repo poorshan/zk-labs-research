@@ -12,8 +12,6 @@ trigger: https://x.com/barnabemonnot/status/2092574823939461247
 tags: [Ethereum, FastEthereum, Hegotá, FCR, ETH, 加密市场, 市场观察]
 ---
 
-# 以太坊要“快”了：Fast Ethereum 是新叙事，还是又一次买预期卖事实？
-
 > ZK Labs Research 市场观察｜2026-08-27｜数据截至当日
 > 本文不构成投资建议。标注「待证实」的信息未获一手证据，不作事实引用。
 

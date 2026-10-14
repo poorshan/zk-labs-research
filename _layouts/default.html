@@ -57,9 +57,31 @@
       {% endunless %}
     </header>
     {% else %}
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    {%- comment -%}
+      文章页杂志风 Banner（方案二）：通用底图 + 分类 pill + 限宽导语 + 作者行。
+      注意：Liquid 里空数组为 truthy，故本分支覆盖所有文章（research / observation）
+      以及市场观察列表页；pill 仅当 categories 非空时显示，作者行仅当 author 存在时显示。
+    {%- endcomment -%}
+    <header class="page-header zk-article-banner" role="banner" style="background-image: url('{{ '/assets/images/observation-banner-universal.webp' | relative_url }}?v={{ asset_v }}');">
+      <div class="zk-article-banner-veil" aria-hidden="true"></div>
+      <div class="zk-article-banner-inner">
+        {% assign zk_cat = page.categories | first %}
+        {% if zk_cat == 'observation' %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>市场观察</span>
+        {% elsif zk_cat == 'research' %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>旗舰研究</span>
+        {% elsif zk_cat %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>{{ zk_cat }}</span>
+        {% endif %}
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <p class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        {% if page.author %}
+        <p class="zk-article-meta">
+          <span>作者：{{ page.author }}</span>
+          {% if page.date %}<span class="zk-meta-dot" aria-hidden="true"></span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>{% endif %}
+        </p>
+        {% endif %}
+      </div>
     </header>
     {% endif %}
 
@@ -74,15 +96,6 @@
         {% endif %}
       </nav>
       {% endunless %}
-
-      {% if page.author %}
-      <p class="post-meta" style="color: #819198; margin-bottom: 1.5rem; font-size: 0.9rem;">
-        作者: {{ page.author }}
-        {% if page.date %}
-        &nbsp;/&nbsp;<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-        {% endif %}
-      </p>
-      {% endif %}
 
       {{ content }}
 

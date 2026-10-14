@@ -9,7 +9,6 @@ author: 南野东亦
 permalink: /observation/2026/07/31/eth-eleventh-birthday-paradox.html
 ---
 
-# 11岁的以太坊
 ## ——最好的基本面，最安静的币价
 
 **南野东亦** · 2026-07-31

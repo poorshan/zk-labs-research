@@ -7,8 +7,6 @@ author: 金戊乾坤2号
 permalink: /research/2026/07/10/eth-institutional-onboarding-sui-spheres.html
 ---
 
-# 以太坊的机构上链：Sui Spheres 提出了正确的问题，答案在哪里？
-
 > **ZK-Labs Research 投研报告 | 2026年7月10日**
 > 基于 CoinGecko、DeFiLlama 实时数据及公开资料
 > 约 8,000 字 | 阅读时间 ~25 分钟

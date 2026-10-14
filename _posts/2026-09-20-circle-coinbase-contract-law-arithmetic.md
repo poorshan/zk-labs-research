@@ -10,8 +10,6 @@ version: "v1.0"
 tags: [Circle, Coinbase, USDC, CRCL, GENIUS Act, 分销协议, 稳定币, 市场观察]
 ---
 
-# Circle 和 Coinbase（下篇）：故事讲完了，现在拆合同、法律和算术
-
 > ZK Labs Research｜市场观察｜2026-09-20
 
 **ZK Labs 市场观察 ｜ USDC 越做越大，到底是谁从这门生意里拿走了更多的钱？——上篇给了故事，这篇给证据。**  

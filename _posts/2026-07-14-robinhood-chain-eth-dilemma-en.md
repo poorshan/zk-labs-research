@@ -8,7 +8,6 @@ lang: en
 permalink: /research/2026/07/14/robinhood-chain-eth-dilemma-en.html
 ---
 
-# Robinhood Chain Deep Dive (v3.1)
 # Ethereum's Victory, ETH's Dilemma
 
 **Bottom Line**: Robinhood Chain validates Ethereum L2s as a viable path for "regulated financial infrastructure" — but the cost it exposes outweighs the opportunity: **the more prosperous the Ethereum L2 ecosystem becomes, the weaker ETH's value capture. The divergence — Robinhood choosing Ethereum while Stripe chooses Solana — is the structural expression of this contradiction.** This is not Robinhood's problem. This is a systemic problem in Ethereum's roadmap.

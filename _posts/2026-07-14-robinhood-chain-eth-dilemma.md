@@ -8,7 +8,6 @@ author: ZK-Labs Research
 permalink: /research/2026/07/14/robinhood-chain-eth-dilemma.html
 ---
 
-# Robinhood Chain 深度研报（v3.1）
 # 以太坊的胜利，ETH 的困境
 
 **一句话结论**：Robinhood Chain 验证了以太坊 L2 作为「受监管金融基础设施」的可行路径——但它暴露的代价远比这个机会重大：**以太坊 L2 生态越繁荣，ETH 的价值捕获反而越薄弱。Robinhood 选择以太坊而 Stripe 选择 Solana 的分化，正是这种矛盾的结构性表达。** 这不是 Robinhood 的问题，这是 Ethereum 路线图的系统性问题。

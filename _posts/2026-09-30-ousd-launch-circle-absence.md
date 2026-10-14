@@ -10,8 +10,6 @@ version: "v2.1（P0 Evidence Audit 三项通过后的证据补强：OCC 批文�
 tags: [Circle, CRCL, USDC, OUSD, Open Standard, Bridge, 稳定币, GENIUS Act, Coinbase, Stripe, 市场观察]
 ---
 
-# OUSD 上线：Circle 缺席的那份名单，以及一条不同的监管路径
-
 > ZK Labs Research｜市场观察｜2026-09-30
 
 **ZK Labs 市场观察 ｜ OUSD 首日供应仅约为 USDC 的 0.6%，但它正在重新定义稳定币的分发经济**  

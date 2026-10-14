@@ -12,8 +12,6 @@ data_cutoff: 2026-10-02
 version: "v2.0"
 tags: [Ethereum, ValueCapture, ETH, L2, Blob, Stablecoin, Staking, 传导机制, 反事实, 投研]
 ---
-# 《论 ETH 的价值捕获》
-
 ## Ethereum Value Capture v2.0｜From Protocol Cash Flow to Network Value Transmission
 
 <a id="errata-1"></a>

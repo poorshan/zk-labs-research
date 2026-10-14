@@ -10,8 +10,6 @@ version: "v1.0"
 tags: [Circle, Coinbase, USDC, CRCL, 稳定币, 分销协议, Arc, Base, 市场观察]
 ---
 
-# Circle 和 Coinbase：一部十年「合伙创业—分家—重新绑定」的连续剧
-
 > ZK Labs Research｜市场观察｜2026-09-20
 
 **ZK Labs 市场观察 ｜ USDC 越做越大，到底是谁从这门生意里拿走了更多的钱？**  

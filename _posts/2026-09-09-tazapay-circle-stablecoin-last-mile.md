@@ -11,8 +11,6 @@ status: archived-v3.2
 tags: [Stablecoin, USDC, Circle, Tazapay, CPN, Arc, ETH, 价值捕获, 市场观察]
 ---
 
-# 稳定币的“最后一公里”：Circle 为什么花 4 亿美元买 Tazapay
-
 > **副标题：一笔支付基础设施收购，揭示稳定币采用、结算网络与 ETH 价值捕获之间的三道价值传导断点。**
 
 > ZK Labs Research 市场观察｜2026-09-09｜数据截至当日

@@ -12,8 +12,6 @@ tags: [Ethereum, ETF, staking, Fidelity, BlackRock, yield, custodians, concentra
 description: 2026 年 8 月 11 日，Fidelity 向 SEC 提交修订注册声明，请求允许其以太坊现货 ETF（FETH）将所持 ETH 拿去质押、并把收益以季度现金分给投资者。质押结构为三家托管 + 三家节点运营商，抽成 15%。它并非首创——Grayscale、21Shares 早已列明质押费，而净流入第一的贝莱德走了一条更绕的路：旗舰 ETHA 保持纯净不碰质押，却早在 3 月就另立了质押型 ETF ETHB。质押率却已升至 34.4% 的历史高位，底层收益率被压到约 2.2%。
 ---
 
-# 2.2%：当 Fidelity 开始把质押收益包装成季度现金分红
-
 ## ——贝莱德另立门户，它改造旗舰，华尔街在质押这件事上走出了两条清晰的路
 
 **南野东亦** · 2026-08-13

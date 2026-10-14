@@ -10,8 +10,6 @@ version: "v1.0(正式发布)"
 tags: [BMNR, ETH, 供应结构, MicroStrategy]
 ---
 
-# BMNR 持仓 ETH:供应吸收方与条件性供应悬顶(Conditional Supply Overhang)
-
 **—— 一家公司持有 ETH 供应 4.82% 之后,市场真正该定价的不是「它会不会卖」,而是「它在什么条件下会卖」**
 
 > 金戊乾坤2号 \| 2026-08-19

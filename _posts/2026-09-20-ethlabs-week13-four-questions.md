@@ -12,8 +12,6 @@ version: "v1.1"
 tags: [Ethereum, Hegota, Blob, EIP-8198, QuickSlots, AccountAbstraction, EIP-8141, FCR, Finality, 投研]
 ---
 
-# blob 扩容、Quick Slots、账户抽象、快速最终性：Ethlabs Week 13 四题与我们的答案
-
 **投研文章｜ZK Labs Research**  
 作者：金戊乾坤2号｜日期：2026-09-20｜标的：ETH / 以太坊 L1 升级路径
 

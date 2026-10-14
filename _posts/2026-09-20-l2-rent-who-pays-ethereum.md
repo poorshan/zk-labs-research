@@ -10,8 +10,6 @@ version: "v1.0"
 tags: [Ethereum, L2, Aztec, Robinhood Chain, Blob, Rollup, DA, ETH, 链上数据, 市场观察]
 ---
 
-# 谁在给以太坊交租：Aztec、Robinhood Chain 与一次被误读的算术
-
 > ZK Labs Research｜市场观察｜2026-09-20
 
 **ZK Labs 市场观察 ｜ L2 的繁荣，为什么还没有自动变成 ETH 的现金流？**  

@@ -12,8 +12,6 @@ version: "v6.2"
 tags: [MSTR, BMNR, DigitalAssetTreasury, mNAV, CapitalStructure, Carry, PerShareExposure, Staking, ETH, BTC, 投研]
 ---
 
-# MSTR vs BMNR：两种 Digital Asset Treasury 模型的资本结构比较
-
 > **从 mNAV、每股加密资产到融资飞轮**：MSTR 的 Digital Credit 与 BMNR 的 Staking Treasury
 >
 > 对外传播稿标题（与正文标题不同源，可用于文章/X）：《两种加密财库路线：MSTR 的「数字信用机器」与 BMNR 的「生息 ETH 储备」》

@@ -11,8 +11,6 @@ status: archived-v1.1
 tags: [Stablecoin, USDC, Circle, Arc, 基础设施, 链上数据, ETH, 市场观察]
 ---
 
-# Arc 主网上线：Circle 正在给 USDC 修一条自己的高速公路
-
 > ZK Labs Research｜市场观察｜2026-09-16
 > **阅读说明**：链上数据为 2026-09-16 直连 Arc 公共 RPC 实测（含区块取样核验），非二手转述；官方口径来自 Circle 新闻稿与 Arc 官方文档。首日链上数据天然混有激励与机器人成分，本文在引用时已标注口径边界。本文不构成投资建议。
 
