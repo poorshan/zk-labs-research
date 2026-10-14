@@ -25,6 +25,9 @@ title: ZK-Labs Research
 </a>
 {% endfor %}
 </div>
+<div style="text-align: center; margin-top: 1.6rem;">
+  <a class="zk-more-btn" href="{{ '/research.html' | relative_url }}">查看全部旗舰研究 →</a>
+</div>
 ---
 
 ## 📡 市场观察
