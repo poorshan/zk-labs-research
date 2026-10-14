@@ -2,7 +2,7 @@
 layout: default
 title: "淘金热里卖水的人"
 description: "五大交易所的股票代币在台前打得火热，台后却是同一家硅谷公司在收过路费。本文拆解自称拿下 94% 代币化美股托管份额的隐形底座 Alpaca：两个日本人如何用十年修好一条通向 DTCC 的 API 水管？它靠哪几道关卡抽水？这根水管未来又会被谁换掉？"
-date: 2026-10-14
+date: 2026-10-14 18:03:00 +0800
 categories: observation
 author: 南野东亦
 permalink: /observation/2026/10/14/alpaca-water-seller.html
