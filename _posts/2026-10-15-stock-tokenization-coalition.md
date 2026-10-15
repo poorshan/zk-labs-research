@@ -29,41 +29,28 @@ image:
 
 这篇文章就是讲这盘棋的。
 
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
 <style>
-  body {
-    background-color: #070a10;
-    color: #e2e8f0;
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-    padding: 30px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .board {
-    width: 920px;
+.zh-information .board {
+    max-width: 100%;
     background: linear-gradient(180deg, #0d1320 0%, #090d16 100%);
     border: 1px solid #1e293b;
     border-radius: 16px;
     padding: 36px;
     box-shadow: 0 24px 60px rgba(0,0,0,0.8);
   }
-  .eyebrow {
+  .zh-information .eyebrow {
     color: #f59e0b;
     font-size: 12.5px;
     letter-spacing: 1.5px;
     font-weight: 700;
     margin-bottom: 6px;
   }
-  h1 {
+  .zh-information h1 {
     font-size: 30px;
     margin: 0 0 8px 0;
     color: #f8fafc;
   }
-  .subtitle {
+  .zh-information .subtitle {
     color: #94a3b8;
     font-size: 13.5px;
     margin-bottom: 24px;
@@ -71,39 +58,39 @@ image:
     border-bottom: 1px solid #1e293b;
   }
   /* 顶部双线日历 */
-  .timeline {
+  .zh-information .timeline {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
     margin-bottom: 26px;
   }
-  .time-card {
+  .zh-information .time-card {
     background: rgba(30, 41, 59, 0.45);
     border: 1px solid #334155;
     border-radius: 12px;
     padding: 14px 18px;
     position: relative;
   }
-  .time-card.gold { border-left: 4px solid #f59e0b; }
-  .time-card.cyan { border-left: 4px solid #38bdf8; }
-  .date-tag {
+  .zh-information .time-card.gold { border-left: 4px solid #f59e0b; }
+  .zh-information .time-card.cyan { border-left: 4px solid #38bdf8; }
+  .zh-information .date-tag {
     font-size: 18px;
     font-weight: 800;
     color: #f8fafc;
     margin-bottom: 4px;
   }
-  .date-tag span {
+  .zh-information .date-tag span {
     font-size: 12px;
     font-weight: 600;
     padding: 2px 8px;
     border-radius: 99px;
     margin-left: 8px;
   }
-  .tag-gold { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.4); }
-  .tag-cyan { background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.4); }
-  .time-desc { font-size: 13px; color: #cbd5e1; line-height: 1.5; }
+  .zh-information .tag-gold { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.4); }
+  .zh-information .tag-cyan { background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.4); }
+  .zh-information .time-desc { font-size: 13px; color: #cbd5e1; line-height: 1.5; }
 
-  .sec-title {
+  .zh-information .sec-title {
     font-size: 15px;
     font-weight: 700;
     color: #f1f5f9;
@@ -112,39 +99,39 @@ image:
     justify-content: space-between;
     align-items: center;
   }
-  .sec-note { font-size: 12px; color: #64748b; font-weight: 400; }
+  .zh-information .sec-note { font-size: 12px; color: #64748b; font-weight: 400; }
 
   /* 三个梯队卡片 */
-  .tier-card {
+  .zh-information .tier-card {
     background: #111827;
     border: 1px solid #1f2937;
     border-radius: 12px;
     padding: 18px 20px;
     margin-bottom: 14px;
   }
-  .tier-header {
+  .zh-information .tier-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
   }
-  .tier-name { font-size: 17px; font-weight: 700; color: #f8fafc; }
-  .pill {
+  .zh-information .tier-name { font-size: 17px; font-weight: 700; color: #f8fafc; }
+  .zh-information .pill {
     font-size: 12px;
     padding: 3px 10px;
     border-radius: 99px;
     font-weight: 600;
   }
-  .pill-wild { background: rgba(148,163,184,0.15); color: #cbd5e1; border: 1px solid #475569; }
-  .pill-optout { background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.4); }
-  .pill-spon { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.4); }
+  .zh-information .pill-wild { background: rgba(148,163,184,0.15); color: #cbd5e1; border: 1px solid #475569; }
+  .zh-information .pill-optout { background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.4); }
+  .zh-information .pill-spon { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.4); }
 
-  .row { font-size: 13px; line-height: 1.6; color: #cbd5e1; margin-bottom: 4px; }
-  .label { color: #38bdf8; font-weight: 600; margin-right: 6px; }
-  .label-warn { color: #f87171; font-weight: 600; margin-right: 6px; }
-  .label-ok { color: #34d399; font-weight: 600; margin-right: 6px; }
+  .zh-information .row { font-size: 13px; line-height: 1.6; color: #cbd5e1; margin-bottom: 4px; }
+  .zh-information .label { color: #38bdf8; font-weight: 600; margin-right: 6px; }
+  .zh-information .label-warn { color: #f87171; font-weight: 600; margin-right: 6px; }
+  .zh-information .label-ok { color: #34d399; font-weight: 600; margin-right: 6px; }
 
-  .alert-box {
+  .zh-information .alert-box {
     margin-top: 10px;
     background: rgba(248, 113, 113, 0.1);
     border: 1px solid rgba(248, 113, 113, 0.35);
@@ -155,35 +142,35 @@ image:
     line-height: 1.5;
   }
 
-  /* 底部双栏：Alpaca两难 + 三个观察锚点 */
-  .bottom-grid {
+  /* 底部双栏 */
+  .zh-information .bottom-grid {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     gap: 14px;
     margin-top: 20px;
   }
-  .box {
+  .zh-information .box {
     background: #111827;
     border: 1px solid #1e293b;
     border-radius: 12px;
     padding: 16px 18px;
   }
-  .box h3 {
+  .zh-information .box h3 {
     margin: 0 0 10px 0;
     font-size: 14.5px;
     color: #fbbf24;
     border-bottom: 1px solid #1f2937;
     padding-bottom: 8px;
   }
-  .anchor-item {
+  .zh-information .anchor-item {
     font-size: 12.5px;
     color: #cbd5e1;
     line-height: 1.5;
     margin-bottom: 9px;
   }
-  .anchor-item strong { color: #f8fafc; }
+  .zh-information .anchor-item strong { color: #f8fafc; }
 
-  .footer {
+  .zh-information .footer {
     margin-top: 22px;
     padding-top: 12px;
     border-top: 1px solid #1e293b;
@@ -191,12 +178,10 @@ image:
     justify-content: space-between;
     font-size: 11.5px;
     color: #64748b;
-  }
-</style>
-</head>
-<body>
+  }</style>
+<div class="zh-information">
 <div class="board">
-  <div class="eyebrow">STOCK TOKENIZATION PART IV · 下半场开哨</div>
+<div class="eyebrow">STOCK TOKENIZATION PART IV · 下半场开哨</div>
   <h1>股票代币的“招安”时刻：三大梯队与双线收网</h1>
   <div class="subtitle">坐标系：传统美股 ADR 战争链上重演（Unsponsored 野生版 vs Sponsored 官方正版）· 2026.10</div>
 
@@ -283,8 +268,7 @@ image:
     <span>非投资建议 · 仅供研究参考</span>
   </div>
 </div>
-</body>
-</html>
+</div>
 
 ---
 
