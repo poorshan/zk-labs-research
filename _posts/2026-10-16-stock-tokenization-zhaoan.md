@@ -161,4 +161,6 @@ Alpaca 的两难是结构性的：
 
 *本文事实核验：SEC Release No. 34-106402（2026-09-17）、OKXICE 备案（2026-10-04 及后续异议更新）、GlobeNewswire ISTC 联盟通稿（2026-09-24）、Bullish 收购 Equiniti 官方通稿（2026-05-05）、Equiniti 2025 ESG 报告、O'Melveny 律所备忘录；交叉信源 The Defiant、The Information、Ledger Insights、The Industry Spread、Bloomberg、TD Securities 分析报告。非投资建议，仅供研究参考。*
 
+![股票代币招安时刻信息图：9 家拒绝 / 剩 55 代码](/assets/images/zhaohan-infographic.png)
+
 — 南野东亦 ｜ ZK Labs 市场观察 ｜ 2026-10-16
