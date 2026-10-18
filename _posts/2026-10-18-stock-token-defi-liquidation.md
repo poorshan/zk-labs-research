@@ -229,3 +229,264 @@ LlamaRisk 追踪了上线后第一个周末（周五 20:00 至周日 20:00）的
 *(本文事实核验：Aave V4 Equities Hub 上线公告与 10.13 激励提案、ADGM 披露之 Coinbase Onchain SPV Ltd 英伟达凭证招股书 2026-08-04 第 51 页、LlamaRisk 针对 Base 链 B20 股票代币的风险评估报告与首周末逐笔观测数据、FINRA Regulatory Notice 14-05、Superform 2026-10-06 公告、Chainlink Tokenized Equity Feeds 官方文档 2026-10-16、SEC Release No. 34-106402 / Press Release 2026-90、IMF 全球金融稳定报告 2026-10-08、RedStone 股票永续报告 2026-09-28、The Defiant 2026-10-17。非投资建议，仅供研究参考。)*
 
 — 南野东亦 ｜ ZK Labs 市场观察 ｜ 2026-10-18
+
+<style>
+  .board {
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    width: 940px;
+    background: linear-gradient(180deg, #0d1320 0%, #090d16 100%);
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 34px 36px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.85);
+  }
+  .eyebrow {
+    color: #38bdf8;
+    font-size: 12.5px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 29px;
+    margin: 0 0 8px 0;
+    color: #f8fafc;
+    letter-spacing: 0.3px;
+  }
+  .subtitle {
+    color: #94a3b8;
+    font-size: 13.5px;
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #1e293b;
+  }
+  /* 顶部四个核心指标卡 */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .metric-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .metric-val {
+    font-size: 22px;
+    font-weight: 800;
+    color: #38bdf8;
+    margin-bottom: 4px;
+  }
+  .metric-val.green { color: #34d399; }
+  .metric-val.amber { color: #fbbf24; }
+  .metric-val.red { color: #f87171; }
+  .metric-label {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.4;
+  }
+
+  .sec-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 20px 0 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .badge {
+    font-size: 11.5px;
+    padding: 3px 10px;
+    border-radius: 99px;
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    color: #38bdf8;
+    font-weight: 600;
+  }
+
+  /* 三笔底层硬账（双栏对照） */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .panel {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .panel.highlight-green { border-left: 4px solid #34d399; }
+  .panel.highlight-amber { border-left: 4px solid #fbbf24; }
+  .panel h3 {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    color: #f8fafc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .row {
+    font-size: 12.8px;
+    line-height: 1.55;
+    color: #cbd5e1;
+    margin-bottom: 6px;
+  }
+  .k-green { color: #34d399; font-weight: 700; }
+  .k-amber { color: #fbbf24; font-weight: 700; }
+  .k-cyan { color: #38bdf8; font-weight: 700; }
+  .k-red { color: #f87171; font-weight: 700; }
+
+  /* 周末死局与周日晚8点压力测试横幅 */
+  .stress-box {
+    background: linear-gradient(90deg, rgba(248,113,113,0.1) 0%, rgba(17,24,39,0.95) 100%);
+    border: 1px solid rgba(248, 113, 113, 0.4);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+  }
+  .stress-header {
+    font-size: 16px;
+    font-weight: 800;
+    color: #f87171;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .stress-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 16px;
+  }
+  .calc-box {
+    background: rgba(9, 13, 22, 0.75);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+
+  /* 底部三大路线与终局对比 */
+  .three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .route-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+  .route-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #1f2937;
+  }
+  .footer {
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #1e293b;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11.5px;
+    color: #64748b;
+  }
+</style>
+<div class="board">
+  <div class="eyebrow">STOCK TOKENIZATION PART V · 链上质押与周末清算大考</div>
+  <h1>股票代币进 DeFi：Coinbase × Aave V4 全景风控拆解</h1>
+  <div class="subtitle">当美股的 5 天营业时间撞上 DeFi 的 7×24 小时债务时钟 · ADGM 招股书第 51 页与 LlamaRisk 参数实测 · 2026.10</div>
+
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-val green">~$9.0M</div>
+      <div class="metric-label">Equities Hub 抵押物规模<br>(6天自 $4.9M 翻倍 / 144 借款钱包)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">$3.8M / 18%</div>
+      <div class="metric-label">已借出 USDC / 占 $21M 上限比<br>(总抵押上限锁死在 $29.3M)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val amber">$0.34 (6秒)</div>
+      <div class="metric-label">史上首笔链上美股清算 (9.25)<br>Chainlink 报价更新后 6 秒强平</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val red">$1.08M / $270K</div>
+      <div class="metric-label">Base 链 2% 滑点内真实卖出深度<br>(NVDAc 仅 $1.08M / TSLAc 仅 $270K)</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="panel highlight-green">
+      <h3><span>🛡️ 托管破案：ADGM 招股书第 51 页铁证</span><span class="badge">回应第三篇追问</span></h3>
+      <div class="row">• <span class="k-green">发行与托管架构：</span>Coinbase Onchain SPV Ltd.（Reg S 离岸），底层真股托管于 <strong>Alpaca Securities LLC</strong> 独立隔离账户。</div>
+      <div class="row">• <span class="k-green">三大绝对禁令：</span>白纸黑字<strong>严禁证券出借（Securities Lending）</strong>、严禁自营交易、排除托管人任何留置权（Lien）。</div>
+      <div class="row">• <span class="k-cyan">分红处理与生息真相：</span>税后分红自动买新股并上调代币乘数（非额外收益）；<code>superNVDA</code>（吸纳近 10% 发行量）本质是抵押借 U 加杠杆套利，对比 Solana 上 Kraken×Kamino 金库净 APY 仅 <strong>1.8%–2%</strong>。</div>
+    </div>
+
+    <div class="panel highlight-amber">
+      <h3><span>🚧 赎回闸门：清算人面对的隐形门槛</span><span class="badge">LlamaRisk 条款评估</span></h3>
+      <div class="row">• <span class="k-amber">Unvested Holder（二级市场默认买家）：</span>可持有、转账、存 Aave 抵押借 U，享有价格敞口，但<strong>无权直接找发行人赎回底层真股</strong>。</div>
+      <div class="row">• <span class="k-amber">Vested Holder（已确权持有人）：</span>须完成发行人合规审查、制裁筛查与钱包认证后，方可解锁底层股票赎回权。</div>
+      <div class="row">• <span class="k-red">清算传导瓶颈：</span>若发生大额爆仓，未办妥 Vested 资格的清算人无法即时赎回真股平账，只能在 Base 链薄池子里直接砸盘变现。</div>
+    </div>
+  </div>
+
+  <div class="stress-box">
+    <div class="stress-header">
+      <span>⚡ 周末死局与周日晚 20:00 跳空大考：冻结的是报价，不是计息表</span>
+      <span style="font-size:12px; color:#fca5a5; font-weight:500;">Chainlink 10.16 更新文档要求集成方自行承担周末与节假日兜底逻辑</span>
+    </div>
+    <div class="stress-grid">
+      <div>
+        <div class="row">• <span class="k-cyan">24/5 喂价冻结机制：</span>覆盖美东周日 20:00 至周五 20:00；周末沿用最后一次报价（首周末实测 76% 借款发生在休市期，但总盘子仅 2.95 万 USDC）。</div>
+        <div class="row">• <span class="k-red">利息照滚不误：</span>周末可随时还款或补仓，但 USDC 借款每秒持续计息，极限仓位仅靠周末利息累积即可跌破健康线。</div>
+        <div class="row">• <span class="k-amber">价格发现失灵：</span>实测周末代币价对周一开盘方向预测率已从 60% 跌至 <strong>7/19（37%）</strong>，清算人周日晚更不敢盲目接飞刀。</div>
+      </div>
+      <div class="calc-box">
+        <strong>📉 跳空爆仓算例（按 NVDAc 初始参数）：</strong><br>
+        1. 存入 <strong>$10,000 NVDAc</strong>，借出 <strong>6,000 USDC</strong><br>
+        2. 初始抵押因子 <strong>70%</strong> ➔ 健康因子 <strong>1.17</strong>（周末冻结期安然无恙）<br>
+        3. 周日晚 20:00 夜盘复价若<strong>跳空跌 20%</strong>（剩 $8,000）➔ 健康因子瞬砸至 <strong>0.93（强平）</strong><br>
+        4. <strong>窄胡同困局：</strong>百来万链上深度如何承接集中清算抛压？
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-title">
+    <span>终局视野：DeFi 美股三大路线体量悬殊，总账本大 Boss 10 月底掀桌</span>
+    <span class="badge">盯死未来半年四笔账</span>
+  </div>
+
+  <div class="three-col">
+    <div class="route-card">
+      <div class="route-title">① 离岸现货借贷（Coinbase × Aave）</div>
+      <div>• <strong>体量：</strong>抵押物约 <strong>$900 万</strong>（精致试点）<br>• <strong>性质：</strong>Reg S 离岸包装，无投票权，周末冻结喂价，依赖补贴激励驱动。</div>
+    </div>
+    <div class="route-card">
+      <div class="route-title">② 链上合成永续（Hyperliquid 等）</div>
+      <div>• <strong>体量：</strong>DEX 股票永续 OI 高达 <strong>$33 亿</strong>；Hyperliquid 日均成交 <strong>$14.3 亿</strong>（现货 1.8 倍）<br>• <strong>真相：</strong>永续合约才是当前赌股价的绝对主战场。</div>
+    </div>
+    <div class="route-card">
+      <div class="route-title">③ 本土合规池与总账本（OKXICE / DTCC）</div>
+      <div>• <strong>OKXICE：</strong>SEC 豁免下保留投票权，周末 AMM 自由浮动定价。<br>• <strong>DTCC 终局：</strong>确认 <strong>10 月底商用</strong>，首批 25 只证券 / 30 万亿美元潜在池，保留原 CUSIP。</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>核验信源：ADGM 招股书 (第51页) / LlamaRisk 评估与首周末观测 / Chainlink 文档 (2026.10.16) / IMF GFSR (10.08) / RedStone 报告</span>
+    <span>非投资建议 · 仅供研究参考</span>
+  </div>
+</div>
