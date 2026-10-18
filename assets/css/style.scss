@@ -640,10 +640,12 @@ ul li {
   border-bottom: 1px solid var(--zk-border);
 }
 .zk-brand {
+  display: inline-flex; align-items: center; border-bottom: none !important;
   font-family: 'JetBrains Mono', monospace; font-weight: 500; letter-spacing: 0.08em;
-  color: var(--zk-text); text-decoration: none; font-size: 0.95rem; border-bottom: none !important;
+  color: var(--zk-text); text-decoration: none; font-size: 0.95rem;
   b { color: var(--zk-accent); }
   span { color: var(--zk-muted); font-size: 0.75rem; }
+  img { height: 26px; width: auto; display: block; border-radius: 6px; }
 }
 .zk-nav-links { display: flex; gap: 1.6rem; align-items: center;
   a { color: var(--zk-muted); text-decoration: none; font-size: 0.88rem; border-bottom: none !important;

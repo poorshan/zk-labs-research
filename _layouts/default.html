@@ -19,13 +19,15 @@
     <meta name="theme-color" content="#080b11">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ asset_v }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32.png' | relative_url }}?v={{ asset_v }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon-180.png' | relative_url }}?v={{ asset_v }}">
     {% include head-custom.html %}
   </head>
   <body class="{% if page.url == '/' or page.url == '/index.html' %}page-home{% else %}page-article{% endif %}">
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <nav class="zk-topnav" aria-label="站内导航">
-      <a class="zk-brand" href="{{ '/' | relative_url }}"><b>ZK</b>-LABS <span>RESEARCH</span></a>
+      <a class="zk-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/zk-logo.png' | relative_url }}?v={{ asset_v }}" alt="ZK-Labs Research"></a>
       <div class="zk-nav-links" id="zk-nav-links">
         <a href="{{ '/research.html' | relative_url }}">旗舰研究</a>
         <a href="{{ '/observations.html' | relative_url }}">市场观察</a>
