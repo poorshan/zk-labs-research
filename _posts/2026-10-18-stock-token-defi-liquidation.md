@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "股票代币进 DeFi 的大考：当 Coinbase 联手 Aave，周末休市怎么防爆仓？"
-description: "当博通等 9 家巨头还在对美股上链说"不"，Coinbase 已经把七大科技股塞进了 Aave V4 借贷池。翻完 ADGM 招股书第 51 页与 LlamaRisk 风控报告：底层禁出借的账算清了，但当美股的 5 天营业时间撞上 DeFi 的 7×24 债务时钟，周末跳空时谁来接盘？"
+description: "当博通等 9 家巨头还在对美股上链说「不」，Coinbase 已经把七大科技股塞进了 Aave V4 借贷池。翻完 ADGM 招股书第 51 页与 LlamaRisk 风控报告：底层禁出借的账算清了，但当美股的 5 天营业时间撞上 DeFi 的 7×24 债务时钟，周末跳空时谁来接盘？"
 date: 2026-10-18 10:00:00 +0800
 categories: observation
 author: 南野东亦
