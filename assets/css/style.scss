@@ -645,8 +645,8 @@ ul li {
   color: var(--zk-text); text-decoration: none; font-size: 0.95rem;
   b { color: var(--zk-accent); }
   span { color: var(--zk-muted); font-size: 0.75rem; }
-  img { height: 38px; width: auto; display: block; }
-  .zk-brand-text { font-size: 1.05rem; letter-spacing: 0.02em; color: var(--zk-text); margin-left: 2px; }
+  img { height: 38px; width: auto; display: block; outline: 2px solid red; }
+  .zk-brand-text { font-size: 1.05rem; letter-spacing: 0.02em; color: var(--zk-text); margin-left: 2px; outline: 2px solid lime; }
     b { font-weight: 700; } }
 }
 .zk-nav-links { display: flex; gap: 1.6rem; align-items: center;
