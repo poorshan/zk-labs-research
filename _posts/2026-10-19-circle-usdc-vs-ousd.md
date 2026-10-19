@@ -1,0 +1,237 @@
+---
+layout: default
+title: "Circle (USDC) 经济模型拆解与 OUSD 攻防评估"
+description: "Circle 首次公开 H1 收入流向：$1,395M 中分销吃掉 58.7%、再投资 33.9%，净利仅 7.4%。这份 $819M 的账单暴露了重资产模式的结构性困境，也给了 OUSD 算账层面的套利空间——但 OUSD 首周 74% 供应集中在 10 个钱包，冷启动现实同样冷峻。"
+date: 2026-10-19 12:00:00 +0800
+categories: research
+author: 南野东亦
+permalink: /research/2026/10/19/circle-usdc-vs-ousd.html
+version: "v1.0"
+flagship: true
+flagship_summary: "Circle H1 收入 $1,395M 的完整拆解：分销 58.7%、再投资 33.9%、净利 7.4%。Q1→Q2 边际恶化实证、OUSD 首周 $717M 四个资金桶链上还原、三档费率情景矩阵，附交互式渠道分润模拟器。"
+tags: [Circle, USDC, OUSD, Open Standard, 稳定币, 旗舰研究]
+data_cutoff: 2026-10-19
+---
+
+> **证据分级规范（全稿强制执行）：**
+> [原文事实]：博客或官方公告原文可直接查证，零外推；
+> [财报/链上数据]：经 Q1/Q2 GAAP 财报交叉对账或链上区块浏览器实证；
+> [合理推断]：基于已核验事实的严密逻辑推演；
+> [情景假设]：核心参数官方未披露，仅作为敏感性沙盘测算变量。
+>
+> 一手核验源：Circle 官方博客原文（2026-10-16）、Circle 2026 Q1/Q2 业绩披露、Crystal Intelligence 链上地址级分析、Routescan / DropsTab 实时面板。
+
+---
+
+## 一、核心结论
+
+- **USDC 的利润表本质是一张"为渠道打工"的账单** [财报/链上数据]：Circle 2026 上半年总收入 $1,395.32M 中，分销与交易成本吃掉 $819.00M（58.7%），运营与基建再投资消耗 $473.00M（33.9%），GAAP 净利润仅余 $103.00M（7.4%）。每 $1 收入留存 7.4 美分的极薄缓冲垫，锁死了其单方面挑起价格战的空间。
+
+- **10-16 博客是一次防御性预期管理** [原文事实][合理推断]：在 OUSD 上线两周后，Circle 首次公开收入流向，但全文只字未提 OUSD，仅泛指"新进入者（new entrants）"，亦未披露 Coinbase 的具体分成比例。其核心意图是用"每年近 $10 亿合规基建投入的必要性"，将市场焦点从"谁给渠道分钱更多"强行扭转向"谁的合规底盘更安全"。
+
+- **OUSD 的算账套利空间真实存在，无需猜测费率即可证立** [合理推断][情景假设]：尽管 OUSD 的管理费与链上转账费公式尚未公布，但只要其最终综合留存率显著低于 Circle 的 41.3%（33.9% 运营 + 7.4% 净利），B2B 分销渠道在算账层面即自动获得结构性超额收益。
+
+- **但 OUSD 的冷启动现实同样冷峻——供应是"摆出来的"，而非"用出来的"** [财报/链上数据]：首周 $717.0M 铸造量（净流通 $666.3M）中，59.4%（$396.0M）是静默躺在 Tempo 链 8 个巨鲸钱包里的摆账资金，全网 74% 供应集中于前 10 大钱包，上线前 6 天 DEX 真实交易量仅 $4.1M（占净流通 0.6%）。
+
+- **中期胜负手取决于三件可证伪的硬事** [合理推断]：（1）首份第三方月度储备鉴证能否如期高质量落地；（2）管理费与交易费公式的实际扣点；（3）前 10 钱包集中度（74%）与 Tempo 单链淤积度（71%）能否实质性脱敏。三者任一落空，Circle 的合规与流动性护城河将继续有效。
+
+---
+
+## 二、事实核验：Circle 博客到底披露了什么
+
+2026 年 10 月 16 日，Circle 首席商务官（CCO）Kash Razzaghi 发表《The Economics of USDC and Why Our Partners Win》。以下将博客披露值与 2026 Q1/Q2 财报实绩逐项交叉核验，四项核心财务数据完全闭合：
+
+| 核验维度 | 披露值 / 核验实绩 | 核验口径与对账细节 | 证据标签 |
+|---|---|---|---|
+| H1 总收入与储备收益 | $1,395.32M | 博客约述"~$1.4B"；财报实绩对账：Q1 $694.00M + Q2 $701.32M = $1,395.32M。 | [原文事实][财报/链上数据] |
+| 分销合作与交易成本 | $819.00M · 58.7% | 博客约述"59¢ / 每 $1"；合并口径（含分销分成与交易成本，原文未拆分）。其中 Q1 $407.00M、Q2 $412.00M。 | [原文事实][财报/链上数据] |
+| 运营与基建再投资 | $473.00M · 33.9% | 博客约述"34¢ / 每 $1"；残差校验：$1,395.32M − $819.00M − $103.00M = $473.32M，与博客披露值严丝合缝。 | [原文事实][财报/链上数据] |
+| GAAP 净利润 | $103.00M · 7.4% | 博客仅述"7¢ / 每 $1"；财报实绩对账：Q1 $55.00M + Q2 $48.00M = $103.00M（精确净利率 7.38%）。 | [财报/链上数据] |
+| 调整后 EBITDA | $294.00M · 21.1% | Q1 $151.00M + Q2 $143.00M；剔除非现金与一次性项目后，正向经营现金流依然稳健。 | [财报/链上数据] |
+| 分销伙伴规模 | 150+ 家 | 博客原文：除"最大且合作最久的伙伴" Coinbase 外，另有 150 多家合作伙伴在 USDC 增长中享有经济利益。 | [原文事实] |
+| Binance 战略绑定 | 5 年协议 · $1 亿 | 2026 年 9 月签署 5 年商业合作协议，Binance 同时向 Circle 投资 $1 亿美元。 | [原文事实] |
+| H1 链上交易量与份额 | $36.3T · 77% / 70% | Q1 $21.5T + Q2 $14.8T = $36.3T。博客称 6 月占全球稳定币交易量约 77%；但 Q2 电话会引述 Visa 数据为 70%，两口径并存。 | [原文事实][财报/链上数据] |
+| H1 铸造与赎回规模 | $315B+ | Q2 单季铸赎总额达 $170B（铸造 $83B + 赎回 $87B），同比增长 +105%。 | [原文事实] |
+| 联盟名单重合度 | 70%+ | 博客原文：近期加入某新兴联盟发行名单的企业中，70% 以上已在基于 USDC 构建业务。 | [原文事实] |
+| 牌照与基础设施 | 55+ 张牌照 | 含美国 OCC 国家信托银行正式牌照、欧盟 MiCA 合规资质；连接 25+ 家合作银行，原生部署于 35+ 条公链。 | [原文事实] |
+
+### ⚠️ 三项"博客没说"的事实边界
+
+- **① 全文未点名 OUSD 或 Open Standard** [原文事实]：博客仅以"new entrants（新进入者）"泛指，"贴脸暗讽 OUSD"属于结合发布时点的分析师语境推论，而非原文事实。
+- **② 未披露 Coinbase 具体分成金额与比例** [原文事实]：博客仅称 Coinbase 为"最大且历史最久的伙伴"，$819M 中具体分走多少从未披露。
+- **③ 未出现"Centre Consortium"名称** [原文事实]：博客仅有一句"USDC 于 2018 年作为联盟项目启动，2023 年 Circle 收回全部治理"，原文既未出现 Centre 名称，亦未阐述收回理由。
+
+---
+
+## 三、财务解剖：Q1→Q2 边际恶化轨迹
+
+静态的 H1 汇总掩盖了季度间的边际恶化。将 Q1 与 Q2 拆开对账：收入几乎停滞，分销抽成刚性咬死，净利润已先行出现双位数下滑。
+
+| 季度对账指标 | Q1 2026 实绩 | Q2 2026 实绩 | 环比变动 | 边际解剖 [财报/链上数据] |
+|---|---|---|---|---|
+| 总收入与储备收益 | $694.00M | $701.32M | +1.05% (+$7.32M) | Q2 显著低于市场一致预期（$732M–$745M），高利率红利见顶回落。 |
+| 分销与交易成本 | $407.00M (58.65%) | $412.00M (58.75%) | +1.23% (+$5.00M) | **Q2 新增的 $7.32M 收入中，$5.00M（68.3%）被分销成本分走。** |
+| 运营与基建再投资 | $232.00M (33.43%) | $241.32M (34.41%) | +4.02% (+$9.32M) | 牌照维护与合规审计属刚性支出，不随收入放缓下调。 |
+| GAAP 净利润 | $55.00M (7.93%) | $48.00M (6.84%) | −12.73% (−$7.00M) | **负向经营杠杆显性化：收入微增 1.05%，净利下滑 12.73%，单季净利率跌破 7%。** |
+| 调整后 EBITDA | $151.00M (21.76%) | $143.00M (20.39%) | −5.30% (−$8.00M) | 与 GAAP 净利同向走弱。 |
+
+**"双向挤压"机制** [合理推断]：Circle 收入端几乎 100% 锚定美债收益率。当降息周期深化，收入随利率线性收缩，但分销协议（58.7%）与合规基建（33.9%）双双刚性。利率每下行 100 bps，冲击将不成比例地由那 7.4%（Q2 已降至 6.84%）的净利率缓冲垫承担。Circle 要么容忍利润趋近于零，要么在续签时压降渠道分成——而后者恰恰为 OUSD 创造了最佳策反窗口。
+
+---
+
+## 四、Circle 防御逻辑的三处裂缝
+
+**裂缝一："基建必要论"——把沉没成本包装成行业准入税**
+- Circle 话术 [原文事实]：每年近 $10 亿维护牌照、银行网络与 35+ 条链，是稳定币成为"真正数字美元"的前提。
+- 反方拆解 [合理推断]：这只能证明"合规成本不能为零"，无法证明"必须吃掉 33.9% 的总收入"。OUSD 发行方 Bridge 内嵌于 Stripe 全球支付网络，合规与法币通道属集团基建的边际复用，而非单一稳定币公司从零供养。
+
+**裂缝二："联盟史牵制"——用 2018 年旧账否定新架构**
+- Circle 话术 [原文事实]：USDC 2018 年作为联盟项目启动、2023 年收回治理，暗示联盟制走不通。
+- 反方拆解 [原文事实][合理推断]：Open Standard 与早期联盟完全不同构——"发行与治理彻底分离"，Bridge 独立负责铸赎与储备，Open Standard 由 Zach Abrams 任全职 CEO，五大创始股东等额持股组成董事会。用松散旧联盟的解体预判绑定股权激励的现代协议层，属刻意错位类比。
+
+**裂缝三："70% 重合论"与 Coinbase 的双栖博弈**
+- Circle 话术 [原文事实]：新联盟名单中 70% 以上企业仍在基于 USDC 构建，"签约不等于迁移"。
+- 反方拆解 [合理推断]：这恰恰证明 Circle 对渠道的独占权已经终结——七成伙伴已完成"双栖下注（Dual-Homing）"。
+- **Coinbase 的核威慑期权** [原文事实][合理推断]：Coinbase 既是 USDC 分销池最大受益方，又是 OUSD 五大创始股东之一，10 月 1 日即接收 $200M OUSD 四链配资。扶植 OUSD 既是切入 B2B 增量，更是悬在 Circle 头顶的议价武器——只要 OUSD 管道跑通，Circle 在下调分成谈判中将失去底牌。
+
+---
+
+## 五、OUSD 链上实证：首周 $717M 的四个资金桶
+
+OUSD 于 2026 年 9 月 30 日在 Base、Ethereum、Solana、Tempo 四条链原生上线。发行方 Bridge 通过 EVM 铸造总控地址累计铸造 $717.0M，赎回销毁 $50.9M，首周净流通 $666.3M：
+
+| 资金桶 | 规模 | 占比 | 链上实证 [财报/链上数据] |
+|---|---|---|---|
+| 桶 1 · 创始股东摆账池 | $396.0M | 59.4% | Tempo 链 8 个巨鲸钱包，入账后零转账、零 DEX 交互。其中 #1 持有 $200.0M，#2 持有 $85.0M（Coinbase Custody 托管特征）。 |
+| 桶 2 · 渠道与做市商分发池 | $230.0M | 34.5% | Coinbase 四链对齐配资 $200.0M（每链 $50M，其中 $80M 拆为 40 个 $2.0M 子地址）；Wintermute 做市 $4.0M；Tempo DEX 种子 $5.0M。 |
+| 桶 3 · Bridge 发行方国库 | $40.0M | 6.0% | 留存待分发的一级市场库存。 |
+| 桶 4 · 赎回销毁 | $50.9M | — | 首周 $98.0M 回流，其中 $95.0M 来自同一地址两日快进快出。 |
+
+**四阶段脉冲式铸造**：9/23 预热 $40M → 9/29 Tempo 集中 $439.5M → 10/1 Coinbase 四链 $200M → 10/6 至中旬 Ethereum 突破 $100M，总流通达 825.28M。
+
+**链上活跃度脱水** [财报/链上数据]：
+- 74% 供应集中在 10 个钱包；64 个百万美元地址控制 99.5%；218 个地址（61.4%）余额不足 $100。
+- 71%（$472.8M）淤积 Tempo，但其 DEX 6 天真实交易量仅 $17,000。
+- 全网 DEX 真实量仅 $4.1M（Solana 82.9% / Base 17.1% / Tempo 0.4%）。
+- Tempo 72.6% 的"转账"实为几分钱 Gas 扣费（8,377 笔，累计 $3.33）；Base 被 OHUSD 等仿盘池刷量污染。
+
+---
+
+## 六、攻防情景矩阵
+
+**费率现状** [原文事实]：OUSD 实行"零铸造费、零赎回费、无交易量上限"，但对链上转账收取"小额、可预测的交易费"，外加协议管理费——两项费率数值与公式至今均未公布。美国 GENIUS 法案禁止发行方向持有人付息，OUSD 收益分配对象严格限定为分销合作伙伴。
+
+| 评估维度 | Circle H1 实绩基准 | OUSD 情景 A：极简 (10%) | OUSD 情景 B：稳健 (20%) | OUSD 情景 C：重度 (35%) |
+|---|---|---|---|---|
+| 综合留存率 | 41.3% | 10.0% [情景假设] | 20.0% [情景假设] | 35.0% [情景假设] |
+| 渠道可分润池上限 | 58.7% | 90.0% | 80.0% | 65.0% |
+| 每 $1 亿沉淀 · 渠道年化分成 (4.25% 收益率) | $2.49M | $3.83M (+53.4%) | $3.40M (+36.3%) | $2.76M (+10.7%) |
+| 每 $1 亿沉淀 · 降息至 3.00% 时 | $1.76M | $2.70M (+$0.94M) | $2.40M (+$0.64M) | $1.95M (+$0.19M) |
+
+**结论** [合理推断]：无需猜测 OUSD 确切费率，只要综合留存率显著低于 41.3%，渠道在算账层面即获结构性超额收益。
+
+### 交互式模拟器：拖动滑块实时测算
+
+<div id="ousd-simulator" style="background:#fff;border:1px solid #cbd5e1;border-radius:12px;padding:24px;margin:24px 0;">
+<div style="font-size:12px;font-weight:700;letter-spacing:.1em;color:#b45309;text-transform:uppercase;margin-bottom:8px;">Interactive Simulation Sandbox</div>
+<h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Circle (USDC) 实绩基准 vs. OUSD 分润模拟器</h3>
+<p style="font-size:14px;color:#475569;margin-bottom:20px;">基于 Circle 2026 H1 财报实绩（总收入 $1,395.32M：分销 58.7% / 再投资 33.9% / 净利 7.4%）。拖动滑块，实时测算每 $1 亿美元沉淀资金的渠道年化收益差额。</p>
+
+<div style="margin-bottom:20px;">
+<div style="display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-bottom:8px;">
+<span>底层国债储备年化收益率</span>
+<output id="oYield" style="font-family:monospace;font-weight:700;color:#0369a1;">4.25%</output>
+</div>
+<input type="range" id="rYield" min="1.00" max="6.00" step="0.25" value="4.25" style="width:100%;accent-color:#0369a1;">
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#94a3b8;font-family:monospace;">
+<span>1.00% (深度降息)</span><span>4.25% (当前)</span><span>6.00% (高息)</span>
+</div>
+</div>
+
+<div style="margin-bottom:20px;">
+<div style="display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-bottom:8px;">
+<span>OUSD 综合留存率假设 <span style="color:#b45309;">(官方未披露)</span></span>
+<output id="oRet" style="font-family:monospace;font-weight:700;color:#0369a1;">20.0%</output>
+</div>
+<input type="range" id="rRet" min="5.0" max="45.0" step="1.0" value="20.0" style="width:100%;accent-color:#0369a1;">
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#94a3b8;font-family:monospace;">
+<span>5% (极简)</span><span>20% (稳健)</span><span>41.3% (Circle 线)</span>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;padding-top:16px;border-top:1px solid #e2e8f0;">
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px;">
+<div id="vCircle" style="font-family:monospace;font-size:22px;font-weight:700;">$2.49M</div>
+<div style="font-size:12px;color:#64748b;">USDC 渠道年化分成 / 每 $1 亿<br>(固定分润 <b>58.7%</b>)</div>
+</div>
+<div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:8px;padding:12px;">
+<div id="vOusd" style="font-family:monospace;font-size:22px;font-weight:700;color:#065f46;">$3.40M</div>
+<div style="font-size:12px;color:#047857;">OUSD 渠道年化分成 / 每 $1 亿<br>(模拟分润 <b id="vShare">80.0%</b>)</div>
+</div>
+<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:12px;">
+<div id="vDiff" style="font-family:monospace;font-size:22px;font-weight:700;color:#065f46;">+36.3%</div>
+<div id="vDiffAbs" style="font-size:12px;color:#0369a1;">每 $1 亿每年多 $0.91M</div>
+</div>
+</div>
+
+<div id="alertBox" style="display:none;font-size:12px;font-weight:500;padding:10px;border-radius:8px;background:#fffbeb;border:1px solid #fde68a;color:#92400e;margin-top:12px;">
+⚠️ OUSD 综合留存率已接近或超过 Circle 的 41.3% 成本线，渠道算账套利空间正在迅速收窄。
+</div>
+</div>
+
+<script>
+(function(){
+var rY=document.getElementById('rYield'),rR=document.getElementById('rRet'),
+oY=document.getElementById('oYield'),oR=document.getElementById('oRet'),
+vC=document.getElementById('vCircle'),vO=document.getElementById('vOusd'),
+vD=document.getElementById('vDiff'),vS=document.getElementById('vShare'),
+vA=document.getElementById('vDiffAbs'),ab=document.getElementById('alertBox');
+function fmt(n){return '$'+n.toFixed(2)+'M';}
+function upd(){
+var y=parseFloat(rY.value),ret=parseFloat(rR.value);
+oY.textContent=y.toFixed(2)+'%';oR.textContent=ret.toFixed(1)+'%';
+var gross=100*(y/100),cs=gross*0.587,op=100-ret,os=gross*(op/100);
+vC.textContent=fmt(cs);vO.textContent=fmt(os);vS.textContent=op.toFixed(1)+'%';
+var dp=((os/cs)-1)*100;
+vD.textContent=(dp>=0?'+':'')+dp.toFixed(1)+'%';
+vD.style.color=dp>=0?'#065f46':'#b91c1c';
+var da=os-cs;
+vA.textContent='每 $1 亿每年 '+(da>=0?'多 ':'少 ')+'$'+Math.abs(da).toFixed(2)+'M';
+ab.style.display=ret>=40?'block':'none';
+}
+rY.addEventListener('input',upd);rR.addEventListener('input',upd);upd();
+})();
+</script>
+
+<p style="font-size:12px;color:#94a3b8;text-align:center;">本模拟器仅作情景敏感性测算，不构成投资建议。OUSD 费率公式官方未披露。</p>
+
+---
+
+## 七、可证伪跟踪清单
+
+> ⚠️ 纠偏声明 [原文事实]：公开渠道从未确认 OUSD 首份储备鉴证的审计机构为安永（EY），亦从未锁定"10 月底"这一发布日期。储备托管人 BlackRock、BNY Mellon、Lead Bank 已确认；资产拆分比例尚无鉴证数据。
+
+| 跟踪维度 | 核查锚点 | Bull Case（利好 OUSD） | Bear Case（利好 Circle） |
+|---|---|---|---|
+| 1. 首份储备鉴证 | reserves.bridge.xyz/ousd | 满月内如期发布，顶级会计所 ISAE 3000 报告，列明现金/短债拆分，确认 $2.0M 超额备付性质。 | 逾期未出或仅内部报表，200+ 机构法务无法放行。 |
+| 2. 费率公式披露 | Open Standard 官方文档 | 综合留存率 ≤20%，无隐性附加费，坐实对 41.3% 的碾压。 | 转账费显著或综合留存率 30%+，迁移净收益无法覆盖切换成本。 |
+| 3. 链上去集中度 | 哨兵 A: 0x4c2c...200B8<br>哨兵 B: Tempo 8 大钱包 ($396M)<br>哨兵 C: Coinbase 40 个 $2.0M 子地址 ($80M) | 零散 $1M–$5M 铸造出现；巨鲸钱包破冰外发；前 10 占比降至 <50%，DEX 日均破千万美元。 | 供应破 $10 亿但前 10 仍 >70%，资金继续静默，验证 Circle "70%" 判断。 |
+
+---
+
+## 八、双向风险提示
+
+**🔴 OUSD 多头的三项结构性风险**
+- **欧盟 MiCA 合规缺位** [原文事实]：OUSD 不在欧盟 MiCA 注册名单上，在欧盟被视为未受监管的电子货币代币。在欧洲 B2B 跨境支付中，牌照是准入硬门槛。
+- **Bridge OCC 牌照尚未落地** [原文事实]：仅获有条件（conditional）批准，信托银行实体尚未运营（Circle 已持正式牌照）。
+- **关键集成停留提案阶段** [原文事实]：Aave 集成仅为社区提案（拟列可存借、初期不作抵押品，Chainlink 喂价未定）；Pi Network 仅探索性质。
+
+**🔵 Circle 多头的单一核心风险**
+- **降息周期下的利润表挤压与渠道叛离共振** [财报/链上数据][合理推断]：收入依赖高息美债，分销（58.7%）与合规（33.9%）双双刚性，仅 7.4%（Q2 已降至 6.84%）净利率缺乏厚度。Q1→Q2"收入 +1.05%、净利 −12.7%"已预警。一旦降息深化且 OUSD 跑通低费率与鉴证，Circle 将面临利润压缩与渠道分流的双重夹击。
+
+---
+
+<p style="margin-top:3em;padding-top:1.5em;border-top:1px solid rgba(255,255,255,.08);text-align:center;color:#94a3b8;font-size:0.82em;">
+基准日期：2026-10-19 · 数据截止：2026-10-19 · 证据分级：[原文事实][财报/链上数据][合理推断][情景假设]<br>
+© 2026 ZK-Labs Research
+</p>
