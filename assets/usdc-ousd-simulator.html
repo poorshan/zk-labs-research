@@ -1155,7 +1155,7 @@ button.active, button.is-active, button.selected, button.is-selected, button[ari
 
   <!-- Scenario Quick Selector Chips -->
   <div class="preset-row">
-    <span class="preset-label lumi-body-s">OUSD 留存情景预设:</span>
+    <span class="preset-label lumi-body-s" style="color: #cbd5e1 !important;">OUSD 留存情景预设:</span>
     <button class="lumi-chip" id="chip-a" onclick="setPreset(10, 'chip-a')">情景 A (10% 极简套利)</button>
     <button class="lumi-chip is-active" id="chip-b" onclick="setPreset(20, 'chip-b')">情景 B (20% 稳健合规)</button>
     <button class="lumi-chip" id="chip-c" onclick="setPreset(35, 'chip-c')">情景 C (35% 重运营/高留存)</button>
@@ -1239,7 +1239,7 @@ button.active, button.is-active, button.selected, button.is-selected, button[ari
   <!-- Interactive Controls Deck -->
   <div class="control-deck">
     <div class="control-row">
-      <label class="lumi-body-m" for="slider-yield">底层国债储备年化收益率 (Reserve Yield)</label>
+      <label class="lumi-body-m" for="slider-yield" style="color: #e2e8f0 !important;">底层国债储备年化收益率 (Reserve Yield)</label>
       <div class="lumi-slider-container">
         <input type="range" id="slider-yield" class="lumi-slider" data-key="reserveYield" min="1.00" max="6.00" step="0.25" value="4.25" style="--progress: 65%;">
         <div id="slider-yield-val" class="lumi-slider-value">4.25%</div>
@@ -1247,8 +1247,8 @@ button.active, button.is-active, button.selected, button.is-selected, button[ari
     </div>
 
     <div class="control-row">
-      <label class="lumi-body-m" for="slider-retention">
-        OUSD 综合留存率假设 <span class="lumi-caption">(管理费+交易费折算)</span>
+      <label class="lumi-body-m" for="slider-retention" style="color: #e2e8f0 !important;">
+        OUSD 综合留存率假设 <span class="lumi-caption" style="color: #94a3b8 !important;">(管理费+交易费折算)</span>
       </label>
       <div class="lumi-slider-container">
         <input type="range" id="slider-retention" class="lumi-slider" data-key="ousdRetention" min="5" max="45" step="1" value="20" style="--progress: 37.5%;">
