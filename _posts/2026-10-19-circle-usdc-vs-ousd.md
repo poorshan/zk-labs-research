@@ -131,7 +131,7 @@ OUSD 于 2026 年 9 月 30 日在 Base、Ethereum、Solana、Tempo 四条链原�
 
 ### 交互式模拟器
 
-<iframe src="{{ "/assets/usdc-ousd-simulator.html" | relative_url }}" 
+<iframe src="{{ "/assets/usdc-ousd-simulator.html?v=20261019c" | relative_url }}" 
   style="width:100%;height:900px;border:1px solid #cbd5e1;border-radius:12px;margin:24px 0;" 
   frameborder="0" title="USDC vs OUSD 渠道分润模拟器"></iframe>
 
