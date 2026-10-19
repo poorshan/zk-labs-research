@@ -7,9 +7,7 @@ categories: research
 author: 南野东亦
 permalink: /research/2026/10/19/circle-usdc-vs-ousd.html
 version: "v1.0"
-flagship: true
-flagship_summary: "Circle H1 收入 $1,395M 的完整拆解：分销 58.7%、再投资 33.9%、净利 7.4%。Q1→Q2 边际恶化实证、OUSD 首周 $717M 四个资金桶链上还原、三档费率情景矩阵，附交互式渠道分润模拟器。"
-tags: [Circle, USDC, OUSD, Open Standard, 稳定币, 旗舰研究]
+tags: [Circle, USDC, OUSD, Open Standard, 稳定币]
 data_cutoff: 2026-10-19
 ---
 
