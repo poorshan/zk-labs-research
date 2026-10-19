@@ -9,10 +9,10 @@ permalink: /observations/2026/10/19/dtcc-tokenization-endgame.html
 version: "v1.0"
 tags: [股票代币化, DTCC, 代币化, 市场观察]
 data_cutoff: 2026-10-19
-cover: /assets/images/dtcc-infographic-fixed.png
+cover: /assets/images/dtcc-infographic-original.png
 ---
 
-![DTCC 数字资产整合](/assets/images/dtcc-infographic-fixed.png)
+![DTCC 数字资产整合](/assets/images/dtcc-infographic-original.png)
 
 > 这是“股票代币化”系列的第七篇，也是本系列的终局收官篇。前六篇我们从离岸 SPV、自清算券商 Alpaca、过户代理 Equiniti，一路拆解到 DeFi 借贷大考与 9 家投出反对票的公司的律所自保博弈。当各方诸侯在台前为离岸包装和 30 天默许制争得不可开交时，美股大厦真正的地基，自己带着链上总账本进场了。
 
