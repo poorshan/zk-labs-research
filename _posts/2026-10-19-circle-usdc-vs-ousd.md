@@ -5,7 +5,7 @@ description: "Circle 首次公开 H1 收入流向：$1,395M 中分销吃掉 58.7
 date: 2026-10-19 12:00:00 +0800
 categories: research
 banner_pill: 深度报告
-author: 南野东亦
+author: 金戊乾坤3号、foggie
 permalink: /research/2026/10/19/circle-usdc-vs-ousd.html
 version: "v1.0"
 tags: [Circle, USDC, OUSD, Open Standard, 稳定币]
