@@ -128,78 +128,11 @@ OUSD 于 2026 年 9 月 30 日在 Base、Ethereum、Solana、Tempo 四条链原�
 
 **结论** [合理推断]：无需猜测 OUSD 确切费率，只要综合留存率显著低于 41.3%，渠道在算账层面即获结构性超额收益。
 
-### 交互式模拟器：拖动滑块实时测算
+### 交互式模拟器
 
-<div id="ousd-simulator" style="background:#fff;border:1px solid #cbd5e1;border-radius:12px;padding:24px;margin:24px 0;">
-<div style="font-size:12px;font-weight:700;letter-spacing:.1em;color:#b45309;text-transform:uppercase;margin-bottom:8px;">Interactive Simulation Sandbox</div>
-<h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Circle (USDC) 实绩基准 vs. OUSD 分润模拟器</h3>
-<p style="font-size:14px;color:#475569;margin-bottom:20px;">基于 Circle 2026 H1 财报实绩（总收入 $1,395.32M：分销 58.7% / 再投资 33.9% / 净利 7.4%）。拖动滑块，实时测算每 $1 亿美元沉淀资金的渠道年化收益差额。</p>
-
-<div style="margin-bottom:20px;">
-<div style="display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-bottom:8px;">
-<span>底层国债储备年化收益率</span>
-<output id="oYield" style="font-family:monospace;font-weight:700;color:#0369a1;">4.25%</output>
-</div>
-<input type="range" id="rYield" min="1.00" max="6.00" step="0.25" value="4.25" style="width:100%;accent-color:#0369a1;">
-<div style="display:flex;justify-content:space-between;font-size:12px;color:#94a3b8;font-family:monospace;">
-<span>1.00% (深度降息)</span><span>4.25% (当前)</span><span>6.00% (高息)</span>
-</div>
-</div>
-
-<div style="margin-bottom:20px;">
-<div style="display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-bottom:8px;">
-<span>OUSD 综合留存率假设 <span style="color:#b45309;">(官方未披露)</span></span>
-<output id="oRet" style="font-family:monospace;font-weight:700;color:#0369a1;">20.0%</output>
-</div>
-<input type="range" id="rRet" min="5.0" max="45.0" step="1.0" value="20.0" style="width:100%;accent-color:#0369a1;">
-<div style="display:flex;justify-content:space-between;font-size:12px;color:#94a3b8;font-family:monospace;">
-<span>5% (极简)</span><span>20% (稳健)</span><span>41.3% (Circle 线)</span>
-</div>
-</div>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;padding-top:16px;border-top:1px solid #e2e8f0;">
-<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px;">
-<div id="vCircle" style="font-family:monospace;font-size:22px;font-weight:700;">$2.49M</div>
-<div style="font-size:12px;color:#64748b;">USDC 渠道年化分成 / 每 $1 亿<br>(固定分润 <b>58.7%</b>)</div>
-</div>
-<div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:8px;padding:12px;">
-<div id="vOusd" style="font-family:monospace;font-size:22px;font-weight:700;color:#065f46;">$3.40M</div>
-<div style="font-size:12px;color:#047857;">OUSD 渠道年化分成 / 每 $1 亿<br>(模拟分润 <b id="vShare">80.0%</b>)</div>
-</div>
-<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:12px;">
-<div id="vDiff" style="font-family:monospace;font-size:22px;font-weight:700;color:#065f46;">+36.3%</div>
-<div id="vDiffAbs" style="font-size:12px;color:#0369a1;">每 $1 亿每年多 $0.91M</div>
-</div>
-</div>
-
-<div id="alertBox" style="display:none;font-size:12px;font-weight:500;padding:10px;border-radius:8px;background:#fffbeb;border:1px solid #fde68a;color:#92400e;margin-top:12px;">
-⚠️ OUSD 综合留存率已接近或超过 Circle 的 41.3% 成本线，渠道算账套利空间正在迅速收窄。
-</div>
-</div>
-
-<script>
-(function(){
-var rY=document.getElementById('rYield'),rR=document.getElementById('rRet'),
-oY=document.getElementById('oYield'),oR=document.getElementById('oRet'),
-vC=document.getElementById('vCircle'),vO=document.getElementById('vOusd'),
-vD=document.getElementById('vDiff'),vS=document.getElementById('vShare'),
-vA=document.getElementById('vDiffAbs'),ab=document.getElementById('alertBox');
-function fmt(n){return '$'+n.toFixed(2)+'M';}
-function upd(){
-var y=parseFloat(rY.value),ret=parseFloat(rR.value);
-oY.textContent=y.toFixed(2)+'%';oR.textContent=ret.toFixed(1)+'%';
-var gross=100*(y/100),cs=gross*0.587,op=100-ret,os=gross*(op/100);
-vC.textContent=fmt(cs);vO.textContent=fmt(os);vS.textContent=op.toFixed(1)+'%';
-var dp=((os/cs)-1)*100;
-vD.textContent=(dp>=0?'+':'')+dp.toFixed(1)+'%';
-vD.style.color=dp>=0?'#065f46':'#b91c1c';
-var da=os-cs;
-vA.textContent='每 $1 亿每年 '+(da>=0?'多 ':'少 ')+'$'+Math.abs(da).toFixed(2)+'M';
-ab.style.display=ret>=40?'block':'none';
-}
-rY.addEventListener('input',upd);rR.addEventListener('input',upd);upd();
-})();
-</script>
+<iframe src="{{ "/assets/usdc-ousd-simulator.html" | relative_url }}" 
+  style="width:100%;height:900px;border:1px solid #cbd5e1;border-radius:12px;margin:24px 0;" 
+  frameborder="0" title="USDC vs OUSD 渠道分润模拟器"></iframe>
 
 <p style="font-size:12px;color:#94a3b8;text-align:center;">本模拟器仅作情景敏感性测算，不构成投资建议。OUSD 费率公式官方未披露。</p>
 
