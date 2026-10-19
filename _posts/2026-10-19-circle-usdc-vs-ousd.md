@@ -4,6 +4,7 @@ title: "Circle (USDC) 经济模型拆解与 OUSD 攻防评估"
 description: "Circle 首次公开 H1 收入流向：$1,395M 中分销吃掉 58.7%、再投资 33.9%，净利仅 7.4%。这份 $819M 的账单暴露了重资产模式的结构性困境，也给了 OUSD 算账层面的套利空间——但 OUSD 首周 74% 供应集中在 10 个钱包，冷启动现实同样冷峻。"
 date: 2026-10-19 12:00:00 +0800
 categories: research
+banner_pill: 深度报告
 author: 南野东亦
 permalink: /research/2026/10/19/circle-usdc-vs-ousd.html
 version: "v1.0"
