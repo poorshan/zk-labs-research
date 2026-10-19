@@ -129,7 +129,9 @@ body {
 .main-content table {
   display: table;
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e9ebec;
   border: 1px solid #e9ebec;
   font-size: 0.92rem;
   margin-bottom: 1.5rem;
@@ -156,6 +158,10 @@ body {
 
   tbody tr:nth-child(even) td {
     background: #f8f9fa;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
   }
 
   tbody tr:hover td {
@@ -256,6 +262,7 @@ body {
 
     table {
       box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      border-color: #2a3035;
       border-color: #2a3035;
 
       th {
