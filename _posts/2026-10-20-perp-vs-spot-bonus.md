@@ -2,13 +2,13 @@
 layout: default
 title: "33 亿对 900 万：为什么真金白银赌美股的人，都在用 Hyperliquid 而不是买股票代币？"
 description: "当全网在讨论 Aave 借贷池里那 900 万美元的美股现货代币时，链上股票永续合约（Perp）的未平仓量早已冲过 33 亿美元。为什么加密市场宁可剥离股东权利也要拥抱衍生品？从“三元权利束”解构、时间主权碰撞到 Perpetuals.com 入局，拆解股票上链最底层的演化哲学。"
-date: 2026-10-19 23:30:00 +0800
+date: 2026-10-20 06:00:00 +0800
 categories: observation
 author: 南野东亦
-permalink: /observations/2026/10/19/perp-vs-spot-token-bonus.html
+permalink: /observations/2026/10/20/perp-vs-spot-token-bonus.html
 version: "v1.0"
 tags: [股票代币化, Hyperliquid, 永续合约, 市场观察]
-data_cutoff: 2026-10-19
+data_cutoff: 2026-10-20
 cover: /assets/images/perp-vs-spot-cover.webp
 ---
 

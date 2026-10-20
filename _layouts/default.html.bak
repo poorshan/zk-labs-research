@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    {%- comment -%}
+      静态资源版本号：GitHub Pages 对 /assets/* 下发 Cache-Control: max-age=14400（4 小时），
+      且不支持自定义缓存头。若 URL 不变，改图后访客最长 4 小时仍看到旧图。
+      故所有资源 URL 必须带版本号。优先用 commit SHA；万一 site.github 不可用，
+      退回构建时间戳（每次都变，保证一定能击穿）。
+    {%- endcomment -%}
+    {%- assign asset_v = site.github.build_revision -%}
+    {%- if asset_v == nil or asset_v == "" -%}{%- assign asset_v = site.time | date: "%s" -%}{%- endif -%}
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080b11">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ asset_v }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32.png' | relative_url }}?v={{ asset_v }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon-180.png' | relative_url }}?v={{ asset_v }}">
+    {% include head-custom.html %}
+  </head>
+  <body class="{% if page.url == '/' or page.url == '/index.html' %}page-home{% else %}page-article{% endif %}">
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <nav class="zk-topnav" aria-label="站内导航">
+      <a class="zk-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/zk-logo.png' | relative_url }}?v={{ asset_v }}" alt="ZK-Labs Research"></a>
+      <div class="zk-nav-links" id="zk-nav-links">
+        <a href="{{ '/research.html' | relative_url }}">旗舰研究</a>
+        <a href="{{ '/observations.html' | relative_url }}">市场观察</a>
+        <a href="{{ '/about.html' | relative_url }}">关于我们</a>
+        <a class="ext" href="https://vix.zklabsresearch.com" target="_blank" rel="noopener">VIX 训练站 ↗</a>
+      </div>
+      <span class="zk-clock" id="zk-clock" aria-hidden="true">--:--:--</span>
+      <button class="zk-menu-btn" aria-label="打开菜单" onclick="document.getElementById('zk-nav-links').classList.toggle('open')">☰</button>
+    </nav>
+
+    {% if page.url == '/' or page.url == '/index.html' %}
+    <header class="zk-hero" role="banner">
+      <canvas id="zk-vol" aria-hidden="true"></canvas>
+      <div class="zk-hero-content">
+        <span class="zk-pill"><span class="zk-pill-dot"></span>EVIDENCE FIRST · MARKET STRUCTURE · DIGITAL ASSETS</span>
+        <h1 class="zk-hero-title">ZK-Labs Research</h1>
+        <p class="zk-hero-tagline">期权波动率 × 加密资产 × 宏观结构 —— 深度投研</p>
+        <p class="zk-hero-sub">由旗下「金戊乾坤2号 / 金戊乾坤3号」投研团队运营，所有结论均可回溯至一手数据与可复算证据链。</p>
+      </div>
+    </header>
+    {% elsif page.hero_image %}
+    <header class="page-header hero-header" role="banner">
+      <img class="hero-image" src="{{ page.hero_image | relative_url }}?v={{ asset_v }}" alt="{{ page.title | default: site.title }} — {{ site.description }}">
+      {% unless page.hide_header_text %}
+      <div class="hero-overlay-text">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      </div>
+      {% endunless %}
+    </header>
+    {% else %}
+    {%- comment -%}
+      文章页杂志风 Banner（方案二）：通用底图 + 分类 pill + 限宽导语 + 作者行。
+      注意：Liquid 里空数组为 truthy，故本分支覆盖所有文章（research / observation）
+      以及市场观察列表页；pill 仅当 categories 非空时显示，作者行仅当 author 存在时显示。
+    {%- endcomment -%}
+    <header class="page-header zk-article-banner" role="banner" style="background-image: url('{{ page.banner_image | default: '/assets/images/observation-banner-universal.webp' | relative_url }}?v={{ asset_v }}');">
+      <div class="zk-article-banner-veil" aria-hidden="true"></div>
+      <div class="zk-article-banner-inner">
+        {% assign zk_cat = page.categories | first %}
+        {% if page.banner_pill %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>{{ page.banner_pill }}</span>
+        {% elsif zk_cat == 'observation' %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>市场观察</span>
+        {% elsif zk_cat == 'research' %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>旗舰研究</span>
+        {% elsif zk_cat %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>{{ zk_cat }}</span>
+        {% endif %}
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <p class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        {% if page.author %}
+        <p class="zk-article-meta">
+          <span>作者：{{ page.author }}</span>
+          {% if page.date %}<span class="zk-meta-dot" aria-hidden="true"></span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>{% endif %}
+        </p>
+        {% endif %}
+      </div>
+    </header>
+    {% endif %}
+
+    <main id="content" class="main-content" role="main">
+      {% unless page.url == "/" or page.url == "/index.html" %}
+      <nav class="breadcrumb" style="margin-bottom: 1.5rem;">
+        <a href="{{ '/' | relative_url }}">← 返回主页</a>
+        {% if page.categories %}
+          {% for category in page.categories %}
+            <span style="color: #819198;"> / {{ category }}</span>
+          {% endfor %}
+        {% endif %}
+      </nav>
+      {% endunless %}
+
+      {{ content }}
+
+      <footer class="site-footer">
+        <div class="zk-footer-meta">
+          <p class="zk-footer-copy">© {{ site.time | date: '%Y' }} ZK-Labs Research · 保留所有权利</p>
+          <p class="zk-footer-disclaimer">本站内容仅供研究与交流，不构成投资建议。</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
