@@ -125,6 +125,6 @@ cover: /assets/images/perp-vs-spot-cover.webp
 
 ---
 
-— 南野东亦 ｜ ZK Labs 市场观察 ｜ 2026-10-19
+— 南野东亦 ｜ ZK Labs 市场观察 ｜ 2026-10-20
 
 *（本文事实核验：RedStone 股票永续合约市场报告 2026-09-28、2026年10月代币化股票总市值统计、Hyperliquid HIP-3 架构与 Trade.xyz 生态数据、Aave V4 Equities Hub 风险参数与 ADGM 招股书、Perpetuals.com (NASDAQ: PDC) 2026-10-14 SEC 创新豁免申请公告、DTCC Tokenization Service 架构说明。非投资建议，仅供研究参考。）*
