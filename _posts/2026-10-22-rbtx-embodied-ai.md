@@ -9,10 +9,10 @@ permalink: /observations/2026/10/22/rbtx-embodied-ai.html
 version: "v1.0"
 tags: [具身智能, 机器人, RBTX, 贝莱德, 物理AI, 市场观察]
 data_cutoff: 2026-10-20
-cover: /assets/images/rbtx-embodied-ai-cover.webp
+cover: /assets/images/rbtx-embodied-ai-infographic.jpg
 ---
 
-![从比特到原子：具身智能时代的资产配置与 RBTX 拆解](/assets/images/rbtx-embodied-ai-cover.webp)
+![从比特到原子：具身智能时代的资产配置与 RBTX 拆解](/assets/images/rbtx-embodied-ai-infographic.jpg)
 
 > 贝莱德推出了旗下首只主动管理机器人 ETF（RBTX），把「物理 AI」从叙事变成可持仓的资产配置问题。本文以 RBTX 首批持仓为标本，拆解主动管理与被动指数的真实边界——差异不在「指数失灵」，而在多元化公司数量上限、资产类别限制与权重机制这三重结构性约束。
 
