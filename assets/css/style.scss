@@ -768,6 +768,10 @@ ul li {
   max-width: 1180px;
   margin: 0 auto;
   padding: 4rem 1.75rem 2.75rem;
+  /* 修复：Cayman 主题 .page-header 的 text-align:center 会继承到 banner，
+     导致标题/胶囊居中而导语（max-width:720px）与作者行靠左，视觉上"标题没对齐"。
+     此处显式左对齐，使 pill / 标题 / 导语 / 作者行共享同一条左边缘。 */
+  text-align: left;
 }
 .zk-article-banner .zk-pill { margin-bottom: 1.1rem; }
 .zk-article-banner .project-name {
