@@ -47,12 +47,38 @@ def tables(txt):
     return res
 
 
+def front_matter_check(path):
+    """front matter 里 `key: "值"` 的双引号必须成对；否则 YAML 解析失败，
+    GitHub Pages 会静默不生成该页（实测：flagship_summary 里多一个 " → 整页 404）。"""
+    bad = []
+    raw = io.open(path, encoding="utf-8").read()
+    if not raw.startswith("---"):
+        return bad
+    parts = raw.split("---", 2)
+    if len(parts) < 3:
+        return bad
+    for ln, line in enumerate(parts[1].split("\n"), 2):
+        s = line.strip()
+        m = re.match(r'^([A-Za-z_][\w]*):\s*"(.*)"\s*$', s)
+        if not m:
+            continue
+        inner = m.group(2)
+        # 双引号标量内部不得再出现未转义的 "（贪心匹配会把它们包进来）
+        if inner.replace('\\"', "").count('"') != 0:
+            bad.append((ln, m.group(1), s[:90]))
+    return bad
+
+
 def main():
     src = body_wo_front(io.open(sys.argv[1], encoding="utf-8").read())
     dst_all = io.open(sys.argv[2], encoding="utf-8").read()
     dst = body_wo_front(dst_all)
 
     problems = []
+
+    fm_bad = front_matter_check(sys.argv[2])
+    if fm_bad:
+        problems.append("FRONT_MATTER_QUOTES %s" % fm_bad[:4])
 
     # 1. 表格列数
     ts, td = tables(src), tables(dst)

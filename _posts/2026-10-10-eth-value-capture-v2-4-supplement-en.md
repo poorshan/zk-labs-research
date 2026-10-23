@@ -11,8 +11,8 @@ parent_report: /research/2026/10/03/eth-value-capture-v2-en.html
 data_cutoff: 2026-10-09
 version: "English ed. 1.0 | corresponds to Chinese v2.4 supplement"
 flagship: false
-flagship_summary: "Building on the two breakpoints in v2.0: a three-layer root-cause framework (claim / transmission / premium) and seven fix hypotheses A-G, each with evidence status, economic constraint and failure condition · figures corrected per "v2.0 Errata 1"."
-description: "ZK Labs Ethereum value capture special report, v2.4 supplement — building on the two breakpoints in v2.0, a three-layer root-cause framework (claim / transmission / premium) and seven fix hypotheses A-G, each tagged with evidence status, economic constraints and failure conditions; figures corrected per "v2.0 Errata 1"."
+flagship_summary: "Building on the two breakpoints in v2.0: a three-layer root-cause framework (claim / transmission / premium) and seven fix hypotheses A-G, each with evidence status, economic constraint and failure condition · figures corrected per 'v2.0 Errata 1'."
+description: "ZK Labs Ethereum value capture special report, v2.4 supplement — building on the two breakpoints in v2.0, a three-layer root-cause framework (claim / transmission / premium) and seven fix hypotheses A-G, each tagged with evidence status, economic constraints and failure conditions; figures corrected per 'v2.0 Errata 1'."
 tags: [Ethereum, ValueCapture, ETH, IssuanceReform, Blob, Preconfirmation, NativeRollup, Staking, Falsifiability, Research]
 ---
 
