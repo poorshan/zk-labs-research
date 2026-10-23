@@ -7,3 +7,6 @@ Gemfile.lock
 
 # 内部研究文档（非公开发布物）
 research/
+
+# 英文版分块译稿（中间产物，不进仓库、不发布）
+.en_chunks/
