@@ -78,10 +78,20 @@ tags: [Ethereum, ValueCapture, ETH, L2, Blob, Stablecoin, Staking, Transmission,
 
 ---
 
+<a id="errata-4"></a>
+
+> **Ethereum Value Capture v2.0 — Errata 4** | **Version label**: v2.0 Errata 4 | **Published**: 2026-10-24 (UTC)
+>
+> **Erratum 4 | Item count in the v1.3 additions list**
+>
+> The Chinese source (the "v1.3 additions" bullet) reads "**v1.3 新增八项** (this version's self-check + research review)" — eight new items — while the list that follows actually contains ten items, ①–⑩. Items ⑨ "Originated" and ⑩ "earliest verifiable implementation" were appended later without updating the heading's count. The heading is now corrected to "ten new items"; all other text and every figure are unchanged. This English page follows the corrected source; it previously read "Eight new items in v1.3", which was a faithful translation of the then-uncorrected source.
+>
+> How to verify: count the item numbers ①–⑩ in the list.
 
 ## Table of Contents
 
 - [v2.0 Errata 1 (published 2026-10-10)](#errata-1)
+- [v2.0 Errata 4 (published 2026-10-24)](#errata-4)
 - [Executive Summary](#executive-summary)
   - [00 Executive Summary](#sec-00-executive-summary)
 - [Part I ｜ Main Report (v2.0 body)](#part-i-main-report-v2-0-body)
@@ -723,7 +733,7 @@ Compressing the eight-segment chain into a single table — this is the **prefer
 - Where data-source quality is insufficient, this is labeled a **data-infrastructure limitation** (e.g. no primary source for MEV), and **no market conclusion is inferred from it**;
 - **No load-bearing figure was re-fetched this round** (mandate brief §24: do not redo completed data collection);
 - **Self-errors voluntarily put on record**: six items in v1.1–v1.2 ("Part VIII (disconfirmation register)" §4) — the 0/4 score, the 99.77% naming, the institutional-demand counter-evidence, the absolute stablecoin sentence, "only" ×4, ×32 understatement of staking volume;
-- **Eight new items in v1.3** (this version's self-check + research review): ① "the four channels really capture value" (mechanism→capture slippage); ② "the capture center of gravity has already migrated" (observation→interpretation slippage); ③ "A has been falsified" (inferring the objective function); ④ "2.73% as a capture rate" (numerator and denominator at different layers); ⑤ the Counterfactual "Created" (unfalsifiable counterfactual); ⑥ "segments 6→7 conversion fails" (failure ≠ unverified); ⑦ "ETH has a structural advantage over BTC" (evaluative inference); ⑧ directly naming monetary premium (proxy ≠ premium); **⑨ "Originated" (requires denying that others implemented it earlier, still unfalsifiable — "Part VI (counterfactuals)" §2 has been changed to `Scaled First`)**; **⑩ "earliest verifiable implementation" (factual error; colored coins / Mastercoin / Counterparty all predate Ethereum mainnet)**.
+- **Ten new items in v1.3** (this version's self-check + research review) ※[Errata ④](#errata-4): ① "the four channels really capture value" (mechanism→capture slippage); ② "the capture center of gravity has already migrated" (observation→interpretation slippage); ③ "A has been falsified" (inferring the objective function); ④ "2.73% as a capture rate" (numerator and denominator at different layers); ⑤ the Counterfactual "Created" (unfalsifiable counterfactual); ⑥ "segments 6→7 conversion fails" (failure ≠ unverified); ⑦ "ETH has a structural advantage over BTC" (evaluative inference); ⑧ directly naming monetary premium (proxy ≠ premium); **⑨ "Originated" (requires denying that others implemented it earlier, still unfalsifiable — "Part VI (counterfactuals)" §2 has been changed to `Scaled First`)**; **⑩ "earliest verifiable implementation" (factual error; colored coins / Mastercoin / Counterparty all predate Ethereum mainnet)**.
 - All load-bearing figures are independently recomputable: `notes/T1|T2|T3` + `data/`, `raw/`, `scripts/`.
 
 ---
