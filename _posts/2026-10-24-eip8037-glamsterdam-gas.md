@@ -226,22 +226,22 @@ ZK Labs 的 EEZ 文章将跨 L2 原子可组合性视为共享结算层的潜在
 
 ## 参考资料
 
-[1]: https://eips.ethereum.org/EIPS/eip-8037 "EIP-8037: State Creation Gas Cost Increase，当前规范与兼容性、安全章节"
-[2]: https://www.chainsecurity.com/blog/glamsterdam-gas/ "ChainSecurity：Glamsterdam Hard Fork: When Spent Gas Comes Back，2026-10-13"
-[3]: https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay "以太坊基金会：Glamsterdam on Hoodi Postponed，2026-10-22"
-[4]: https://eips.ethereum.org/EIPS/eip-8038 "EIP-8038: State-access gas cost update"
-[5]: https://www.getfoundry.sh/forge/gas-accounting "Foundry：Gas accounting，双维 gas 的测量、收据与估算"
-[6]: https://ethereum.github.io/repricing-impact/ "Ethereum Repricing Impact：历史主网交易回放仪表盘与分类说明"
-[7]: https://raw.githubusercontent.com/ethereum/repricing-impact/main/site/data/eip-8037/meta.json "EIP-8037 回放元数据、时间窗口与交易分组总量"
-[8]: https://raw.githubusercontent.com/ethereum/repricing-impact/main/site/data/eip-8037/group_categories.json "EIP-8037 回放分类及更高 gas 预算下的失败分布"
-[9]: https://raw.githubusercontent.com/ethereum/repricing-impact/main/site/entity-report.md "Ethereum Repricing Impact：受影响实体报告、具体失败路径与统计限制"
-[10]: https://blog.ethereum.org/2026/08/24/glamsterdam-repricing-testing "以太坊基金会：Glamsterdam Repricing Impact for Smart Contract Developers，2026-08-24"
-[11]: https://ethresear.ch/t/failure-modes-in-eip-8037-and-state-gas-scaling/23975 "Ethereum Research：Failure modes in EIP-8037 and state-gas scaling"
-[12]: https://eips.ethereum.org/EIPS/eip-1884 "EIP-1884: Repricing for trie-size-dependent opcodes"
-[13]: https://eips.ethereum.org/EIPS/eip-2929 "EIP-2929: Gas cost increases for state access opcodes"
-[14]: https://www.zklabsresearch.com/research/2026/10/03/eth-value-capture-v2.html "ZK Labs：《论 ETH 的价值捕获》v2.0，含 2026-10-10 勘误 1、四层框架与八段传导链"
-[15]: https://www.zklabsresearch.com/research/2026/10/10/eth-value-capture-v2-4-supplement.html "ZK Labs：ETH 价值捕获 v2.4 补充章，方案 G、费用账户与可证伪条件"
-[16]: https://www.zklabsresearch.com/research/2026/09/20/ethlabs-week13-four-questions.html "ZK Labs：Ethlabs Week 13，容量、费用与需求的检验框架，2026-09-20"
-[17]: https://www.zklabsresearch.com/research/2026/07/14/eez-composability-ethereum-moat-en.html "ZK Labs：EEZ、跨 L2 可组合性与以太坊潜在护城河，2026-07-14"
-[18]: https://www.zklabsresearch.com/observations/2026/10/04/eip-8363-withdrawal-deflation.html "ZK Labs：EIP-8363 观察，供给指标与价值捕获的区别，页面刊载日期 2026-10-05（URL 路径日期为 10-04）"
-[19]: https://www.zklabsresearch.com/research/2026/10/22/l2-rent-836m-12824x-scissors.html "ZK Labs：L2 租金分析，2026-10-22；排序权与基础费分配权的区别"
+- **[1]** [EIP-8037: State Creation Gas Cost Increase，当前规范与兼容性、安全章节](https://eips.ethereum.org/EIPS/eip-8037)
+- **[2]** [ChainSecurity：Glamsterdam Hard Fork: When Spent Gas Comes Back，2026-10-13](https://www.chainsecurity.com/blog/glamsterdam-gas/)
+- **[3]** [以太坊基金会：Glamsterdam on Hoodi Postponed，2026-10-22](https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay)
+- **[4]** [EIP-8038: State-access gas cost update](https://eips.ethereum.org/EIPS/eip-8038)
+- **[5]** [Foundry：Gas accounting，双维 gas 的测量、收据与估算](https://www.getfoundry.sh/forge/gas-accounting)
+- **[6]** [Ethereum Repricing Impact：历史主网交易回放仪表盘与分类说明](https://ethereum.github.io/repricing-impact/)
+- **[7]** [EIP-8037 回放元数据、时间窗口与交易分组总量](https://raw.githubusercontent.com/ethereum/repricing-impact/main/site/data/eip-8037/meta.json)
+- **[8]** [EIP-8037 回放分类及更高 gas 预算下的失败分布](https://raw.githubusercontent.com/ethereum/repricing-impact/main/site/data/eip-8037/group_categories.json)
+- **[9]** [Ethereum Repricing Impact：受影响实体报告、具体失败路径与统计限制](https://raw.githubusercontent.com/ethereum/repricing-impact/main/site/entity-report.md)
+- **[10]** [以太坊基金会：Glamsterdam Repricing Impact for Smart Contract Developers，2026-08-24](https://blog.ethereum.org/2026/08/24/glamsterdam-repricing-testing)
+- **[11]** [Ethereum Research：Failure modes in EIP-8037 and state-gas scaling](https://ethresear.ch/t/failure-modes-in-eip-8037-and-state-gas-scaling/23975)
+- **[12]** [EIP-1884: Repricing for trie-size-dependent opcodes](https://eips.ethereum.org/EIPS/eip-1884)
+- **[13]** [EIP-2929: Gas cost increases for state access opcodes](https://eips.ethereum.org/EIPS/eip-2929)
+- **[14]** [ZK Labs：《论 ETH 的价值捕获》v2.0，含 2026-10-10 勘误 1、四层框架与八段传导链](https://www.zklabsresearch.com/research/2026/10/03/eth-value-capture-v2.html)
+- **[15]** [ZK Labs：ETH 价值捕获 v2.4 补充章，方案 G、费用账户与可证伪条件](https://www.zklabsresearch.com/research/2026/10/10/eth-value-capture-v2-4-supplement.html)
+- **[16]** [ZK Labs：Ethlabs Week 13，容量、费用与需求的检验框架，2026-09-20](https://www.zklabsresearch.com/research/2026/09/20/ethlabs-week13-four-questions.html)
+- **[17]** [ZK Labs：EEZ、跨 L2 可组合性与以太坊潜在护城河，2026-07-14](https://www.zklabsresearch.com/research/2026/07/14/eez-composability-ethereum-moat-en.html)
+- **[18]** [ZK Labs：EIP-8363 观察，供给指标与价值捕获的区别，页面刊载日期 2026-10-05（URL 路径日期为 10-04）](https://www.zklabsresearch.com/observations/2026/10/04/eip-8363-withdrawal-deflation.html)
+- **[19]** [ZK Labs：L2 租金分析，2026-10-22；排序权与基础费分配权的区别](https://www.zklabsresearch.com/research/2026/10/22/l2-rent-836m-12824x-scissors.html)
