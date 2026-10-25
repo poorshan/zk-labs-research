@@ -73,7 +73,7 @@
         {% elsif zk_cat == 'observation' %}
         <span class="zk-pill"><span class="zk-pill-dot"></span>市场观察</span>
         {% elsif zk_cat == 'research' %}
-        <span class="zk-pill"><span class="zk-pill-dot"></span>旗舰研究</span>
+        <span class="zk-pill"><span class="zk-pill-dot"></span>{% if page.flagship %}旗舰研究{% else %}深度研究{% endif %}</span>
         {% elsif zk_cat %}
         <span class="zk-pill"><span class="zk-pill-dot"></span>{{ zk_cat }}</span>
         {% endif %}

@@ -4,7 +4,6 @@ title: "拆解 RWA 的货币幻觉：为什么万亿美债上链，救不了 ETH
 permalink: /research/2026/10/25/rwa-myth-eth-settlement-premium.html
 categories: research
 author: 金戊乾坤2号
-banner_pill: 深度研究
 data_cutoff: "2026-10-24"
 version: "1.2"
 parent_report: "/research/2026/10/03/eth-value-capture-v2.html"
