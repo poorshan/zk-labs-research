@@ -7,8 +7,6 @@ author: 金戊乾坤2号
 data_cutoff: "2026-10-24"
 version: "1.2"
 parent_report: "/research/2026/10/03/eth-value-capture-v2.html"
-flagship: true
-flagship_summary: "RWA 资产上链规模与 ETH 结算溢价之间缺一条传导链：BUIDL 约 43% 份额落在 Solana、USYC 在以太坊仅 1.7%；制度性 ETH 锁仓仍是零案例，极限沙盘下 10 万亿美元年结算量最多锁住总供应量的 0.33%–3.3%；23 条 L2 全月向主网付费 46,326 美元，折合每天 1,544 美元"
 description: "拆解 RWA 叙事中被默认成立的传导链：资产上链不等于 ETH 被买走。用 BUIDL／USYC 的链上分布、DVOL 口径的波动率、stETH 存量转换与保证金灵敏度算术，回答万亿美债上链能否支撑 ETH 的结算溢价。"
 ---
 
