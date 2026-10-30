@@ -9,7 +9,10 @@ permalink: /observations/2026/10/30/binance-freeze-boundary.html
 version: "v1.0"
 tags: [币安安全事件, 稳定币冻结, 去中心化, Arbitrum, EIP-7702, 市场观察]
 data_cutoff: 2026-10-30
+cover: /assets/images/binance-freeze-boundary-cover.webp
 ---
+
+![冻结权的边界：币安安全事件带来的去中心化启示](/assets/images/binance-freeze-boundary-cover.webp)
 
 > 黑客为何愿意以高于市价一成的代价，把刚到手的大额稳定币换成 ETH？答案指向一个判断：谁能在最后一刻按下暂停键。
 
