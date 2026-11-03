@@ -4,7 +4,7 @@ title: "物理极简与数字极简：拿回你生活的默认设置权"
 description: "把「少」当成一种选择权：少物是为了更自由，少数字噪音是为了更清醒。物理极简换主权，数字极简换清醒。"
 date: 2026-11-02 23:22:00 +0800
 categories: musings
-author: 南野东亦
+author: foggie
 permalink: /musings/2026/11/02/physical-digital-minimalism.html
 tags: [物理极简, 数字极简, Vitalik, 注意力, 杂谈]
 cover: /assets/images/physical-digital-minimalism-cover.webp
@@ -118,6 +118,6 @@ cover: /assets/images/physical-digital-minimalism-cover.webp
 
 ---
 
-— 南野东亦 ｜ ZK Labs 杂谈 ｜ 2026-11-02
+— foggie ｜ ZK Labs 杂谈 ｜ 2026-11-02
 
 > 原文首发于 X（2026-11-02）：[物理极简与数字极简：拿回你生活的默认设置权](https://x.com/shangu365/article/2117276122123505933)
