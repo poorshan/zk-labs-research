@@ -49,16 +49,37 @@ title: ZK-Labs Research
 
 ---
 
+## 💬 杂谈
+
+<p style="color: #606060; max-width: 640px;">
+不拘形式的随笔：研究之外的思考、行业见闻与方法札记。不追求完整投研框架，也不追短期信号。
+</p>
+
+{% if site.categories.musings %}
+{% for post in site.categories.musings limit:3 %}
+- **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url | relative_url }})
+  {% if post.description %}*{{ post.description }}*{% endif %}
+{% endfor %}
+{% endif %}
+
+<div style="text-align: center; margin-top: 1.6rem;">
+  <a class="zk-more-btn" href="{{ '/musings.html' | relative_url }}">查看全部杂谈 →</a>
+</div>
+
+---
+
 ## 全部报告
 
 {% for post in site.posts %}
-{% unless post.categories contains 'observation' %}
+{% unless post.categories contains 'observation' or post.categories contains 'musings' %}
 - **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url | relative_url }})
 {% endunless %}
 {% endfor %}
 
 <div class="zk-page-nav">
   <a href="{{ '/observations.html' | relative_url }}">市场观察</a>
+  <span class="zk-nav-sep">·</span>
+  <a href="{{ '/musings.html' | relative_url }}">杂谈</a>
   <span class="zk-nav-sep">·</span>
   <a href="{{ '/about.html' | relative_url }}">关于我们</a>
   <span class="zk-nav-sep">·</span>

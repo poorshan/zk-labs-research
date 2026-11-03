@@ -31,6 +31,7 @@
       <div class="zk-nav-links" id="zk-nav-links">
         <a href="{{ '/research.html' | relative_url }}">旗舰研究</a>
         <a href="{{ '/observations.html' | relative_url }}">市场观察</a>
+        <a href="{{ '/musings.html' | relative_url }}">杂谈</a>
         <a href="{{ '/about.html' | relative_url }}">关于我们</a>
         <a class="ext" href="https://vix.zklabsresearch.com" target="_blank" rel="noopener">VIX 训练站 ↗</a>
       </div>
@@ -72,6 +73,8 @@
         <span class="zk-pill"><span class="zk-pill-dot"></span>{{ page.banner_pill }}</span>
         {% elsif zk_cat == 'observation' %}
         <span class="zk-pill"><span class="zk-pill-dot"></span>市场观察</span>
+        {% elsif zk_cat == 'musings' %}
+        <span class="zk-pill"><span class="zk-pill-dot"></span>杂谈</span>
         {% elsif zk_cat == 'research' %}
         <span class="zk-pill"><span class="zk-pill-dot"></span>{% if page.flagship %}旗舰研究{% else %}深度研究{% endif %}</span>
         {% elsif zk_cat %}
