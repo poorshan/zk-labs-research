@@ -71,21 +71,21 @@ tags: [Ethereum, ValueCapture, ETH, EIP8363, Staking, Burn, Stablecoin, 投研]
 
 **首帖（12:06:50 UTC）**：
 
-> "Expanding on why I believe 'ETH as store of value (SoV)' makes much more sense to focus on than 'ETH as fee-burning token'. Three primary reasons: 1. ETH as fee-burning token never was as strong as it seemed; 2. Optimizing for ETH as fee-burning token would demand Ethereum and ETH function in ways that are very hard to make compatible with decentralization and capture resistance; 3. Meanwhile, optimizing for ETH as SoV is aligned with Ethereum focusing on its unique strengths (decentralization and CROPS)"
+> “Expanding on why I believe 'ETH as store of value (SoV)' makes much more sense to focus on than 'ETH as fee-burning token'. Three primary reasons: 1. ETH as fee-burning token never was as strong as it seemed; 2. Optimizing for ETH as fee-burning token would demand Ethereum and ETH function in ways that are very hard to make compatible with decentralization and capture resistance; 3. Meanwhile, optimizing for ETH as SoV is aligned with Ethereum focusing on its unique strengths (decentralization and CROPS)”
 
 **第二帖（12:07:01 UTC，论证一）**：给出 NPV 估值公式与「10 亿美元销毁 ÷ 4% 折现 = 250 亿美元地板」，并否定该地板：
 
-> "this was never a true floor. The reason is that the bulk of that burn was crypto-internal use cases. If ETH had dropped by 10x, then the profits from those use cases would have also dropped... The floor argument only works if the backing of the revenue stream is external."
+> “this was never a true floor. The reason is that the bulk of that burn was crypto-internal use cases. If ETH had dropped by 10x, then the profits from those use cases would have also dropped... The floor argument only works if the backing of the revenue stream is external.”
 
-> "Today, Ethereum actually has a better claim to this external backing, because of the growing RWA economy, but on the other hand, perhaps precisely because it's a normal stable mature business, it's not going to randomly go crazy and burn $180m on a digital monkey sale."
+> “Today, Ethereum actually has a better claim to this external backing, because of the growing RWA economy, but on the other hand, perhaps precisely because it's a normal stable mature business, it's not going to randomly go crazy and burn $180m on a digital monkey sale.”
 
 **第三帖（12:07:10 UTC，论证二）**：把「优化销毁」换算成公司化代价。他以 L'Oréal（市值第 55 位）为参照，研发支出约占市值 0.58%/年，折出每年约 70 万 ETH 的协议内拨款，并指出这条路线需要验证者收入砍 2/3、长期依赖干预式治理；同时指出「优化销毁」在某种程度上等于优化高 gas，会挤出最需要隐私与安全的用户。
 
-**第四帖（12:07:19 UTC，论证三）**：把 SoV 的第一指标定义为存活，配套指标包括保守取舍（"hash-only security, all formally proven, >3x more rounds than known to be necessary"）、部分 ossification、最小化协议政治、多签、Kohaku 隐私、EIP-8288 与 private-AA、FOCIL、降低基础设施依赖（"I am able to currently run a node on this laptop, and it synced in < 6 hours and takes up only 1/8 of my hard drive"）。结尾两句：
+**第四帖（12:07:19 UTC，论证三）**：把 SoV 的第一指标定义为存活，配套指标包括保守取舍（“hash-only security, all formally proven, >3x more rounds than known to be necessary”）、部分 ossification、最小化协议政治、多签、Kohaku 隐私、EIP-8288 与 private-AA、FOCIL、降低基础设施依赖（“I am able to currently run a node on this laptop, and it synced in < 6 hours and takes up only 1/8 of my hard drive”）。结尾两句：
 
-> "The best social reason to care about Ethereum is because it makes decentralization and CROPS properties a reality for more people and uses."
+> “The best social reason to care about Ethereum is because it makes decentralization and CROPS properties a reality for more people and uses.”
 
-> "The best private reason to hold ETH is its SoV properties, which are a direct consequence of that decentralization and CROPS."
+> “The best private reason to hold ETH is its SoV properties, which are a direct consequence of that decentralization and CROPS.”
 
 ### 1.2 他说了什么，没说什么
 
@@ -146,10 +146,10 @@ ETH Economic Value       ⚪️ Unknown（不判定）
 | 方案 | 内容 | 这条发言的影响 | 依据 |
 |:--|:--|:--|:--|
 | A 发行改革 | 调平发行与质押率的关系 | **未被提及** | 四帖无发行相关表述 |
-| B blob 定价与分层收费 | 提高单位资源收费 | **优先级被降级**（未否定机制） | "Optimizing for ETH as fee-burning token..." 否定的是以销毁为优化目标 |
+| B blob 定价与分层收费 | 提高单位资源收费 | **优先级被降级**（未否定机制） | “Optimizing for ETH as fee-burning token...” 否定的是以销毁为优化目标 |
 | C 预确认与 ETH 保证金 | 排序权需 ETH 质押 | 无表态 | — |
 | D 原生 Rollup 与内置验证计费 | 批发式收费 | 无表态 | — |
-| E 制度性 ETH 需求 | 机构以 ETH 作结算担保 | **获得叙事外壳，机制仍缺** | "the growing RWA economy" 一句 |
+| E 制度性 ETH 需求 | 机构以 ETH 作结算担保 | **获得叙事外壳，机制仍缺** | “the growing RWA economy” 一句 |
 | F 价格无关度量 | 建立不依赖价格的指标 | **被反向需要**（他给指标名，未给读数） | 第四帖的指标清单 |
 | G L1 直接活动回流 | 用量增长快于单价下降 | 无表态 | — |
 
@@ -317,7 +317,7 @@ v2.2 曾在同一张表中混用「净发行」与「净供给」。本节先把
 | 70 万 ETH 研发支出相当于发行的一定比例 | 「验证者收入砍 2/3」 | 700,000 ÷ 1,106,097 = 63.3% | 3.4 个百分点 | 站得住 |
 | 同上，按 365 天实测发行 | — | 700,000 ÷ 1,016,345 = 68.9% | 2.2 个百分点 | 站得住 |
 | 市值参照 | 约 2,700 亿美元 | 截点 2,610.7 亿美元 | −3.3% | 站得住 |
-| 单日 1.8 亿美元销毁的例子 | "burn $180m on a digital monkey sale" | 当期最高单日销毁 1,606.65 ETH ≈ 362 万美元 | 差 50 倍 | 属设例，非读数 |
+| 单日 1.8 亿美元销毁的例子 | “burn $180m on a digital monkey sale” | 当期最高单日销毁 1,606.65 ETH ≈ 362 万美元 | 差 50 倍 | 属设例，非读数 |
 
 第四行需要说明：他举的 1.8 亿美元是设例，用于说明「成熟业务不会偶发巨额销毁」，并非引用某日读数。我们此前的版本曾把它当作可核对的数字，这是误读。当期最高单日销毁为 2026-10-29 的 1,606.65 ETH，按当日价格约合 360 万美元，与 1.8 亿美元相差 50 倍，这恰恰支持他的论点：偶发事件撑不起一个地板。
 
