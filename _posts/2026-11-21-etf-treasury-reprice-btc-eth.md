@@ -9,7 +9,15 @@ permalink: /observations/2026/11/21/etf-treasury-reprice-btc-eth.html
 version: "v1.0"
 tags: [ETF, 财库公司, BTC, ETH, 市场观察]
 data_cutoff: 2026-11-19
+image:
+  path: /assets/images/etf-treasury-reprice-btc-eth-cover.jpg
+  width: 1983
+  height: 793
+  alt: "ETF × 财库公司：谁在重写 BTC / ETH 的定价机制？ — ZK Labs Research"
+cover: /assets/images/etf-treasury-reprice-btc-eth-cover.jpg
 ---
+
+![ETF × 财库公司：谁在重写 BTC / ETH 的定价机制？](/assets/images/etf-treasury-reprice-btc-eth-cover.jpg)
 
 **ETF和财库公司，真的改写了BTC与ETH的定价规则吗？**
 
